@@ -5,7 +5,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.64](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.63...v3.13.0-beta.64) (2026-04-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **seg:** prevent segmentations from spreading to all viewports before hydration confirmation in 3D four-up ([#5967](https://github.com/OHIF/Viewers/issues/5967)) ([f8ccf9f](https://github.com/OHIF/Viewers/commit/f8ccf9ff2ea9ab7c38bd427514a8ae87902822a3))
 
 
 
@@ -13,7 +16,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.63](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.62...v3.13.0-beta.63) (2026-04-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** refine dynamic config URL trust policy and document trusted-origin behavior ([#5973](https://github.com/OHIF/Viewers/issues/5973)) ([f3cca21](https://github.com/OHIF/Viewers/commit/f3cca21e49729fbf4bab85aa1de64b9dcfebd0ce))
 
 
 
@@ -21,7 +27,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.62](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.61...v3.13.0-beta.62) (2026-04-23)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Patch protobufjs for CVE-2026-41242. ([#5974](https://github.com/OHIF/Viewers/issues/5974)) ([1fc97fe](https://github.com/OHIF/Viewers/commit/1fc97fea43cc5e6689bd0076b77a278c67252af7))
 
 
 
@@ -62,7 +71,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.58](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.57...v3.13.0-beta.58) (2026-04-14)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -92,7 +101,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.55](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.54...v3.13.0-beta.55) (2026-04-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* ignore auth in git ([#5955](https://github.com/OHIF/Viewers/issues/5955)) ([961eea1](https://github.com/OHIF/Viewers/commit/961eea1c39c37a940c1707c3dfafcede5f4af994))
 
 
 
@@ -100,7 +112,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.54](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.53...v3.13.0-beta.54) (2026-04-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cornerstone:** read FrameOfReferenceUID from display set in viewport service ([#5950](https://github.com/OHIF/Viewers/issues/5950)) ([d219171](https://github.com/OHIF/Viewers/commit/d219171e25caf5a7c575080f63819d6f4fe45016))
 
 
 
@@ -108,7 +123,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.53](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.52...v3.13.0-beta.53) (2026-04-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Reverts
+
+* rename DisplaySet.frameOfReferenceUID back to FrameOfReferenceUID ([#5943](https://github.com/OHIF/Viewers/issues/5943)) ([0e933c2](https://github.com/OHIF/Viewers/commit/0e933c256e07b7cda35ed2ba3cfb1ab35d895d57))
 
 
 
@@ -122,12 +140,20 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **defaultRouteInit:** pass sorted display sets to hanging protocol for deterministic viewport order ([#5933](https://github.com/OHIF/Viewers/issues/5933)) ([68b10d3](https://github.com/OHIF/Viewers/commit/68b10d365a72d656c83a1c61624dcbd245fff5db))
 
 
+### Features
+
+* **component:** Adds SmartScrollbar to ui-next - OHIF-2558 ([#5924](https://github.com/OHIF/Viewers/issues/5924)) ([91a8715](https://github.com/OHIF/Viewers/commit/91a8715795c1501b271f10b361382331eb836bf9))
+
+
 
 
 
 # [3.13.0-beta.51](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.50...v3.13.0-beta.51) (2026-04-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Update yarn.lock that was missed in PR [#5936](https://github.com/OHIF/Viewers/issues/5936). ([#5940](https://github.com/OHIF/Viewers/issues/5940)) ([84ddf78](https://github.com/OHIF/Viewers/commit/84ddf78c879a7cb1aa62c3aaef4428adf67065da))
 
 
 
@@ -135,7 +161,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.50](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.49...v3.13.0-beta.50) (2026-04-02)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** update dependencies to fix security vulnerabilities ([#5936](https://github.com/OHIF/Viewers/issues/5936)) ([5358a39](https://github.com/OHIF/Viewers/commit/5358a3985a1fa87eb1e3e7493dd61254f790b6d8))
 
 
 
@@ -143,7 +172,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.49](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.48...v3.13.0-beta.49) (2026-04-02)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** restrict overlay segmentation menu to same frame of reference as viewport background display set  ([#5900](https://github.com/OHIF/Viewers/issues/5900)) ([b9029ef](https://github.com/OHIF/Viewers/commit/b9029ef6f8d63a0e36ec929310c1c5ad3f563ef8))
 
 
 
@@ -151,7 +183,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.48](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.47...v3.13.0-beta.48) (2026-04-01)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **measurement:** Restore viewport interactivity when deleting in-progress Spline or Livewire measurement ([#5905](https://github.com/OHIF/Viewers/issues/5905)) ([7929f08](https://github.com/OHIF/Viewers/commit/7929f0898f1bf882682a912b1c32d93d0944726f))
 
 
 
@@ -159,7 +194,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.47](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.46...v3.13.0-beta.47) (2026-03-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* prevent black viewport when navigating series with client-created segmentation ([#5919](https://github.com/OHIF/Viewers/issues/5919)) ([e66fb5a](https://github.com/OHIF/Viewers/commit/e66fb5a2b8c93a60ea20d315f73def7a02ea205f))
 
 
 
@@ -167,7 +205,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.46](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.45...v3.13.0-beta.46) (2026-03-27)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -175,7 +213,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.45](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.44...v3.13.0-beta.45) (2026-03-27)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -183,7 +221,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.44](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.43...v3.13.0-beta.44) (2026-03-27)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -191,7 +229,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.43](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.42...v3.13.0-beta.43) (2026-03-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **SR:** Added support for spline and live wire SR items. ([#5870](https://github.com/OHIF/Viewers/issues/5870)) ([1d4802c](https://github.com/OHIF/Viewers/commit/1d4802c2a38dd75dca7afca87913e100453c9135))
 
 
 
@@ -210,7 +251,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.41](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.40...v3.13.0-beta.41) (2026-03-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **sr-hydration:** enable hydration and arrow navigation for 3D SR measurements ([#5887](https://github.com/OHIF/Viewers/issues/5887)) ([7a38903](https://github.com/OHIF/Viewers/commit/7a38903b1977b1cf0f3a0ba8a4a823fac5e8fdeb))
 
 
 
@@ -218,7 +262,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.40](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.39...v3.13.0-beta.40) (2026-03-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Bump flattened version to address CVE-2026-32141. ([#5897](https://github.com/OHIF/Viewers/issues/5897)) ([d8d376e](https://github.com/OHIF/Viewers/commit/d8d376edaf9c2b7af237182657e3e2203cca5abb))
 
 
 
@@ -226,7 +273,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.39](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.38...v3.13.0-beta.39) (2026-03-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **window level:** The window level value is not displayed by default on all the viewports when selecting common/custom layout and TMTV. ([#5865](https://github.com/OHIF/Viewers/issues/5865)) ([fe1ecfe](https://github.com/OHIF/Viewers/commit/fe1ecfe0cc5d1bcf82686d821f356da8936a8c4b))
 
 
 
@@ -245,7 +295,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.37](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.36...v3.13.0-beta.37) (2026-03-12)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Bump tar version to address CVE-2026-31802. ([#5893](https://github.com/OHIF/Viewers/issues/5893)) ([d015b2e](https://github.com/OHIF/Viewers/commit/d015b2e32a418042034c4f557c5a36499c72f702))
 
 
 
@@ -253,7 +306,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.36](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.35...v3.13.0-beta.36) (2026-03-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Modalities in study list should select starts with as primary ([#5886](https://github.com/OHIF/Viewers/issues/5886)) ([b83e978](https://github.com/OHIF/Viewers/commit/b83e978df8c9ffda3759378318267b8d0020653c))
 
 
 
@@ -261,7 +317,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.35](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.34...v3.13.0-beta.35) (2026-03-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **Threshold tool:** Threshold tool no longer becomes deselected when the Dynamic option is selected ([#5884](https://github.com/OHIF/Viewers/issues/5884)) ([889026f](https://github.com/OHIF/Viewers/commit/889026f8a9c20cd21c31b4a02128afd5f057b14b))
 
 
 
@@ -269,7 +328,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.34](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.33...v3.13.0-beta.34) (2026-03-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **seg hydration:** auto-hydrate RT struct on second load with disableConfirmationPrompts ([#5875](https://github.com/OHIF/Viewers/issues/5875)) ([6f773f9](https://github.com/OHIF/Viewers/commit/6f773f997214c388409f3af3e9fc0e5b84debc10))
 
 
 
@@ -277,7 +339,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.33](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.32...v3.13.0-beta.33) (2026-03-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Bump svgo and tar to fix vulnerabilities. ([#5877](https://github.com/OHIF/Viewers/issues/5877)) ([61a1fcc](https://github.com/OHIF/Viewers/commit/61a1fccd7d47965831a6c80357219eed979ce4d6))
 
 
 
@@ -285,7 +350,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.32](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.31...v3.13.0-beta.32) (2026-03-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **ecg:** add DICOM ECG waveform extension ([#5856](https://github.com/OHIF/Viewers/issues/5856)) ([70f76ae](https://github.com/OHIF/Viewers/commit/70f76aeba1b27f8e4de5ec73a7b831428e38e3d2))
 
 
 
@@ -293,7 +361,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.31](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.30...v3.13.0-beta.31) (2026-03-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **microscopy:** rename measurement in microscopy mode ([#5866](https://github.com/OHIF/Viewers/issues/5866)) ([2358a73](https://github.com/OHIF/Viewers/commit/2358a73c3cd24953430064480fb9e66bfe36ea69))
 
 
 
@@ -301,7 +372,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.30](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.29...v3.13.0-beta.30) (2026-03-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** segment bidirectional tool error and show toast notification when no segment is drawn ([#5861](https://github.com/OHIF/Viewers/issues/5861)) ([7e10830](https://github.com/OHIF/Viewers/commit/7e10830d5802e22bda4df6a3f8008e9a414b4cd4))
 
 
 
@@ -309,7 +383,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.29](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.28...v3.13.0-beta.29) (2026-03-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Address various security vulnerabilities. ([#5869](https://github.com/OHIF/Viewers/issues/5869)) ([be8e266](https://github.com/OHIF/Viewers/commit/be8e266a80f13d03ce9dc4a21a0227d3e1bc36ac))
 
 
 
@@ -317,7 +394,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.28](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.27...v3.13.0-beta.28) (2026-03-03)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -325,7 +402,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.27](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.26...v3.13.0-beta.27) (2026-03-02)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -333,7 +410,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.26](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.25...v3.13.0-beta.26) (2026-02-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -352,7 +429,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.24](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.23...v3.13.0-beta.24) (2026-02-24)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* prevent viewer crash when opening DICOM Tag Browser from empty viewport  ([#5827](https://github.com/OHIF/Viewers/issues/5827)) ([d11d6d4](https://github.com/OHIF/Viewers/commit/d11d6d401bc92a3870ec1089d97235b01a6b27c3))
+* **ui-next:** Add validation for opacity and border inputs in the segmentation panel - OHIF-2332 ([#5819](https://github.com/OHIF/Viewers/issues/5819)) ([a8f7099](https://github.com/OHIF/Viewers/commit/a8f709982f16983a11c780e696521df5aa05b604))
 
 
 
@@ -371,7 +452,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.22](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.21...v3.13.0-beta.22) (2026-02-23)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -379,7 +460,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.21](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.20...v3.13.0-beta.21) (2026-02-23)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **RTStruct:** RTSTRUCT contours rendered on first slice for multi-frame images without IPP ([#5811](https://github.com/OHIF/Viewers/issues/5811)) ([b5573ca](https://github.com/OHIF/Viewers/commit/b5573caaa65d0d7ff3e83df0ec70b4aa7ea898ca))
 
 
 
@@ -398,7 +482,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.19](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.18...v3.13.0-beta.19) (2026-02-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:**  CVE-2026-27212 patched. Various dependency updates as a result of CVE-2026-26996. ([#5830](https://github.com/OHIF/Viewers/issues/5830)) ([2722960](https://github.com/OHIF/Viewers/commit/27229609cda3162e37573418ef82ca5d4e365075))
 
 
 
@@ -406,7 +493,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.18](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.17...v3.13.0-beta.18) (2026-02-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation overlay:** update viewport ds list upon seg delete - OHIF-2425 ([#5729](https://github.com/OHIF/Viewers/issues/5729)) ([b353541](https://github.com/OHIF/Viewers/commit/b35354120a01d89b27844f967c32c052bba8b096))
 
 
 
@@ -414,7 +504,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.17](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.16...v3.13.0-beta.17) (2026-02-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Add copy to clipboard option for capture ([#5720](https://github.com/OHIF/Viewers/issues/5720)) ([53c67f3](https://github.com/OHIF/Viewers/commit/53c67f361234a0b4160c1b11fafcb143a0723336))
 
 
 
@@ -433,7 +526,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.15](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.14...v3.13.0-beta.15) (2026-02-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **dicom-tag-browser:** Prevent long series names from overlapping - OHIF-2406 ([#5809](https://github.com/OHIF/Viewers/issues/5809)) ([cca1a86](https://github.com/OHIF/Viewers/commit/cca1a8683bc7d392a3a07268f24585642d13b1cd))
 
 
 
@@ -441,7 +537,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.14](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.13...v3.13.0-beta.14) (2026-02-13)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -460,7 +556,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.12](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.11...v3.13.0-beta.12) (2026-02-12)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **usAnnotation:** Prevent error after JSON download ([#5814](https://github.com/OHIF/Viewers/issues/5814)) ([739e323](https://github.com/OHIF/Viewers/commit/739e3239cf5765711050b673b373c0145747824f))
 
 
 
@@ -479,7 +578,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.10](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.9...v3.13.0-beta.10) (2026-02-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **microscopy:** Prevent measurement clearing on viewport resize ([#5796](https://github.com/OHIF/Viewers/issues/5796)) ([baef707](https://github.com/OHIF/Viewers/commit/baef707e46fd76b50f8b510b45da64e12d71ed0e))
 
 
 
@@ -487,7 +589,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.9](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.6...v3.13.0-beta.9) (2026-02-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Add a single version number with commit process ([#5746](https://github.com/OHIF/Viewers/issues/5746)) ([fb7329f](https://github.com/OHIF/Viewers/commit/fb7329f3fe0edc04833f15cd515522353d465912))
+* Missing tag ([#5808](https://github.com/OHIF/Viewers/issues/5808)) ([c92bdd5](https://github.com/OHIF/Viewers/commit/c92bdd5b48b8805e9ea4cbac72007391b9ba0efe))
 
 
 
@@ -495,7 +601,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.8](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.6...v3.13.0-beta.8) (2026-02-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Add a single version number with commit process ([#5746](https://github.com/OHIF/Viewers/issues/5746)) ([fb7329f](https://github.com/OHIF/Viewers/commit/fb7329f3fe0edc04833f15cd515522353d465912))
 
 
 
@@ -503,7 +612,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.7](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.6...v3.13.0-beta.7) (2026-02-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Add a single version number with commit process ([#5746](https://github.com/OHIF/Viewers/issues/5746)) ([fb7329f](https://github.com/OHIF/Viewers/commit/fb7329f3fe0edc04833f15cd515522353d465912))
 
 
 
@@ -511,7 +623,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.6](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.5...v3.13.0-beta.6) (2026-02-10)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -519,7 +631,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.5](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.4...v3.13.0-beta.5) (2026-02-10)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -527,7 +639,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.4](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.3...v3.13.0-beta.4) (2026-02-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Better handle octet stream case ([#5789](https://github.com/OHIF/Viewers/issues/5789)) ([037402f](https://github.com/OHIF/Viewers/commit/037402f7f6a1fc07593be302e4f578f6c4870c6e))
 
 
 
@@ -546,7 +661,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.2](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.1...v3.13.0-beta.2) (2026-02-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cine:** prevent crash on second view/hydration of SR series  ([#5724](https://github.com/OHIF/Viewers/issues/5724)) ([f70c9b9](https://github.com/OHIF/Viewers/commit/f70c9b932db2bb14173acae675d38ce250d244fa))
 
 
 
@@ -554,7 +672,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.1](https://github.com/OHIF/Viewers/compare/v3.13.0-beta.0...v3.13.0-beta.1) (2026-02-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Use a resolution for axios to address CVE-2026-25639. ([#5793](https://github.com/OHIF/Viewers/issues/5793)) ([94c9e16](https://github.com/OHIF/Viewers/commit/94c9e162f3d17840c7e9659557f685ca8642d06f))
 
 
 
@@ -562,7 +683,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.13.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.135...v3.13.0-beta.0) (2026-02-07)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -570,7 +691,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.135](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.134...v3.12.0-beta.135) (2026-02-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **jump-to-contour-segment:** For contours like those from RSTRUCTs, use generic jumpToSegmentCenter if a segment center is available. ([#5785](https://github.com/OHIF/Viewers/issues/5785)) ([45739b3](https://github.com/OHIF/Viewers/commit/45739b31a2c72cb646c733929f733a8e180a616c))
 
 
 
@@ -600,7 +724,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.132](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.131...v3.12.0-beta.132) (2026-01-30)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -608,7 +732,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.131](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.130...v3.12.0-beta.131) (2026-01-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Use jumpToSegmentNext instead of jumpToSegmentCenter for arrow navigation. ([#5759](https://github.com/OHIF/Viewers/issues/5759)) ([02423c5](https://github.com/OHIF/Viewers/commit/02423c5bf3131006df92c8054994887d1811d821))
 
 
 
@@ -616,7 +743,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.130](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.129...v3.12.0-beta.130) (2026-01-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -624,7 +751,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.129](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.128...v3.12.0-beta.129) (2026-01-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Handle optional ContentSequence for NUM content items ([#5703](https://github.com/OHIF/Viewers/issues/5703)) ([6dedf55](https://github.com/OHIF/Viewers/commit/6dedf5573e78a5751bed0b79646700acedfc8a38))
 
 
 
@@ -643,7 +773,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.127](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.126...v3.12.0-beta.127) (2026-01-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Navigate to contour should work ([#5718](https://github.com/OHIF/Viewers/issues/5718)) ([0fd517d](https://github.com/OHIF/Viewers/commit/0fd517d6ab583652a3667f9af49413648f2755db))
 
 
 
@@ -651,7 +784,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.126](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.125...v3.12.0-beta.126) (2026-01-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* the null value check issue in image spacing calculation ([#5726](https://github.com/OHIF/Viewers/issues/5726)) ([afe184e](https://github.com/OHIF/Viewers/commit/afe184ec78dcc8f780e64687e06670365beeb77e))
 
 
 
@@ -659,7 +795,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.125](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.124...v3.12.0-beta.125) (2026-01-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Ignore CVE-2026-23745, CVE-2026-23950 and CVE-2024-28863 because they are limited to build/dev environments. ([#5733](https://github.com/OHIF/Viewers/issues/5733)) ([320f0a7](https://github.com/OHIF/Viewers/commit/320f0a7463ad95251842ece6cd329bba7b6b2a97))
 
 
 
@@ -667,7 +806,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.124](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.123...v3.12.0-beta.124) (2026-01-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **microscopy:** Update microscope to 0.48.17 to fix a measurement exception. ([#5710](https://github.com/OHIF/Viewers/issues/5710)) ([4a1f509](https://github.com/OHIF/Viewers/commit/4a1f5098654dc7afef4c135f2e2198a0e785f4b9))
 
 
 
@@ -675,7 +817,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.123](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.122...v3.12.0-beta.123) (2026-01-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **window-level-action-menu:** Window level menu no longer needs two clicks to open after it is used ([#5711](https://github.com/OHIF/Viewers/issues/5711)) ([eb6b814](https://github.com/OHIF/Viewers/commit/eb6b814fc9c35feb6aa5f4378632b53202b0d8a3))
 
 
 
@@ -705,7 +850,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.120](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.119...v3.12.0-beta.120) (2026-01-09)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -713,7 +858,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.119](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.118...v3.12.0-beta.119) (2026-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **DicomTagBrowser:** Check for null metadata. ([#5696](https://github.com/OHIF/Viewers/issues/5696)) ([6429a55](https://github.com/OHIF/Viewers/commit/6429a5518a56f7fbd9d948510c52e0d467c9ca57))
 
 
 
@@ -721,7 +869,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.118](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.117...v3.12.0-beta.118) (2026-01-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Use active segmentation for navigation. ([#5692](https://github.com/OHIF/Viewers/issues/5692)) ([ecc74a5](https://github.com/OHIF/Viewers/commit/ecc74a53e097b13851ea8f7be0cabab6b0d82b7f))
 
 
 
@@ -729,7 +880,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.117](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.116...v3.12.0-beta.117) (2026-01-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **capture:** Ensure download filename has the correct extension. ([#5691](https://github.com/OHIF/Viewers/issues/5691)) ([38a8406](https://github.com/OHIF/Viewers/commit/38a8406a66a5d37c403d1dbd09d7e1a62affff15))
 
 
 
@@ -737,7 +891,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.116](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.115...v3.12.0-beta.116) (2026-01-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* NM multiframe with TimeSlotVector ([#5666](https://github.com/OHIF/Viewers/issues/5666)) ([a74648f](https://github.com/OHIF/Viewers/commit/a74648f8ec23c01b91588ff7c6ee1620ca456ed7))
 
 
 
@@ -745,7 +902,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.115](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.114...v3.12.0-beta.115) (2026-01-05)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -753,7 +910,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.114](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.113...v3.12.0-beta.114) (2026-01-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** update qs package to fix vulnerability CVE-2025-15284 ([#5686](https://github.com/OHIF/Viewers/issues/5686)) ([ca364a3](https://github.com/OHIF/Viewers/commit/ca364a3af7a29dc98d5c5b8e4c73abebc107c7ce))
 
 
 
@@ -761,7 +921,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.113](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.112...v3.12.0-beta.113) (2025-12-19)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -769,7 +929,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.112](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.111...v3.12.0-beta.112) (2025-12-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* pass metadata to viewport orientation matching ([#5667](https://github.com/OHIF/Viewers/issues/5667)) ([cd253f2](https://github.com/OHIF/Viewers/commit/cd253f20bde68f33a01ac1fe5e1cf6b987d9d5e2))
 
 
 
@@ -799,7 +962,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.109](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.108...v3.12.0-beta.109) (2025-12-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** When setting the segmentation style and the representation type is not provided, apply the style to all representation types. ([#5662](https://github.com/OHIF/Viewers/issues/5662)) ([f3beb8e](https://github.com/OHIF/Viewers/commit/f3beb8e7115429bdb0e37f4c61491d0b28a2f6b6))
 
 
 
@@ -807,7 +973,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.108](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.107...v3.12.0-beta.108) (2025-12-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Jump to measurement from measurement panel after rotating viewport ([#5090](https://github.com/OHIF/Viewers/issues/5090)) ([ef98516](https://github.com/OHIF/Viewers/commit/ef98516b4fcd76f796bfd5560f98c968e48df645))
 
 
 
@@ -815,7 +984,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.107](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.106...v3.12.0-beta.107) (2025-12-16)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -834,7 +1003,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.105](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.104...v3.12.0-beta.105) (2025-12-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* seg sync for data without FOR ([#5565](https://github.com/OHIF/Viewers/issues/5565)) ([6c628e0](https://github.com/OHIF/Viewers/commit/6c628e09376a0371a84ea55bcecfd25368ee43e8))
 
 
 
@@ -842,7 +1014,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.104](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.103...v3.12.0-beta.104) (2025-12-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -850,7 +1022,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.103](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.102...v3.12.0-beta.103) (2025-12-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -861,6 +1033,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* **DataSource:** migrate configuration dialog to ui-next components ([#5626](https://github.com/OHIF/Viewers/issues/5626)) ([c0f39ae](https://github.com/OHIF/Viewers/commit/c0f39aeb51dc5abad6381706eaa0ac69a54979f2))
 * **routes:** display 404 feedback page for unmatched URLs ([#5627](https://github.com/OHIF/Viewers/issues/5627)) ([eef755e](https://github.com/OHIF/Viewers/commit/eef755ef05e38d5271b1c79e4dd191d723895470))
 
 
@@ -869,7 +1042,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.101](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.100...v3.12.0-beta.101) (2025-12-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **seg-viewport:** add guard for missing reference display set handler to prevent viewport crash ([#5618](https://github.com/OHIF/Viewers/issues/5618)) ([8dde223](https://github.com/OHIF/Viewers/commit/8dde2237a2c1123fc448ae8b68e2f59af376b294))
 
 
 
@@ -877,7 +1053,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.100](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.99...v3.12.0-beta.100) (2025-12-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **notification:** add custom notification component support ([#5605](https://github.com/OHIF/Viewers/issues/5605)) ([c4e5a46](https://github.com/OHIF/Viewers/commit/c4e5a4616db87b39df5e16b75f1ba3c18407468f))
 
 
 
@@ -896,7 +1075,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.98](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.97...v3.12.0-beta.98) (2025-12-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **clipboard:** Adds tooltip clipboard icon feedback when copy fails ([#5609](https://github.com/OHIF/Viewers/issues/5609)) ([6566354](https://github.com/OHIF/Viewers/commit/6566354986583e5d7db01c8734e282faf7a072b9))
 
 
 
@@ -904,7 +1086,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.97](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.96...v3.12.0-beta.97) (2025-12-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* skip VOI sync for empty viewports ([#5599](https://github.com/OHIF/Viewers/issues/5599)) ([1aa4431](https://github.com/OHIF/Viewers/commit/1aa443112186851855a638ab974a3060c3e28ea0))
 
 
 
@@ -912,7 +1097,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.96](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.95...v3.12.0-beta.96) (2025-12-02)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -931,7 +1116,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.94](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.93...v3.12.0-beta.94) (2025-12-02)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -939,7 +1124,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.93](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.92...v3.12.0-beta.93) (2025-11-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* tooltips for tool settings ([#5586](https://github.com/OHIF/Viewers/issues/5586)) ([411553e](https://github.com/OHIF/Viewers/commit/411553ee916b8a63b2a934a7e1274bc449041016))
 
 
 
@@ -947,7 +1135,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.92](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.91...v3.12.0-beta.92) (2025-11-24)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docs:** Empty commit as an attempt to fix the docs build. ([#5582](https://github.com/OHIF/Viewers/issues/5582)) ([94b0358](https://github.com/OHIF/Viewers/commit/94b0358f18f81fa2822a208d68decfce076ef577))
 
 
 
@@ -955,7 +1146,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.91](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.90...v3.12.0-beta.91) (2025-11-21)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -974,7 +1165,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.89](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.88...v3.12.0-beta.89) (2025-11-20)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -982,7 +1173,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.88](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.87...v3.12.0-beta.88) (2025-11-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Remove dead code and fix rectangle roi rehydration ([#5490](https://github.com/OHIF/Viewers/issues/5490)) ([9ca02b4](https://github.com/OHIF/Viewers/commit/9ca02b4071f77600f7dcd87930fecdcf3d1c249f))
 
 
 
@@ -1001,7 +1195,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.86](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.85...v3.12.0-beta.86) (2025-11-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Allow for manually added label map and contour segmentations to be used as viewport data overlays. ([#5562](https://github.com/OHIF/Viewers/issues/5562)) ([02f6744](https://github.com/OHIF/Viewers/commit/02f6744dab993f16cf2516fd5f657e0743e3fa42))
 
 
 
@@ -1031,7 +1228,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.83](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.82...v3.12.0-beta.83) (2025-11-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **metadata:** metadata access improvement ([#5292](https://github.com/OHIF/Viewers/issues/5292)) ([16233d9](https://github.com/OHIF/Viewers/commit/16233d980f17abfc30461b46c6b1888be10c7840))
 
 
 
@@ -1039,7 +1239,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.82](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.81...v3.12.0-beta.82) (2025-11-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** When synchronizing a segmentation representation, use the type of the source viewport segmentation to determine the type of the target viewport segmentation ([#5546](https://github.com/OHIF/Viewers/issues/5546)) ([a0556b0](https://github.com/OHIF/Viewers/commit/a0556b08be98e0bba950ad7b9b575d7b971104ba))
 
 
 
@@ -1058,7 +1261,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.80](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.79...v3.12.0-beta.80) (2025-11-05)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1066,7 +1269,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.79](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.78...v3.12.0-beta.79) (2025-10-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Exact versioning and docs dependabot alerts ([#5536](https://github.com/OHIF/Viewers/issues/5536)) ([000e42e](https://github.com/OHIF/Viewers/commit/000e42e9a6eaa4f0878cbf877f03b09a459ad18e))
 
 
 
@@ -1074,7 +1280,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.78](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.77...v3.12.0-beta.78) (2025-10-29)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1093,7 +1299,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.76](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.75...v3.12.0-beta.76) (2025-10-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Addressed dependabot alert CVE-2025-59288 concerning playwright ([#5527](https://github.com/OHIF/Viewers/issues/5527)) ([1f11c83](https://github.com/OHIF/Viewers/commit/1f11c83006bff98cb8434f0662b4de55d5b9bf78))
 
 
 
@@ -1123,7 +1332,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.73](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.72...v3.12.0-beta.73) (2025-10-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Fixed the tooltip text of the window button, it was mistakenly written in Chinese in the en-us json ([#5513](https://github.com/OHIF/Viewers/issues/5513)) ([8b9445c](https://github.com/OHIF/Viewers/commit/8b9445c442d0a40b7e4393614313192bd006461b))
 
 
 
@@ -1131,7 +1343,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.72](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.71...v3.12.0-beta.72) (2025-10-22)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1139,7 +1351,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.71](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.70...v3.12.0-beta.71) (2025-10-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Fixed the manual scrolling of the segments list and implemented automatic scrolling to the active segment. ([#5510](https://github.com/OHIF/Viewers/issues/5510)) ([1df4f84](https://github.com/OHIF/Viewers/commit/1df4f843fe3c377643938563ff9e2e4f930d8537))
 
 
 
@@ -1147,7 +1362,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.70](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.69...v3.12.0-beta.70) (2025-10-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **rendering:** Fix palette color LUT conversion causing black images ([#5509](https://github.com/OHIF/Viewers/issues/5509)) ([ffd9ec3](https://github.com/OHIF/Viewers/commit/ffd9ec32730580e266ffae365a10ac3e524dd6cf))
 
 
 
@@ -1188,7 +1406,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.66](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.65...v3.12.0-beta.66) (2025-10-17)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1196,7 +1414,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.65](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.64...v3.12.0-beta.65) (2025-10-17)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1204,7 +1422,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.64](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.63...v3.12.0-beta.64) (2025-10-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docker:** Use bun version 1.2.23 for docker build. ([#5501](https://github.com/OHIF/Viewers/issues/5501)) ([86e924f](https://github.com/OHIF/Viewers/commit/86e924fb88cc146f91c7d826ee071e451de47942))
 
 
 
@@ -1212,7 +1433,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.63](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.62...v3.12.0-beta.63) (2025-10-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Segmentation not displayed and unable to draw segments in volume viewport after converting Labelmap to Surface ([#5488](https://github.com/OHIF/Viewers/issues/5488)) ([faea09e](https://github.com/OHIF/Viewers/commit/faea09e7ef2667aad5cef1efc2a6516677ca2915))
 
 
 
@@ -1220,7 +1444,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.62](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.61...v3.12.0-beta.62) (2025-10-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentationService:** prevent no representation crash ([#5495](https://github.com/OHIF/Viewers/issues/5495)) ([3137aed](https://github.com/OHIF/Viewers/commit/3137aed0170196a61e16c6dac0c15bcc41691919))
 
 
 
@@ -1228,7 +1455,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.61](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.60...v3.12.0-beta.61) (2025-10-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docs:** Set exact version for glob. ([#5497](https://github.com/OHIF/Viewers/issues/5497)) ([0d2f4e7](https://github.com/OHIF/Viewers/commit/0d2f4e715a941fa458ebf8e64972088580a04952))
 
 
 
@@ -1236,7 +1466,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.60](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.59...v3.12.0-beta.60) (2025-10-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Run bun audit before bun install. ([#5496](https://github.com/OHIF/Viewers/issues/5496)) ([fbd9371](https://github.com/OHIF/Viewers/commit/fbd9371884d0e87376d67eb98c17a4d62e4e6dd1))
 
 
 
@@ -1255,7 +1488,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.58](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.57...v3.12.0-beta.58) (2025-10-14)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1263,7 +1496,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.57](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.56...v3.12.0-beta.57) (2025-10-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **bun:** Use fixed bun version ([#5493](https://github.com/OHIF/Viewers/issues/5493)) ([3fe67d5](https://github.com/OHIF/Viewers/commit/3fe67d5c98a22edc32cb0d3de5edc05b722dd68e))
 
 
 
@@ -1271,7 +1507,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.56](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.55...v3.12.0-beta.56) (2025-10-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Update Dockerfile ([#5484](https://github.com/OHIF/Viewers/issues/5484)) ([41c0287](https://github.com/OHIF/Viewers/commit/41c028781b80f0ca80f4d6cde3ca8e7958f1baed))
 
 
 
@@ -1279,7 +1518,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.55](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.54...v3.12.0-beta.55) (2025-10-09)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1287,7 +1526,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.54](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.53...v3.12.0-beta.54) (2025-10-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1295,7 +1534,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.53](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.52...v3.12.0-beta.53) (2025-10-07)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1303,7 +1542,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.52](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.51...v3.12.0-beta.52) (2025-10-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Segmentation not displayed and unable to draw segments when switching back to volume/stack viewport from 3D viewport ([#5430](https://github.com/OHIF/Viewers/issues/5430)) ([78df8ff](https://github.com/OHIF/Viewers/commit/78df8ff03a371904a390c63a95628d5511dad136))
 
 
 
@@ -1311,7 +1553,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.51](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.50...v3.12.0-beta.51) (2025-10-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* validation for Percentage of Max SUV input field in TMTV module ([#5417](https://github.com/OHIF/Viewers/issues/5417)) ([5040c94](https://github.com/OHIF/Viewers/commit/5040c947d2f47e5ec66285fa353e3e0ffd127ba7))
 
 
 
@@ -1319,7 +1564,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.50](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.49...v3.12.0-beta.50) (2025-10-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **Segmentation:** [Bug [#5420](https://github.com/OHIF/Viewers/issues/5420)] Segmentation color resets after using toggleOneUp ([#5465](https://github.com/OHIF/Viewers/issues/5465)) ([2c6ce21](https://github.com/OHIF/Viewers/commit/2c6ce21c8f79f8b3e6dc47b5aa6f717b6b5cbd2a))
 
 
 
@@ -1327,7 +1575,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.49](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.48...v3.12.0-beta.49) (2025-10-07)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1335,7 +1583,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.48](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.47...v3.12.0-beta.48) (2025-10-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **measurementTrackingMachine:** remove unreachable states ([#5460](https://github.com/OHIF/Viewers/issues/5460)) ([7f12f39](https://github.com/OHIF/Viewers/commit/7f12f398fb145a31e5557dbee51c0a9b0f40a35b))
 
 
 
@@ -1343,7 +1594,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.47](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.46...v3.12.0-beta.47) (2025-10-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **toolbar:** prevent duplicate command execution on repeated interactions ([#5456](https://github.com/OHIF/Viewers/issues/5456)) ([4d04dd5](https://github.com/OHIF/Viewers/commit/4d04dd5651f4cf8dcaf4732baee5e218e92bd3c1))
 
 
 
@@ -1351,7 +1605,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.46](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.45...v3.12.0-beta.46) (2025-10-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* viewport ready event firing logic ([#5462](https://github.com/OHIF/Viewers/issues/5462)) ([d2ae13b](https://github.com/OHIF/Viewers/commit/d2ae13b03f21e3ab9545d50d7403ec52004bfbfc))
 
 
 
@@ -1370,7 +1627,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.44](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.43...v3.12.0-beta.44) (2025-10-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Safely handle missing active viewport ([#5448](https://github.com/OHIF/Viewers/issues/5448)) ([792db26](https://github.com/OHIF/Viewers/commit/792db26ff1591f9e054486f1bee01c422e774101))
 
 
 
@@ -1378,7 +1638,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.43](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.42...v3.12.0-beta.43) (2025-10-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **MeasurementService:** add rendering of unmapped measurements  ([#5416](https://github.com/OHIF/Viewers/issues/5416)) ([851e74d](https://github.com/OHIF/Viewers/commit/851e74d7b867a806befb5d85fd71ff9a75e9f2d2))
 
 
 
@@ -1386,7 +1649,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.42](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.41...v3.12.0-beta.42) (2025-10-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* duplicate segmentation entries on layout switch ([#5458](https://github.com/OHIF/Viewers/issues/5458)) ([9e951e8](https://github.com/OHIF/Viewers/commit/9e951e88005af505ae0c07fbcd3366de12b773dd))
 
 
 
@@ -1394,7 +1660,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.41](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.40...v3.12.0-beta.41) (2025-10-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* study browser mode for multiple studies ([#5457](https://github.com/OHIF/Viewers/issues/5457)) ([6a1df9d](https://github.com/OHIF/Viewers/commit/6a1df9de4ad3c10a4653f18e03aff6bda4962fd1))
 
 
 
@@ -1402,7 +1671,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.40](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.39...v3.12.0-beta.40) (2025-10-02)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **studyBrowserCustomization:** fix thumbnail menu item actions in study browser ([#5283](https://github.com/OHIF/Viewers/issues/5283)) ([2f28a0d](https://github.com/OHIF/Viewers/commit/2f28a0deab5e43f432bbd9b5989928c9b0450278))
 
 
 
@@ -1421,7 +1693,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.38](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.37...v3.12.0-beta.38) (2025-09-30)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1429,7 +1701,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.37](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.36...v3.12.0-beta.37) (2025-09-30)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1437,7 +1709,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.36](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.35...v3.12.0-beta.36) (2025-09-30)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1445,7 +1717,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.35](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.34...v3.12.0-beta.35) (2025-09-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Restored segment label tool in longitudinal mode. ([#5443](https://github.com/OHIF/Viewers/issues/5443)) ([dd86a8e](https://github.com/OHIF/Viewers/commit/dd86a8eabd0712d25e7652a242377fe09597e8d5))
 
 
 
@@ -1453,7 +1728,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.34](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.33...v3.12.0-beta.34) (2025-09-29)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1472,7 +1747,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.32](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.31...v3.12.0-beta.32) (2025-09-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1480,7 +1755,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.31](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.30...v3.12.0-beta.31) (2025-09-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Improve rt handling for bulkdata ([#5415](https://github.com/OHIF/Viewers/issues/5415)) ([d88a341](https://github.com/OHIF/Viewers/commit/d88a341884f7361865bc10159c1a82633667ab5b))
 
 
 
@@ -1488,7 +1766,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.30](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.29...v3.12.0-beta.30) (2025-09-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **i18n:** Add and update i18n Translation for Toolbar Tool Names ([#5392](https://github.com/OHIF/Viewers/issues/5392)) ([7783d0f](https://github.com/OHIF/Viewers/commit/7783d0f558bbb7016c29513b6fe76ed069dbd75c))
 
 
 
@@ -1496,7 +1777,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.29](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.28...v3.12.0-beta.29) (2025-09-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **Segmentation:** Segmentation highlight animation function selection ([#5401](https://github.com/OHIF/Viewers/issues/5401)) ([69dbe27](https://github.com/OHIF/Viewers/commit/69dbe2778493cdfc7a8da5e757c95217bb31edc2))
 
 
 
@@ -1504,7 +1788,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.28](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.27...v3.12.0-beta.28) (2025-09-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **SegmentationService:** _getSegmentCenter wrongly handling seg center availability ([#5396](https://github.com/OHIF/Viewers/issues/5396)) ([74b82bd](https://github.com/OHIF/Viewers/commit/74b82bd93442411ad68f4872992126c40321eb9e))
 
 
 
@@ -1512,7 +1799,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.27](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.26...v3.12.0-beta.27) (2025-09-17)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1520,7 +1807,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.26](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.25...v3.12.0-beta.26) (2025-09-17)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1528,7 +1815,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.25](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.24...v3.12.0-beta.25) (2025-09-16)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1536,7 +1823,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.24](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.23...v3.12.0-beta.24) (2025-09-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ErrorBoundary:** Fixing console errors and Improving error logging for better developer experience ([#5378](https://github.com/OHIF/Viewers/issues/5378)) ([56c5828](https://github.com/OHIF/Viewers/commit/56c5828b02d53bfd17182bb8d0c126b7cd4f400e))
 
 
 
@@ -1544,7 +1834,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.23](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.22...v3.12.0-beta.23) (2025-09-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cornerstone-dicom-rt:** adding caching usage to cornerstone-dicom-rt SOP Class Handler ([#5387](https://github.com/OHIF/Viewers/issues/5387)) ([d6ea179](https://github.com/OHIF/Viewers/commit/d6ea179ac43a47d4011b8dcaf59d79d99382d6c8))
 
 
 
@@ -1574,7 +1867,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.20](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.19...v3.12.0-beta.20) (2025-08-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1582,7 +1875,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.19](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.18...v3.12.0-beta.19) (2025-08-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1590,7 +1883,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.18](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.17...v3.12.0-beta.18) (2025-08-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1598,7 +1891,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.17](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.16...v3.12.0-beta.17) (2025-08-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* seg preview ([#5338](https://github.com/OHIF/Viewers/issues/5338)) ([d91cc23](https://github.com/OHIF/Viewers/commit/d91cc230e5231ca32ee28736f661a1497f7834c5))
 
 
 
@@ -1617,7 +1913,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.15](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.14...v3.12.0-beta.15) (2025-08-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Docker build failure due to missing lerna command ([#5357](https://github.com/OHIF/Viewers/issues/5357)) ([bedb185](https://github.com/OHIF/Viewers/commit/bedb1854f96928f6db5707dce74ea75b1445e9bd))
 
 
 
@@ -1625,7 +1924,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.14](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.13...v3.12.0-beta.14) (2025-08-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* local ModalitiesInStudy check ([#5285](https://github.com/OHIF/Viewers/issues/5285)) ([d269404](https://github.com/OHIF/Viewers/commit/d2694048a47faf9028184d0272df12e2602ae674))
 
 
 
@@ -1633,7 +1935,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.13](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.12...v3.12.0-beta.13) (2025-08-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* add back clear segmentation representations ([#5336](https://github.com/OHIF/Viewers/issues/5336)) ([21d6ba2](https://github.com/OHIF/Viewers/commit/21d6ba2bb30df5b99bf5728163caff514aaa5dcd))
 
 
 
@@ -1641,7 +1946,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.12](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.11...v3.12.0-beta.12) (2025-08-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Segmentation stats customization module ([#5324](https://github.com/OHIF/Viewers/issues/5324)) ([b9d6f55](https://github.com/OHIF/Viewers/commit/b9d6f558cbe5957f83e6d92305a78662a0b186ed))
 
 
 
@@ -1649,7 +1957,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.11](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.10...v3.12.0-beta.11) (2025-08-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Add seriesInstanceUID fallback for callByRetrieveAETitle ([#5332](https://github.com/OHIF/Viewers/issues/5332)) ([840b5d3](https://github.com/OHIF/Viewers/commit/840b5d37d15537abc38316d636da7c144e6d9223))
 
 
 
@@ -1657,7 +1968,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.10](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.9...v3.12.0-beta.10) (2025-08-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+*  Jump to measurement moves the camera if it is not in the viewport ([#5023](https://github.com/OHIF/Viewers/issues/5023)) ([6fe9df6](https://github.com/OHIF/Viewers/commit/6fe9df6ec93c0f37e3bb9f8bf6425bae025e75c8))
 
 
 
@@ -1665,7 +1979,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.9](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.8...v3.12.0-beta.9) (2025-08-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* header icon logic ([#5339](https://github.com/OHIF/Viewers/issues/5339)) ([a2133ef](https://github.com/OHIF/Viewers/commit/a2133ef6cb6e47fad22908fb1338ee57c67eb8f8))
 
 
 
@@ -1684,7 +2001,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.7](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.6...v3.12.0-beta.7) (2025-08-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* load 3dsr ([#5335](https://github.com/OHIF/Viewers/issues/5335)) ([becba78](https://github.com/OHIF/Viewers/commit/becba7861f99ae4e190caddea8b663e60a9883f5))
 
 
 
@@ -1692,7 +2012,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.6](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.5...v3.12.0-beta.6) (2025-08-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **orientationMarkers:** improved the orientation markers with a simplified version ([#5328](https://github.com/OHIF/Viewers/issues/5328)) ([266b1f5](https://github.com/OHIF/Viewers/commit/266b1f58f01ac6742a9bb40dda28459e7cddc683))
 
 
 
@@ -1700,7 +2023,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.5](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.4...v3.12.0-beta.5) (2025-08-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Update Dockerfile ([#5319](https://github.com/OHIF/Viewers/issues/5319)) ([0e83f45](https://github.com/OHIF/Viewers/commit/0e83f4515c902ffa3dbab2d68ec81b93881e1768))
 
 
 
@@ -1708,7 +2034,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.4](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.3...v3.12.0-beta.4) (2025-08-11)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1716,7 +2042,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.3](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.2...v3.12.0-beta.3) (2025-08-11)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1724,7 +2050,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.2](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.1...v3.12.0-beta.2) (2025-08-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Guard series.instances in DicomJSONDataSource to prevent TypeError (OHI-2114) ([#5312](https://github.com/OHIF/Viewers/issues/5312)) ([f1d158b](https://github.com/OHIF/Viewers/commit/f1d158bbe81fd9f6052ce23c8588c9c93d76360c))
 
 
 
@@ -1732,7 +2061,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.1](https://github.com/OHIF/Viewers/compare/v3.12.0-beta.0...v3.12.0-beta.1) (2025-08-05)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1740,7 +2069,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.12.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.116...v3.12.0-beta.0) (2025-08-05)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1748,7 +2077,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.116](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.115...v3.11.0-beta.116) (2025-08-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **annotation:** Add command to show pleura percentage in USAnnotationPanel and update condition for BLinePleuraPercentage ([#5297](https://github.com/OHIF/Viewers/issues/5297)) ([35bc074](https://github.com/OHIF/Viewers/commit/35bc074a53bd8c804dba44830145a6633302f11d))
 
 
 
@@ -1767,7 +2099,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.114](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.113...v3.11.0-beta.114) (2025-07-30)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1786,7 +2118,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.112](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.111...v3.11.0-beta.112) (2025-07-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **colorbar:** Allow for AdvancedRenderingControls to be placed at the left or right of the viewport. ([#5273](https://github.com/OHIF/Viewers/issues/5273)) ([341f1c4](https://github.com/OHIF/Viewers/commit/341f1c4ce799d1bcef3632e0d135be0cfcb333a9))
 
 
 
@@ -1794,7 +2129,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.111](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.110...v3.11.0-beta.111) (2025-07-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **colorbar:** Allow for `AdvancedRenderingControls` to be placed at the top or bottom of the viewport. ([#5270](https://github.com/OHIF/Viewers/issues/5270)) ([d24fe54](https://github.com/OHIF/Viewers/commit/d24fe54d2b5598c8356afa9ce91939018940ee19))
 
 
 
@@ -1802,7 +2140,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.110](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.109...v3.11.0-beta.110) (2025-07-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **multiframes:** Corrected combining frame instances for multiframes. ([#5264](https://github.com/OHIF/Viewers/issues/5264)) ([47e231f](https://github.com/OHIF/Viewers/commit/47e231f0618443e70c1daae718e7dd0908954b52))
+* null save voi range properties ([#5268](https://github.com/OHIF/Viewers/issues/5268)) ([04dcacd](https://github.com/OHIF/Viewers/commit/04dcacd3a5d0d565b163c96222c8c7f948a05abd))
 
 
 
@@ -1810,7 +2152,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.109](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.108...v3.11.0-beta.109) (2025-07-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1818,7 +2160,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.108](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.107...v3.11.0-beta.108) (2025-07-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **tooltips:** tool tips should be portals ([#5265](https://github.com/OHIF/Viewers/issues/5265)) ([570e087](https://github.com/OHIF/Viewers/commit/570e08700720d561c3d1201e03142634fccf5939))
 
 
 
@@ -1826,7 +2171,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.107](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.106...v3.11.0-beta.107) (2025-07-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* prevent failure in DICOM loader for wadouri type ([#5260](https://github.com/OHIF/Viewers/issues/5260)) ([d0cf9e0](https://github.com/OHIF/Viewers/commit/d0cf9e02f438cd8d26ed5bca5fb528549f4c8b98))
 
 
 
@@ -1834,7 +2182,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.106](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.105...v3.11.0-beta.106) (2025-07-24)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ArrowAnnotate:** Allow free-form text for arrow annotations ([#5259](https://github.com/OHIF/Viewers/issues/5259)) ([3c8446a](https://github.com/OHIF/Viewers/commit/3c8446a5e5caf8c050275bd4c193defa9e370b32))
 
 
 
@@ -1842,7 +2193,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.105](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.104...v3.11.0-beta.105) (2025-07-23)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1861,7 +2212,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.103](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.102...v3.11.0-beta.103) (2025-07-23)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1869,7 +2220,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.102](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.101...v3.11.0-beta.102) (2025-07-23)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1877,7 +2228,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.101](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.100...v3.11.0-beta.101) (2025-07-23)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **calibration:** do not override user set calibration ([#5231](https://github.com/OHIF/Viewers/issues/5231)) ([75cc6ef](https://github.com/OHIF/Viewers/commit/75cc6eff32bc890c240c7b6830b7ef729b6df379))
 
 
 
@@ -1885,7 +2239,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.100](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.99...v3.11.0-beta.100) (2025-07-23)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* disable seg download/export buttons until a user has drawn something ([#4953](https://github.com/OHIF/Viewers/issues/4953)) ([7ffe17d](https://github.com/OHIF/Viewers/commit/7ffe17deea8d5642ad69d11943cff3298c227be2))
 
 
 
@@ -1893,7 +2250,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.99](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.98...v3.11.0-beta.99) (2025-07-23)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ViewportOrientationMarkers:** round rotation to fix floating point issue ([#5135](https://github.com/OHIF/Viewers/issues/5135)) ([bd3ff5f](https://github.com/OHIF/Viewers/commit/bd3ff5f57c2fee35e92be4571048cc057eeaf29d))
 
 
 
@@ -1901,7 +2261,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.98](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.97...v3.11.0-beta.98) (2025-07-23)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docs:** Added docs for multimonitor and local linking ([#5247](https://github.com/OHIF/Viewers/issues/5247)) ([83ea0ad](https://github.com/OHIF/Viewers/commit/83ea0ad93e6cd278e9a585c1bd1c27fccd426d5a))
+* **security:** Removed stylus package due to potential security vulnerability and we don't use it. ([#5250](https://github.com/OHIF/Viewers/issues/5250)) ([83d4bc4](https://github.com/OHIF/Viewers/commit/83d4bc4a5a470bc09ede78c92ef89611dbce1d00))
 
 
 
@@ -1909,7 +2273,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.97](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.96...v3.11.0-beta.97) (2025-07-22)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -1917,7 +2281,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.96](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.95...v3.11.0-beta.96) (2025-07-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **segmentation:** Add customization for handling missing referencedDisplaySetInstanceUID for the SEG/RTSTRUCT. ([#4983](https://github.com/OHIF/Viewers/issues/4983)) ([12de7a8](https://github.com/OHIF/Viewers/commit/12de7a85c9330471d81f481de7bc65e60c1c4ab3))
 
 
 
@@ -1925,7 +2292,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.95](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.94...v3.11.0-beta.95) (2025-07-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docs:** Added entry for the showStudyList configuration setting. ([#5235](https://github.com/OHIF/Viewers/issues/5235)) ([bde0eb1](https://github.com/OHIF/Viewers/commit/bde0eb1f07698b7375f7c4a58753d0368703e5bf))
 
 
 
@@ -1933,7 +2303,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.94](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.93...v3.11.0-beta.94) (2025-07-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **security:** Pin eslint-config-prettier and eslint-plugin-prettier versions. ([#5234](https://github.com/OHIF/Viewers/issues/5234)) ([3d5ee68](https://github.com/OHIF/Viewers/commit/3d5ee687cb105acfbcfb045a95ca32047e8dd78a))
 
 
 
@@ -1941,7 +2314,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.93](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.92...v3.11.0-beta.93) (2025-07-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* labelmap init ([#5228](https://github.com/OHIF/Viewers/issues/5228)) ([ed3de96](https://github.com/OHIF/Viewers/commit/ed3de96e4c2d44d6df366043bdb4b09769902eff))
 
 
 
@@ -1949,7 +2325,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.92](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.91...v3.11.0-beta.92) (2025-07-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **multimonitor:** Study browser more menu fixes ([#5208](https://github.com/OHIF/Viewers/issues/5208)) ([3d4ec31](https://github.com/OHIF/Viewers/commit/3d4ec3181d1c031600a1f76eb57a062f15de0ab9))
 
 
 
@@ -1968,7 +2347,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.90](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.89...v3.11.0-beta.90) (2025-07-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **black-viewports:** MPR viewports were turning black if their parent stack had it's properties reset ([#5219](https://github.com/OHIF/Viewers/issues/5219)) ([3ff9a65](https://github.com/OHIF/Viewers/commit/3ff9a65ef3c3f1735d8730868a8b7dc984fc76fc))
+* **DicomUpload:** Fix upload form and some scrollbars styles ([#5125](https://github.com/OHIF/Viewers/issues/5125)) ([26d77fb](https://github.com/OHIF/Viewers/commit/26d77fb149bd126cdd0571fa0e202e136c6d0d83))
+* **viewportgrid:** don't subscribe to duplicate event listeners ([#5218](https://github.com/OHIF/Viewers/issues/5218)) ([faef74a](https://github.com/OHIF/Viewers/commit/faef74ab21801841ad6b6a2104bc88a52c5c0b9e))
 
 
 
@@ -1976,7 +2360,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.89](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.88...v3.11.0-beta.89) (2025-07-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Fix segmentationid undefined 5106 ([#5107](https://github.com/OHIF/Viewers/issues/5107)) ([f38805e](https://github.com/OHIF/Viewers/commit/f38805e6f1c98138db1617c2fa56f9007207d456))
 
 
 
@@ -1984,7 +2371,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.88](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.87...v3.11.0-beta.88) (2025-07-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **TMTV:** The TMTV CSV file now has the correct name and contents ([#5215](https://github.com/OHIF/Viewers/issues/5215)) ([522d2aa](https://github.com/OHIF/Viewers/commit/522d2aa764c2dbdb6ed22e7877201b0fb108f07d))
 
 
 
@@ -1992,7 +2382,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.87](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.86...v3.11.0-beta.87) (2025-07-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Removed LOAD/hydrate button for segmentation overlays ([#5214](https://github.com/OHIF/Viewers/issues/5214)) ([e0289dc](https://github.com/OHIF/Viewers/commit/e0289dc49f52e7ee6f0642f01de3ae31cddf71e0))
 
 
 
@@ -2000,7 +2393,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.86](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.85...v3.11.0-beta.86) (2025-07-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **panels:** Allow for setting the initial and minimum expanded widths of each side panel. ([#5207](https://github.com/OHIF/Viewers/issues/5207)) ([5454111](https://github.com/OHIF/Viewers/commit/545411137c2560de503c6826b3de7af9a557669e))
 
 
 
@@ -2008,7 +2404,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.85](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.84...v3.11.0-beta.85) (2025-07-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **viewport:** Enhance Orientation Menu with Reformat Option and UI Improvements ([#5184](https://github.com/OHIF/Viewers/issues/5184)) ([c175837](https://github.com/OHIF/Viewers/commit/c175837273e664318fe51c426d98e4989f55b050))
 
 
 
@@ -2016,7 +2415,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.84](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.83...v3.11.0-beta.84) (2025-07-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **UI:** Restored the scroll bar OHIF L&F ([#5202](https://github.com/OHIF/Viewers/issues/5202)) ([94bdcf4](https://github.com/OHIF/Viewers/commit/94bdcf414d5d70767c2cf24fdfd3446c45d9c8dd))
 
 
 
@@ -2035,7 +2437,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.82](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.81...v3.11.0-beta.82) (2025-07-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **UnitTests:** Fixing "Cannot find module @cornerstonejs/core" error while running unit tests ([#5148](https://github.com/OHIF/Viewers/issues/5148)) ([4a59126](https://github.com/OHIF/Viewers/commit/4a59126dd9aad6b10538e46e17415654b219e2ad))
 
 
 
@@ -2043,7 +2448,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.81](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.80...v3.11.0-beta.81) (2025-07-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* exception in newly added segmentations ([#5198](https://github.com/OHIF/Viewers/issues/5198)) ([fd5bcee](https://github.com/OHIF/Viewers/commit/fd5bcee909223f92c0833bf63f9aee08eb533be2))
 
 
 
@@ -2062,7 +2470,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.79](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.78...v3.11.0-beta.79) (2025-07-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* group clear measurements history ([#5194](https://github.com/OHIF/Viewers/issues/5194)) ([4d3ff5a](https://github.com/OHIF/Viewers/commit/4d3ff5a6cc720431f774a179e24205bfaec1d539))
 
 
 
@@ -2092,7 +2503,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.76](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.75...v3.11.0-beta.76) (2025-07-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation overlays:** Allow for the addition of multiple segmentation overlays. ([#5189](https://github.com/OHIF/Viewers/issues/5189)) ([4847362](https://github.com/OHIF/Viewers/commit/48473625f678c7bd3fe9327bd043a3cf4b1b4c0c))
 
 
 
@@ -2111,7 +2525,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.74](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.73...v3.11.0-beta.74) (2025-07-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **labeling:** measurement labeling dialog was overwriting the entire measurement and breaking it ([#5095](https://github.com/OHIF/Viewers/issues/5095)) ([64a634c](https://github.com/OHIF/Viewers/commit/64a634cab93a12021f3217a45fb635dfa9cd8bbd))
+* **measurement-group:** use measurment study uid instead of active study uid ([#5091](https://github.com/OHIF/Viewers/issues/5091)) ([7b2e37a](https://github.com/OHIF/Viewers/commit/7b2e37a44fa60c5b069ba7f30d4b0f9eec693de0))
 
 
 
@@ -2119,7 +2537,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.73](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.72...v3.11.0-beta.73) (2025-07-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **overlay-menu:** Adding, changing and removing segmentation overlays should update the overlay menu instantly ([#5181](https://github.com/OHIF/Viewers/issues/5181)) ([f08cc30](https://github.com/OHIF/Viewers/commit/f08cc303e69501898b40a7ddbe36f2b311a1c1e2))
 
 
 
@@ -2127,7 +2548,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.72](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.71...v3.11.0-beta.72) (2025-07-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* add force to remove image from cache ([#5176](https://github.com/OHIF/Viewers/issues/5176)) ([e277303](https://github.com/OHIF/Viewers/commit/e2773033959dc029cc6c698dfd65e2ed03b51a26))
 
 
 
@@ -2135,7 +2559,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.71](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.70...v3.11.0-beta.71) (2025-07-03)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2143,7 +2567,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.70](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.69...v3.11.0-beta.70) (2025-07-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* Add possibility to add additional props for PanelSection ([#5172](https://github.com/OHIF/Viewers/issues/5172)) ([c112db1](https://github.com/OHIF/Viewers/commit/c112db13a8b81f923698f6e899df36a1486f3a60))
 
 
 
@@ -2151,7 +2578,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.69](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.68...v3.11.0-beta.69) (2025-07-02)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Added support for unhydrated RTSTRUCT in MPR. Added support for overlaying segmentations over display sets the segmentations do not reference. ([#5168](https://github.com/OHIF/Viewers/issues/5168)) ([4f6f525](https://github.com/OHIF/Viewers/commit/4f6f5254fb290203ba6e1777ced552a22864ef04))
 
 
 
@@ -2159,7 +2589,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.68](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.67...v3.11.0-beta.68) (2025-06-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **hp:** add onStageChange callback ([#5165](https://github.com/OHIF/Viewers/issues/5165)) ([4bddd53](https://github.com/OHIF/Viewers/commit/4bddd53fcdf24cf861e73b8be705bc7e12afee56))
 
 
 
@@ -2167,7 +2600,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.67](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.66...v3.11.0-beta.67) (2025-06-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Changes to fix problems with non hydrated/loaded segmentations to be viewable when switching hanging protocols (e.g. MPR) ([#5139](https://github.com/OHIF/Viewers/issues/5139)) ([c2624f1](https://github.com/OHIF/Viewers/commit/c2624f116d8d19911fb9773be263fa647fce0dd9))
 
 
 
@@ -2175,7 +2611,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.66](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.65...v3.11.0-beta.66) (2025-06-27)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2183,7 +2619,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.65](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.64...v3.11.0-beta.65) (2025-06-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2202,7 +2638,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.63](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.62...v3.11.0-beta.63) (2025-06-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2210,7 +2646,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.62](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.61...v3.11.0-beta.62) (2025-06-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **unit-tests:** Update bun.lock to fix unit tests. ([#5159](https://github.com/OHIF/Viewers/issues/5159)) ([ec0c4f7](https://github.com/OHIF/Viewers/commit/ec0c4f745161006ad2b49c0e3a46114a20c6907c))
 
 
 
@@ -2226,6 +2665,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
+* **toolbar/hokeys:** add pub sub events to hotkeys manager class, subscribe toolbar to hotkeys pressed event ([#5157](https://github.com/OHIF/Viewers/issues/5157)) ([57f07ad](https://github.com/OHIF/Viewers/commit/57f07ad9f21082549acb54066fca5c46d6713332))
 * Ultrasound Pleura B-line Annotation Mode & Extension ([#5061](https://github.com/OHIF/Viewers/issues/5061)) ([226f9b0](https://github.com/OHIF/Viewers/commit/226f9b0773900aec29ec22f52f39f33e629dc15b))
 
 
@@ -2234,7 +2674,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.60](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.59...v3.11.0-beta.60) (2025-06-24)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2242,7 +2682,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.59](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.58...v3.11.0-beta.59) (2025-06-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **action-corners:** check hideWhenDisabled at both the evaluator and prop levels ([#5149](https://github.com/OHIF/Viewers/issues/5149)) ([d6d3fa7](https://github.com/OHIF/Viewers/commit/d6d3fa7ef47cc56ad5c9d0e577023358a0c26381))
 
 
 
@@ -2250,7 +2693,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.58](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.57...v3.11.0-beta.58) (2025-06-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **UnitTest:** run was failing due to JS tests importing TS modules ([#5145](https://github.com/OHIF/Viewers/issues/5145)) ([268d62e](https://github.com/OHIF/Viewers/commit/268d62e9913f6ade375e663ba5736b8ebd0c1075))
 
 
 
@@ -2258,7 +2704,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.57](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.56...v3.11.0-beta.57) (2025-06-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **getToolbarModule:** fix enabled state of image slice sync ([#5136](https://github.com/OHIF/Viewers/issues/5136)) ([dc829c8](https://github.com/OHIF/Viewers/commit/dc829c8fcad1ce1fc2e9aef446cc474d08e00835))
 
 
 
@@ -2266,7 +2715,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.56](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.55...v3.11.0-beta.56) (2025-06-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **hp:** When reapplying an hp the display set selectors should be considered. ([#5074](https://github.com/OHIF/Viewers/issues/5074)) ([5311c94](https://github.com/OHIF/Viewers/commit/5311c941f7ebbfe8cc2943e3718245567c09a034))
 
 
 
@@ -2274,7 +2726,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.55](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.54...v3.11.0-beta.55) (2025-06-11)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2282,7 +2734,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.54](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.53...v3.11.0-beta.54) (2025-06-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ToolbarService:** Fixed removeButton bug for removing buttons inside sections ([#5123](https://github.com/OHIF/Viewers/issues/5123)) ([d3c9ff5](https://github.com/OHIF/Viewers/commit/d3c9ff50c7eaec0edad55213d73bc1ed61a40723))
+
+
+### Features
+
+* **commandsModule:** Enhanced flipViewport and rotateViewport commands ([#5065](https://github.com/OHIF/Viewers/issues/5065)) ([4da7fc3](https://github.com/OHIF/Viewers/commit/4da7fc307f2054675510dd44062f8c94a37f9585))
 
 
 
@@ -2290,7 +2750,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.53](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.52...v3.11.0-beta.53) (2025-06-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* data-viewportId name is illegal, renamed to data-viewportid ([#5121](https://github.com/OHIF/Viewers/issues/5121)) ([75271ca](https://github.com/OHIF/Viewers/commit/75271ca416173ddb71972ed311f9d729443cf763))
 
 
 
@@ -2298,7 +2761,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.52](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.51...v3.11.0-beta.52) (2025-06-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **markerlabelmap:** accept preview/reject preview not working when the marker annotation tools are active ([#5101](https://github.com/OHIF/Viewers/issues/5101)) ([26fd51f](https://github.com/OHIF/Viewers/commit/26fd51f53589244a47807106c3065e3926a16903))
 
 
 
@@ -2317,7 +2783,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.50](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.49...v3.11.0-beta.50) (2025-06-09)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2325,7 +2791,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.49](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.48...v3.11.0-beta.49) (2025-06-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **WindowLevelActionMenu:** The window level menu must show different contents for 3D volume viewports ([#5113](https://github.com/OHIF/Viewers/issues/5113)) ([0afb3fc](https://github.com/OHIF/Viewers/commit/0afb3fc75314c1d8d6c50d13f31d5c2fc6849ce2))
 
 
 
@@ -2344,7 +2813,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.47](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.46...v3.11.0-beta.47) (2025-06-02)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **tmtv:** Corrected the various section names being referenced. ([#5093](https://github.com/OHIF/Viewers/issues/5093)) ([316d5a7](https://github.com/OHIF/Viewers/commit/316d5a76445839dd15720a2e1e228e9b0bab3b6e))
 
 
 
@@ -2352,7 +2824,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.46](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.45...v3.11.0-beta.46) (2025-06-02)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** Allow for debounced pub/sub events to be reliably cancelled when unsubscribed to. ([#5092](https://github.com/OHIF/Viewers/issues/5092)) ([38ed7ba](https://github.com/OHIF/Viewers/commit/38ed7ba744528f7c3289e8b795d549adbb7342d0))
 
 
 
@@ -2360,7 +2835,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.45](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.44...v3.11.0-beta.45) (2025-05-30)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2368,7 +2843,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.44](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.43...v3.11.0-beta.44) (2025-05-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* create memo when manually adding and removing annotations ([#5051](https://github.com/OHIF/Viewers/issues/5051)) ([5891505](https://github.com/OHIF/Viewers/commit/5891505c51f82ecad22fb8182b88fb3fb52255b3))
 
 
 
@@ -2376,7 +2854,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.43](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.42...v3.11.0-beta.43) (2025-05-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ui:** Prevent unintended text selection and improve component behavior ([#5077](https://github.com/OHIF/Viewers/issues/5077)) ([c6327ac](https://github.com/OHIF/Viewers/commit/c6327acdc1c00e1f2922af54012c79b274252532))
 
 
 
@@ -2384,7 +2865,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.42](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.41...v3.11.0-beta.42) (2025-05-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **Customization:** Fixed incorrect events broadcast  ([#5075](https://github.com/OHIF/Viewers/issues/5075)) ([c88bdac](https://github.com/OHIF/Viewers/commit/c88bdac4b1d9da89dcda74133045be776d73cfb3))
 
 
 
@@ -2392,7 +2876,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.41](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.40...v3.11.0-beta.41) (2025-05-26)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* e2e playwright tests runnigns ([#5070](https://github.com/OHIF/Viewers/issues/5070)) ([b9ca76e](https://github.com/OHIF/Viewers/commit/b9ca76ea6714726a13bceec73dbddc12280ca5bf))
 
 
 
@@ -2400,7 +2887,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.40](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.39...v3.11.0-beta.40) (2025-05-26)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **capture:** Disable or enable the tool group based on the show flag. ([#5069](https://github.com/OHIF/Viewers/issues/5069)) ([ebfa1ff](https://github.com/OHIF/Viewers/commit/ebfa1ff5f22ea5318328722dd9f1929b37f16b0c))
+* **frame-view:** After pan and/or zoom, stack scroll is now synchronized for frame view ([#5067](https://github.com/OHIF/Viewers/issues/5067)) ([1873a84](https://github.com/OHIF/Viewers/commit/1873a8405f6c8d112035d47049582c52f00f640b))
 
 
 
@@ -2419,7 +2910,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.38](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.37...v3.11.0-beta.38) (2025-05-24)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **context-menu:** Move the reposition logic from the context menu to the dialog component. ([#5060](https://github.com/OHIF/Viewers/issues/5060)) ([cb814e6](https://github.com/OHIF/Viewers/commit/cb814e6a6076847caf46200c49adbac31f3d5236))
 
 
 
@@ -2427,7 +2921,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.37](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.36...v3.11.0-beta.37) (2025-05-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cli:** removing missing imports in mode template ([#5049](https://github.com/OHIF/Viewers/issues/5049)) ([dcde841](https://github.com/OHIF/Viewers/commit/dcde8418390f7070d6830ebf6257dc08969e8136))
 
 
 
@@ -2439,6 +2936,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * backward compatibility with toolbar service ([#5052](https://github.com/OHIF/Viewers/issues/5052)) ([9b1b501](https://github.com/OHIF/Viewers/commit/9b1b501d83502d13b285050bd5fca102b7f7612c))
+* **segmentation:** segmentation stats calculations were not being done on a subsequent navigation to a mode ([#5046](https://github.com/OHIF/Viewers/issues/5046)) ([c6b2865](https://github.com/OHIF/Viewers/commit/c6b28654b507981d1dc5038b4f8a869ed53470fe))
 
 
 
@@ -2446,7 +2944,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.35](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.34...v3.11.0-beta.35) (2025-05-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **viewport:** Added getter for presentation id provider. ([#5053](https://github.com/OHIF/Viewers/issues/5053)) ([338bd86](https://github.com/OHIF/Viewers/commit/338bd865c3bc660bd5b377020977181939002856))
 
 
 
@@ -2454,7 +2955,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.34](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.33...v3.11.0-beta.34) (2025-05-15)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2473,7 +2974,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.32](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.31...v3.11.0-beta.32) (2025-05-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Added missing export for LayoutSelector in ui-next ([#5040](https://github.com/OHIF/Viewers/issues/5040)) ([da51e6e](https://github.com/OHIF/Viewers/commit/da51e6e3c185e4d11d50679fd0deaa804b07511c))
 
 
 
@@ -2492,7 +2996,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.30](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.29...v3.11.0-beta.30) (2025-05-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **DicomWebProxyDataSource:** bug fix to save Segmentation files back to Kheops ([#5028](https://github.com/OHIF/Viewers/issues/5028)) ([349306d](https://github.com/OHIF/Viewers/commit/349306da4013602141fecefd095d95e8dc538c30))
 
 
 
@@ -2533,7 +3040,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.26](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.25...v3.11.0-beta.26) (2025-05-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* add locale files for Russian language, translated texts in locale json files to Russian language. ([#4984](https://github.com/OHIF/Viewers/issues/4984)) ([c829270](https://github.com/OHIF/Viewers/commit/c829270c80c0899132aff0294b8e7386475dc71c))
 
 
 
@@ -2541,7 +3051,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.25](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.24...v3.11.0-beta.25) (2025-05-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **i18n:** add Arabic translations ([#5013](https://github.com/OHIF/Viewers/issues/5013)) ([8218a9d](https://github.com/OHIF/Viewers/commit/8218a9d0346fe9a5473420e26a0b8ab389f4ef58))
 
 
 
@@ -2560,7 +3073,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.23](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.22...v3.11.0-beta.23) (2025-05-05)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2579,7 +3092,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.21](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.20...v3.11.0-beta.21) (2025-05-02)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2587,7 +3100,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.20](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.19...v3.11.0-beta.20) (2025-05-01)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2595,7 +3108,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.19](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.18...v3.11.0-beta.19) (2025-05-01)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2603,7 +3116,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.18](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.17...v3.11.0-beta.18) (2025-04-30)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2611,7 +3124,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.17](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.16...v3.11.0-beta.17) (2025-04-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **referencelines:** and bring back the notification for worker updates but disallow duplication ([#5005](https://github.com/OHIF/Viewers/issues/5005)) ([98f8187](https://github.com/OHIF/Viewers/commit/98f8187dfeb8aec6eca145da75c855aec0da4e1d))
 
 
 
@@ -2619,7 +3135,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.16](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.15...v3.11.0-beta.16) (2025-04-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **template:** Update mode template to match current implementation (OHI-1833) ([#4998](https://github.com/OHIF/Viewers/issues/4998)) ([0f39496](https://github.com/OHIF/Viewers/commit/0f394962904808a140221dbae063ca5dcf0df36b))
 
 
 
@@ -2627,7 +3146,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.15](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.14...v3.11.0-beta.15) (2025-04-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docs:** Fix SSR build errors by dynamically importing UI components and resolving other issues ([#4991](https://github.com/OHIF/Viewers/issues/4991)) ([09ac43f](https://github.com/OHIF/Viewers/commit/09ac43f297fa81101d3a3eaa9b5cfef8e01ea214))
 
 
 
@@ -2635,7 +3157,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.14](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.13...v3.11.0-beta.14) (2025-04-22)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2643,7 +3165,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.13](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.12...v3.11.0-beta.13) (2025-04-22)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2651,7 +3173,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.12](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.11...v3.11.0-beta.12) (2025-04-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* Improve unsupported displayset messages ([#4979](https://github.com/OHIF/Viewers/issues/4979)) ([3b8faa8](https://github.com/OHIF/Viewers/commit/3b8faa8a76dde5088815431a947fec07db4a3c7f))
 
 
 
@@ -2659,7 +3184,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.11](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.10...v3.11.0-beta.11) (2025-04-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **dicomWebClient:** use public getter for activeDataSourceName instead of accessing private property ([#4973](https://github.com/OHIF/Viewers/issues/4973)) ([5688a2b](https://github.com/OHIF/Viewers/commit/5688a2b4b8f872163ff6492bb80d12cade4385cd))
 
 
 
@@ -2667,7 +3195,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.10](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.9...v3.11.0-beta.10) (2025-04-17)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2675,7 +3203,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.9](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.8...v3.11.0-beta.9) (2025-04-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ExtensionManager:** getDataSources method ([#4959](https://github.com/OHIF/Viewers/issues/4959)) ([66a16cd](https://github.com/OHIF/Viewers/commit/66a16cd22f6cedc6e4287dd1304e1f87de4c0d08))
 
 
 
@@ -2683,7 +3214,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.8](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.7...v3.11.0-beta.8) (2025-04-16)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2691,7 +3222,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.7](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.6...v3.11.0-beta.7) (2025-04-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* github runner ([#4961](https://github.com/OHIF/Viewers/issues/4961)) ([9535422](https://github.com/OHIF/Viewers/commit/953542236116aea6f4dce6275b8cdbd4490f4520))
 
 
 
@@ -2699,7 +3233,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.6](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.5...v3.11.0-beta.6) (2025-04-16)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2707,7 +3241,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.5](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.4...v3.11.0-beta.5) (2025-04-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* making onnxruntime work with rsbuild ([#4957](https://github.com/OHIF/Viewers/issues/4957)) ([4a87302](https://github.com/OHIF/Viewers/commit/4a87302f06378649680370f10dd942d31c1c61fb))
 
 
 
@@ -2715,7 +3252,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.4](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.3...v3.11.0-beta.4) (2025-04-11)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2723,7 +3260,16 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.3](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.2...v3.11.0-beta.3) (2025-04-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* add back study browser scrollbar ([#4942](https://github.com/OHIF/Viewers/issues/4942)) ([ed94df0](https://github.com/OHIF/Viewers/commit/ed94df0dfe007748e51de959d9dd4101485d8df4))
+* enable measurements panel scroll ([#4943](https://github.com/OHIF/Viewers/issues/4943)) ([7a36eba](https://github.com/OHIF/Viewers/commit/7a36eba67c6365f3f8cabb53a31ae1eee96069e8))
+
+
+### Features
+
+* expose scroll thumbnail into view ([#4941](https://github.com/OHIF/Viewers/issues/4941)) ([4926a95](https://github.com/OHIF/Viewers/commit/4926a9532c89011ef932fad1dbae643806e780a8))
 
 
 
@@ -2731,7 +3277,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.2](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.1...v3.11.0-beta.2) (2025-04-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* make datasource selection work ([#4944](https://github.com/OHIF/Viewers/issues/4944)) ([a9b180c](https://github.com/OHIF/Viewers/commit/a9b180c5d427ec5a6823991cf0c6604be7af1cc2))
 
 
 
@@ -2739,7 +3288,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.1](https://github.com/OHIF/Viewers/compare/v3.11.0-beta.0...v3.11.0-beta.1) (2025-04-10)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2747,7 +3296,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.11.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.159...v3.11.0-beta.0) (2025-04-10)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2777,7 +3326,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.157](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.156...v3.10.0-beta.157) (2025-04-09)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2785,7 +3334,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.156](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.155...v3.10.0-beta.156) (2025-04-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2793,7 +3342,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.155](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.154...v3.10.0-beta.155) (2025-04-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2801,7 +3350,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.154](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.153...v3.10.0-beta.154) (2025-04-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2831,7 +3380,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.151](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.150...v3.10.0-beta.151) (2025-04-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* allow saving to same SR series ([#4889](https://github.com/OHIF/Viewers/issues/4889)) ([62e5a62](https://github.com/OHIF/Viewers/commit/62e5a6206606ba7a16a56cf47456e52f892372da))
 
 
 
@@ -2872,7 +3424,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.147](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.146...v3.10.0-beta.147) (2025-04-03)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2880,7 +3432,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.146](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.145...v3.10.0-beta.146) (2025-04-02)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2910,7 +3462,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.143](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.142...v3.10.0-beta.143) (2025-04-01)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2918,7 +3470,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.142](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.141...v3.10.0-beta.142) (2025-03-31)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -2960,7 +3512,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.138](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.137...v3.10.0-beta.138) (2025-03-26)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* remove duplicated deleteMeasurements code ([#4895](https://github.com/OHIF/Viewers/issues/4895)) ([9bde644](https://github.com/OHIF/Viewers/commit/9bde644fce6db56d7d0dd62a876312559b7b2beb))
 
 
 
@@ -2979,7 +3534,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.136](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.135...v3.10.0-beta.136) (2025-03-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **seg:** orthanc seg ([#4883](https://github.com/OHIF/Viewers/issues/4883)) ([4dd485b](https://github.com/OHIF/Viewers/commit/4dd485bd2d927381bbc2910a2ec545c7d4c03868))
 
 
 
@@ -2990,7 +3548,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* compare series date time ([#4887](https://github.com/OHIF/Viewers/issues/4887)) ([165c9dc](https://github.com/OHIF/Viewers/commit/165c9dc7104f63844a887b0ba91bd877c90c8471))
 * Delete study measurements instead of all measurements ([#4882](https://github.com/OHIF/Viewers/issues/4882)) ([8e47112](https://github.com/OHIF/Viewers/commit/8e47112d8e9fe86d57a587e3445b12d5f98d0161))
+* Skip showing NaN for average pixel/max value ([#4884](https://github.com/OHIF/Viewers/issues/4884)) ([f6fa509](https://github.com/OHIF/Viewers/commit/f6fa5098744ff0058b007cf97e68d95c4b0e77c8))
 
 
 
@@ -2998,7 +3558,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.134](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.133...v3.10.0-beta.134) (2025-03-20)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3006,7 +3566,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.133](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.132...v3.10.0-beta.133) (2025-03-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* add customization to PanelStudyBrowser dbl click callback ([#4871](https://github.com/OHIF/Viewers/issues/4871)) ([01c3726](https://github.com/OHIF/Viewers/commit/01c3726ced9afaa75b7c78fd22b380b42151c671))
 
 
 
@@ -3036,7 +3599,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.130](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.129...v3.10.0-beta.130) (2025-03-19)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3055,7 +3618,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.128](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.127...v3.10.0-beta.128) (2025-03-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* add back dicom tag browser SQ items ([#4869](https://github.com/OHIF/Viewers/issues/4869)) ([fb93ef9](https://github.com/OHIF/Viewers/commit/fb93ef921999010cbabe4bc7d8bef9b90c8efc71))
 
 
 
@@ -3063,7 +3629,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.127](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.126...v3.10.0-beta.127) (2025-03-18)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3082,7 +3648,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.125](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.124...v3.10.0-beta.125) (2025-03-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **metadata:** change the default values for cosines ([#4863](https://github.com/OHIF/Viewers/issues/4863)) ([b7fbf04](https://github.com/OHIF/Viewers/commit/b7fbf04230ec71e1812d12020e0b48d35a51b285))
 
 
 
@@ -3090,7 +3659,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.124](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.123...v3.10.0-beta.124) (2025-03-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* max call stack exceeded for dicom tag browser ([#4855](https://github.com/OHIF/Viewers/issues/4855)) ([841320a](https://github.com/OHIF/Viewers/commit/841320adfb4cd009350e70c43a7661dc42800c7d))
 
 
 
@@ -3098,7 +3670,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.123](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.122...v3.10.0-beta.123) (2025-03-17)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3129,7 +3701,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.120](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.119...v3.10.0-beta.120) (2025-03-11)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3137,7 +3709,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.119](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.118...v3.10.0-beta.119) (2025-03-10)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3145,7 +3717,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.118](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.117...v3.10.0-beta.118) (2025-03-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **tmtv tools:** add CircleROIStartEndThreshold to supported tools in TMTV extension ([#4828](https://github.com/OHIF/Viewers/issues/4828)) ([17d2889](https://github.com/OHIF/Viewers/commit/17d2889dc50bc943f1fb6371f5a1667243b6eb70))
 
 
 
@@ -3164,7 +3739,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.116](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.115...v3.10.0-beta.116) (2025-03-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* dicom tag browser row height on toggle ([#4832](https://github.com/OHIF/Viewers/issues/4832)) ([5a7f784](https://github.com/OHIF/Viewers/commit/5a7f7841b2c3b88d4fa6313862bc355be74acf5d))
 
 
 
@@ -3172,7 +3750,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.115](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.114...v3.10.0-beta.115) (2025-02-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3191,7 +3769,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.113](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.112...v3.10.0-beta.113) (2025-02-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Performance of panel study browser ([#4819](https://github.com/OHIF/Viewers/issues/4819)) ([d25809e](https://github.com/OHIF/Viewers/commit/d25809eed073d3f308f6af8244ceae7df8c2ee35))
 
 
 
@@ -3199,7 +3780,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.112](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.111...v3.10.0-beta.112) (2025-02-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* separate checks for addWindowLevelActionMenu and addSegmentationOverlay ([#4813](https://github.com/OHIF/Viewers/issues/4813)) ([7f0cc0f](https://github.com/OHIF/Viewers/commit/7f0cc0f60e74a2e0ac2aea1fe6a786582b495c4e))
 
 
 
@@ -3218,7 +3802,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.110](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.109...v3.10.0-beta.110) (2025-02-26)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **sr:** sr hydration and load was not working, Screenshot Comparison, and Testing ([#4814](https://github.com/OHIF/Viewers/issues/4814)) ([9233143](https://github.com/OHIF/Viewers/commit/9233143b9da5850080365e1526e24b44e9910075))
 
 
 
@@ -3226,7 +3813,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.109](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.108...v3.10.0-beta.109) (2025-02-25)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3234,7 +3821,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.108](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.107...v3.10.0-beta.108) (2025-02-25)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3242,7 +3829,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.107](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.106...v3.10.0-beta.107) (2025-02-25)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3261,7 +3848,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.105](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.104...v3.10.0-beta.105) (2025-02-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Changes to address hang/crash on jump to instance ([#4679](https://github.com/OHIF/Viewers/issues/4679)) ([e480e84](https://github.com/OHIF/Viewers/commit/e480e841bb5da5281a7c4624a60d5964d690ebb8))
+* **rt:** jump to segment discards the configured width ([#4799](https://github.com/OHIF/Viewers/issues/4799)) ([afd528b](https://github.com/OHIF/Viewers/commit/afd528b8d72c3d8360b54bb52604758e83ada863))
 
 
 
@@ -3269,7 +3860,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.104](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.103...v3.10.0-beta.104) (2025-02-25)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Delay for all series thumbnails on fetching thumbnail ([#4802](https://github.com/OHIF/Viewers/issues/4802)) ([bda98b0](https://github.com/OHIF/Viewers/commit/bda98b0beebde6294a522b5c7e0ca76724020a2f))
 
 
 
@@ -3277,7 +3871,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.103](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.102...v3.10.0-beta.103) (2025-02-23)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3285,7 +3879,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.102](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.101...v3.10.0-beta.102) (2025-02-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* combine frame instance ([#4792](https://github.com/OHIF/Viewers/issues/4792)) ([55f0b54](https://github.com/OHIF/Viewers/commit/55f0b54db1e81a99f9e2d92b1d6d78dfb02762f0))
 
 
 
@@ -3293,7 +3890,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.101](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.100...v3.10.0-beta.101) (2025-02-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* icon is not defined ([#4794](https://github.com/OHIF/Viewers/issues/4794)) ([b7cd0c6](https://github.com/OHIF/Viewers/commit/b7cd0c6027debcbfa573bc8068bc2e87928af9a5))
 
 
 
@@ -3301,7 +3901,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.100](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.99...v3.10.0-beta.100) (2025-02-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **button:** fix for className ([#4604](https://github.com/OHIF/Viewers/issues/4604)) ([125f11f](https://github.com/OHIF/Viewers/commit/125f11fc737f70ec9324798245787f44198e3bd4))
 
 
 
@@ -3309,7 +3912,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.99](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.98...v3.10.0-beta.99) (2025-02-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* cache thumbnail in display set ([#4782](https://github.com/OHIF/Viewers/issues/4782)) ([2410c6a](https://github.com/OHIF/Viewers/commit/2410c6a50904c1235993900e837876cc26af019b))
 
 
 
@@ -3328,7 +3934,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.97](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.96...v3.10.0-beta.97) (2025-02-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* improve dicom tag browser with nested rows ([#4451](https://github.com/OHIF/Viewers/issues/4451)) ([0b5836c](https://github.com/OHIF/Viewers/commit/0b5836ca1a908e152336752672b196f0d533f4f9))
 
 
 
@@ -3336,7 +3945,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.96](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.95...v3.10.0-beta.96) (2025-02-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* depandabot ([#4786](https://github.com/OHIF/Viewers/issues/4786)) ([d8a6e79](https://github.com/OHIF/Viewers/commit/d8a6e79df008139f7f2f45054b73baf8cd52fb40))
+* right panel for the create mode cli command ([#4788](https://github.com/OHIF/Viewers/issues/4788)) ([5712e91](https://github.com/OHIF/Viewers/commit/5712e91ca1d939ff3c36615d3cf1a1f6f0051c4f))
 
 
 
@@ -3344,7 +3957,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.95](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.94...v3.10.0-beta.95) (2025-02-13)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3352,7 +3965,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.94](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.93...v3.10.0-beta.94) (2025-02-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* add viewport overlays to microscopy mode ([#4776](https://github.com/OHIF/Viewers/issues/4776)) ([084a10f](https://github.com/OHIF/Viewers/commit/084a10f7835acab6a851922850c474bc9c7b864b))
 
 
 
@@ -3360,7 +3976,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.93](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.92...v3.10.0-beta.93) (2025-02-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* add commandsManager to MoreDropdownMenu onClick props ([#4765](https://github.com/OHIF/Viewers/issues/4765)) ([bbf1a19](https://github.com/OHIF/Viewers/commit/bbf1a19676b2b345a0f911dde319e5ffefe29fa6))
 
 
 
@@ -3379,7 +3998,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.91](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.90...v3.10.0-beta.91) (2025-02-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* changing colormap for second volume in fusion viewport ([#4746](https://github.com/OHIF/Viewers/issues/4746)) ([8996df8](https://github.com/OHIF/Viewers/commit/8996df80e45c97ad5847ebbd19291cd772a2163d))
 
 
 
@@ -3398,7 +4020,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.89](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.88...v3.10.0-beta.89) (2025-02-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **ui:** customization option for viewport notification ([#4638](https://github.com/OHIF/Viewers/issues/4638)) ([8acbd76](https://github.com/OHIF/Viewers/commit/8acbd760d801dcaf624c5d9fb636a029201b91e1))
 
 
 
@@ -3406,7 +4031,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.88](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.87...v3.10.0-beta.88) (2025-02-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **context-menu:**  Fixing regression introduced by PR [#4727](https://github.com/OHIF/Viewers/issues/4727) ([#4760](https://github.com/OHIF/Viewers/issues/4760)) ([12d3db2](https://github.com/OHIF/Viewers/commit/12d3db2dbc80438df60139c67e9bcf0a610532d6))
 
 
 
@@ -3414,7 +4042,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.87](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.86...v3.10.0-beta.87) (2025-02-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **measurement label auto-completion:** Customization of measurement label auto-completion fails for measurements following arrow annotations. ([#4739](https://github.com/OHIF/Viewers/issues/4739)) ([e035ef1](https://github.com/OHIF/Viewers/commit/e035ef1dcc72ecbe2a757e3b814551d768d7e610))
 
 
 
@@ -3422,7 +4053,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.86](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.85...v3.10.0-beta.86) (2025-02-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **store-segmentation:** storing segmentations was hitting the wrong command resulting in an undefined datasource ([#4755](https://github.com/OHIF/Viewers/issues/4755)) ([9b8e5cf](https://github.com/OHIF/Viewers/commit/9b8e5cfd1a6121a58991c0f75660a2fd9913a4e7))
 
 
 
@@ -3441,7 +4075,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.84](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.83...v3.10.0-beta.84) (2025-01-31)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Remove non-functional Tailwind class for SegmentationPanel ([#4745](https://github.com/OHIF/Viewers/issues/4745)) ([32017d1](https://github.com/OHIF/Viewers/commit/32017d15a4c11e0cb7717c13da022a01ee152ba5))
 
 
 
@@ -3449,7 +4086,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.83](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.82...v3.10.0-beta.83) (2025-01-31)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* publish dependency ([#4753](https://github.com/OHIF/Viewers/issues/4753)) ([0cb6106](https://github.com/OHIF/Viewers/commit/0cb6106d0fa576348ca3324685d5768b6ec80572))
 
 
 
@@ -3457,7 +4097,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.82](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.81...v3.10.0-beta.82) (2025-01-31)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* typo in pet_series_module ([#4748](https://github.com/OHIF/Viewers/issues/4748)) ([f10683c](https://github.com/OHIF/Viewers/commit/f10683c667ea8f20c8d3e99ee0fb206522757b71))
 
 
 
@@ -3465,7 +4108,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.81](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.80...v3.10.0-beta.81) (2025-01-29)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3484,7 +4127,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.79](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.78...v3.10.0-beta.79) (2025-01-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **dependencies:** Update dcmjs library and improve documentation links ([#4741](https://github.com/OHIF/Viewers/issues/4741)) ([d554f02](https://github.com/OHIF/Viewers/commit/d554f02f7cdb876e4132fb94e3b3df8d11b7bb5c))
 
 
 
@@ -3492,7 +4138,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.78](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.77...v3.10.0-beta.78) (2025-01-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **side-panels:** Added resize handle interactive feedback for side panels ([#4734](https://github.com/OHIF/Viewers/issues/4734)) ([6abb095](https://github.com/OHIF/Viewers/commit/6abb095b8a39c5ae4f8df8852b3ddb3249ec463f))
 
 
 
@@ -3500,7 +4149,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.77](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.76...v3.10.0-beta.77) (2025-01-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* for initialImageIndex mismatch issue for loading SR after disabling prompts ([#4732](https://github.com/OHIF/Viewers/issues/4732)) ([8e3e208](https://github.com/OHIF/Viewers/commit/8e3e2085d45eba230d0210849b65a6e609c9d81a))
 
 
 
@@ -3508,7 +4160,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.76](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.75...v3.10.0-beta.76) (2025-01-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **context menu:** Context menus for edge-proximate measurements are partially obscured. ([#4727](https://github.com/OHIF/Viewers/issues/4727)) ([61699d0](https://github.com/OHIF/Viewers/commit/61699d00b6ce1e53631fd8c01e783701e01a7373))
 
 
 
@@ -3527,7 +4182,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.74](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.73...v3.10.0-beta.74) (2025-01-27)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3535,7 +4190,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.73](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.72...v3.10.0-beta.73) (2025-01-24)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docs:** image in customization ([#4735](https://github.com/OHIF/Viewers/issues/4735)) ([28fb921](https://github.com/OHIF/Viewers/commit/28fb92108988c3304344690792947c847bad72a6))
 
 
 
@@ -3543,7 +4201,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.72](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.71...v3.10.0-beta.72) (2025-01-24)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* delete active annotation using backspace/delete key ([#4722](https://github.com/OHIF/Viewers/issues/4722)) ([d6f0092](https://github.com/OHIF/Viewers/commit/d6f0092a3236cecb5d04ec46c8ad01600500831e))
 
 
 
@@ -3595,7 +4256,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.67](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.66...v3.10.0-beta.67) (2025-01-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ui:** Update dependencies and add missing icons ([#4699](https://github.com/OHIF/Viewers/issues/4699)) ([cf97fa9](https://github.com/OHIF/Viewers/commit/cf97fa9b7b9687a9b73c1cf6926bc9fbc39b6512))
 
 
 
@@ -3603,7 +4267,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.66](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.65...v3.10.0-beta.66) (2025-01-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Inconsistent Handling of Patient Name Tag ([#4703](https://github.com/OHIF/Viewers/issues/4703)) ([8aedb2e](https://github.com/OHIF/Viewers/commit/8aedb2ec54a0ccf2550f745fed6f0b8aa184a860))
 
 
 
@@ -3611,7 +4278,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.65](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.64...v3.10.0-beta.65) (2025-01-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **rotation:** support cycling rotateViewportCCW ([#4533](https://github.com/OHIF/Viewers/issues/4533)) ([bf58707](https://github.com/OHIF/Viewers/commit/bf587070cccd344f5e8817e9954ba9f2e46b81bb))
 
 
 
@@ -3619,7 +4289,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.64](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.63...v3.10.0-beta.64) (2025-01-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **hp:** Display set should allow remembered updates ([#4707](https://github.com/OHIF/Viewers/issues/4707)) ([464148e](https://github.com/OHIF/Viewers/commit/464148ece66b48b583dc6e998ca4d11c66746f3a))
 
 
 
@@ -3627,7 +4300,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.63](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.62...v3.10.0-beta.63) (2025-01-17)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3635,7 +4308,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.62](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.61...v3.10.0-beta.62) (2025-01-16)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* context menu icon ([#4696](https://github.com/OHIF/Viewers/issues/4696)) ([1993161](https://github.com/OHIF/Viewers/commit/19931614dc53da440718e512d39a87ca9118b96e))
 
 
 
@@ -3665,7 +4341,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.59](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.58...v3.10.0-beta.59) (2025-01-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* bugs after multimonitor ([#4680](https://github.com/OHIF/Viewers/issues/4680)) ([c901a84](https://github.com/OHIF/Viewers/commit/c901a847af75d356509366c695ea46ff4f4bcdaf))
+* cs dicom sr commands module ([#4683](https://github.com/OHIF/Viewers/issues/4683)) ([2d611d0](https://github.com/OHIF/Viewers/commit/2d611d06ed759bbd1e83ccfac7dceeff9eb6238e))
 
 
 
@@ -3684,7 +4364,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.57](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.56...v3.10.0-beta.57) (2025-01-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **toolbarService:** All header tools are enabled in volume3D viewport ([#4677](https://github.com/OHIF/Viewers/issues/4677)) ([9832dbe](https://github.com/OHIF/Viewers/commit/9832dbe653a196280a0de57460436b6600a6aaa8))
 
 
 
@@ -3692,7 +4375,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.56](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.55...v3.10.0-beta.56) (2025-01-13)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3711,7 +4394,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.54](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.53...v3.10.0-beta.54) (2025-01-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docker:** run compression regardless of APP_CONFIG being present ( in cases such as volume mount) ([#4673](https://github.com/OHIF/Viewers/issues/4673)) ([a2d34c9](https://github.com/OHIF/Viewers/commit/a2d34c97edcdc34f14b4b99a1bca6c1b43e80006))
 
 
 
@@ -3719,7 +4405,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.53](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.52...v3.10.0-beta.53) (2025-01-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **icons:** icons missing for volume presets and others ([#4671](https://github.com/OHIF/Viewers/issues/4671)) ([01924b8](https://github.com/OHIF/Viewers/commit/01924b8bf27da045d39dfaeb126b73cb4efcdb08))
 
 
 
@@ -3727,7 +4416,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.52](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.51...v3.10.0-beta.52) (2025-01-10)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3746,7 +4435,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.50](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.49...v3.10.0-beta.50) (2025-01-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* Start using group filtering to define measurements table layout ([#4501](https://github.com/OHIF/Viewers/issues/4501)) ([82440e8](https://github.com/OHIF/Viewers/commit/82440e88d5debe808f0b14281b77e430c2489779))
 
 
 
@@ -3754,7 +4446,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.49](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.48...v3.10.0-beta.49) (2025-01-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Execute HP onProtocolEnter callback after HPservice.run( ([#4589](https://github.com/OHIF/Viewers/issues/4589)) ([8e2c607](https://github.com/OHIF/Viewers/commit/8e2c60790437d4df583a236c99e856d21dbc0dfe))
 
 
 
@@ -3762,7 +4457,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.48](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.47...v3.10.0-beta.48) (2025-01-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Make StudyInstanceUID optional to retrieve a Series from DicomMetadataStore  ([#4644](https://github.com/OHIF/Viewers/issues/4644)) ([aef68d1](https://github.com/OHIF/Viewers/commit/aef68d18b82455ee485fef70df4ee7ba2c775417))
 
 
 
@@ -3770,7 +4468,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.47](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.46...v3.10.0-beta.47) (2025-01-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Inconsistencies and update the style setting on load for embedded styles from codingValues ([#4599](https://github.com/OHIF/Viewers/issues/4599)) ([e0088ec](https://github.com/OHIF/Viewers/commit/e0088ec91807fa6a8e11e1e6942f51cedd080cc9))
 
 
 
@@ -3778,7 +4479,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.46](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.45...v3.10.0-beta.46) (2025-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **circleci:** Update workflow dependencies for Docker publishing stages ([#4661](https://github.com/OHIF/Viewers/issues/4661)) ([66eebbe](https://github.com/OHIF/Viewers/commit/66eebbed0f27975082bf8997f4637c5de169af79))
+* **circleci:** Update workflow dependencies for Docker publishing stages ([#4662](https://github.com/OHIF/Viewers/issues/4662)) ([38edde5](https://github.com/OHIF/Viewers/commit/38edde5e37e8408b853c3712d240bd0423464701))
 
 
 
@@ -3786,7 +4491,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.45](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.44...v3.10.0-beta.45) (2025-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **circleci:** Update workflow dependencies for Docker publishing stages ([#4660](https://github.com/OHIF/Viewers/issues/4660)) ([3c6a5ef](https://github.com/OHIF/Viewers/commit/3c6a5ef69e9914bdc9f3fda1b149400881e2ce1e))
 
 
 
@@ -3794,7 +4502,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.44](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.43...v3.10.0-beta.44) (2025-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **Dockerfile:** Clear bun package manager cache before installation ([#4659](https://github.com/OHIF/Viewers/issues/4659)) ([5f6f528](https://github.com/OHIF/Viewers/commit/5f6f528fbf166a524f447708e1d0b4b8f3766d3c))
 
 
 
@@ -3802,7 +4513,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.43](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.42...v3.10.0-beta.43) (2025-01-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3810,7 +4521,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.42](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.41...v3.10.0-beta.42) (2025-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Convert Rows and Columns to numbers before comparison ([#4654](https://github.com/OHIF/Viewers/issues/4654)) ([#4656](https://github.com/OHIF/Viewers/issues/4656)) ([2f5076e](https://github.com/OHIF/Viewers/commit/2f5076ece8b3125c3426014efdf7fc6b498606d0))
 
 
 
@@ -3818,7 +4532,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.41](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.40...v3.10.0-beta.41) (2025-01-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3826,7 +4540,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.40](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.39...v3.10.0-beta.40) (2025-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docker:** make multiarch work ([#4655](https://github.com/OHIF/Viewers/issues/4655)) ([8e12021](https://github.com/OHIF/Viewers/commit/8e120219390a91474fb634711ea8c3312a7d9539))
 
 
 
@@ -3845,7 +4562,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.38](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.37...v3.10.0-beta.38) (2025-01-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **toolbars:** Fix error when filtering out duplicate buttons for a button section. ([#4618](https://github.com/OHIF/Viewers/issues/4618)) ([28cf3a1](https://github.com/OHIF/Viewers/commit/28cf3a17fad5070ba00d0d5d27633237b499da7a))
 
 
 
@@ -3853,7 +4573,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.37](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.36...v3.10.0-beta.37) (2025-01-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* year 2025 missing in date picker ([#4647](https://github.com/OHIF/Viewers/issues/4647)) ([4a8e8ca](https://github.com/OHIF/Viewers/commit/4a8e8cacf2fa5a7e2ed2429cba79edcd3f2a6d78))
 
 
 
@@ -3861,7 +4584,16 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.36](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.35...v3.10.0-beta.36) (2025-01-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **context menu:** Implemented closing of context menu on outside click ([#4627](https://github.com/OHIF/Viewers/issues/4627)) ([6b851df](https://github.com/OHIF/Viewers/commit/6b851dfc12f4cf617d02f683e0661feeebfbcf20))
+* **context menu:** restrict the context menu accessibility for locked and hidden annotations ([#4625](https://github.com/OHIF/Viewers/issues/4625)) ([e11ceb9](https://github.com/OHIF/Viewers/commit/e11ceb9d20fa5e680a0247f6ca7c27825daea6c5))
+
+
+### Features
+
+* Implemented CSV support for Arrow annotation. ([#4623](https://github.com/OHIF/Viewers/issues/4623)) ([55fe185](https://github.com/OHIF/Viewers/commit/55fe185c72500256452e25d2f2b17fc9faa99dff))
 
 
 
@@ -3869,7 +4601,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.35](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.34...v3.10.0-beta.35) (2025-01-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **3D rendering:** disabled light sliders when shade is off ([#4631](https://github.com/OHIF/Viewers/issues/4631)) ([5322064](https://github.com/OHIF/Viewers/commit/5322064e9eb66791bc598f82bdf4edd35e40be11))
 
 
 
@@ -3899,7 +4634,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.32](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.31...v3.10.0-beta.32) (2024-12-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **datasource:** attach auth headers for delete requests in the dicomweb datasource ([#4619](https://github.com/OHIF/Viewers/issues/4619)) ([8d0ed80](https://github.com/OHIF/Viewers/commit/8d0ed80e0c4570ab799281c29e487dbb39f47b95))
 
 
 
@@ -3907,7 +4645,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.31](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.30...v3.10.0-beta.31) (2024-12-20)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** black preview when loading a seg, and crash on opening panel ([#4602](https://github.com/OHIF/Viewers/issues/4602)) ([faf5515](https://github.com/OHIF/Viewers/commit/faf5515e4b93da58b673f1ae59ec345e30870446))
 
 
 
@@ -3915,7 +4656,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.30](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.29...v3.10.0-beta.30) (2024-12-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **SR:** Bring back the onModeEnter for the cornerstone-dicom-sr extension that was accidentally removed by PR [#4586](https://github.com/OHIF/Viewers/issues/4586) ([#4616](https://github.com/OHIF/Viewers/issues/4616)) ([2df8e1d](https://github.com/OHIF/Viewers/commit/2df8e1d5cd7a203bdde1cac6230b60a0b87bfcdd))
 
 
 
@@ -3923,7 +4667,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.29](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.28...v3.10.0-beta.29) (2024-12-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **icons:** Add Clipboard icon and update MetadataProvider for null checks ([#4615](https://github.com/OHIF/Viewers/issues/4615)) ([93d7076](https://github.com/OHIF/Viewers/commit/93d707690104ae099df6e08156e2efd8c1a6e076))
 
 
 
@@ -3931,7 +4678,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.28](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.27...v3.10.0-beta.28) (2024-12-18)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -3939,7 +4686,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.27](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.26...v3.10.0-beta.27) (2024-12-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **measurements:** Provide for the Load (SR) measurements button to optionally clear existing measurements prior to loading the SR. ([#4586](https://github.com/OHIF/Viewers/issues/4586)) ([4d3d5e7](https://github.com/OHIF/Viewers/commit/4d3d5e794cb99212eba06bf91dbb30a258725efe))
 
 
 
@@ -3947,7 +4697,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.26](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.25...v3.10.0-beta.26) (2024-12-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* ohif icons in Header ([#4611](https://github.com/OHIF/Viewers/issues/4611)) ([52cf9b1](https://github.com/OHIF/Viewers/commit/52cf9b1e0398f966d4498dda83fd5ceae69262c6))
 
 
 
@@ -3955,7 +4708,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.25](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.24...v3.10.0-beta.25) (2024-12-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Documentation and default enabled for bulkdata load ([#4607](https://github.com/OHIF/Viewers/issues/4607)) ([d0ccdbd](https://github.com/OHIF/Viewers/commit/d0ccdbd68db1dcb190b5a288dd455f573eddc280))
 
 
 
@@ -3985,7 +4741,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.22](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.21...v3.10.0-beta.22) (2024-12-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **tag-browser:** fix dicom tag browser not loading in segmentation mode in study panel ([#4601](https://github.com/OHIF/Viewers/issues/4601)) ([60fc7d6](https://github.com/OHIF/Viewers/commit/60fc7d6a112da99b47e26c5e3460b920bbc3c0b0))
 
 
 
@@ -4015,7 +4774,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.19](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.18...v3.10.0-beta.19) (2024-12-11)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4023,7 +4782,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.18](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.17...v3.10.0-beta.18) (2024-12-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **sr:** correct jump to first image via viewRef ([#4576](https://github.com/OHIF/Viewers/issues/4576)) ([6ec04ca](https://github.com/OHIF/Viewers/commit/6ec04ca65ea2f0fe95eaf624652911b87a6f81e6))
 
 
 
@@ -4048,6 +4810,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **defaultRouteInit:** fixes 'madeInClient' parameter when 'makeDisplaySets' is called ([#4571](https://github.com/OHIF/Viewers/issues/4571)) ([7cc6c14](https://github.com/OHIF/Viewers/commit/7cc6c1484a551026af5f641254431c23b729c2c2))
 
 
+### Features
+
+* **extension:** added 'extensionManager' to 'onModeEnter' parameter list ([#4569](https://github.com/OHIF/Viewers/issues/4569)) ([f87c6cd](https://github.com/OHIF/Viewers/commit/f87c6cd2aa83007393302d4437b417150ed26e2e))
+
+
 
 
 
@@ -4064,7 +4831,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.14](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.13...v3.10.0-beta.14) (2024-12-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **WorkflowSteps:** fixed how hooks are invoked + added support for 'onExit' hook ([#4568](https://github.com/OHIF/Viewers/issues/4568)) ([bca2022](https://github.com/OHIF/Viewers/commit/bca20223513c15720b4538533c0f6d38b839e045))
 
 
 
@@ -4072,7 +4842,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.13](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.12...v3.10.0-beta.13) (2024-12-02)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4102,7 +4872,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.10](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.9...v3.10.0-beta.10) (2024-11-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **segmentation:** Enhance dropdown menu functionality in SegmentationTable ([#4553](https://github.com/OHIF/Viewers/issues/4553)) ([397fd85](https://github.com/OHIF/Viewers/commit/397fd856539cd3b949a9614a9ea32d0d04a90000))
 
 
 
@@ -4132,7 +4905,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.7](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.6...v3.10.0-beta.7) (2024-11-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Make the commands ordering the registration order of hte mode ([#4492](https://github.com/OHIF/Viewers/issues/4492)) ([edfaf72](https://github.com/OHIF/Viewers/commit/edfaf7248d217707e90d24642361a40c6f1a03ff))
 
 
 
@@ -4162,7 +4938,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.4](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.3...v3.10.0-beta.4) (2024-11-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ci:** address error in merge report step of the playwright workflow ([#4518](https://github.com/OHIF/Viewers/issues/4518)) ([d05db4c](https://github.com/OHIF/Viewers/commit/d05db4cb61b9f0492fd2498990f2ef0309cfaaa3))
 
 
 
@@ -4170,7 +4949,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.3](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.2...v3.10.0-beta.3) (2024-11-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* avoid black images after hiding the viewports ([#4502](https://github.com/OHIF/Viewers/issues/4502)) ([ad8f205](https://github.com/OHIF/Viewers/commit/ad8f205e419d439bd8e51eff1101b2ef4c314214))
 
 
 
@@ -4178,7 +4960,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.2](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.1...v3.10.0-beta.2) (2024-11-13)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4186,7 +4968,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.1](https://github.com/OHIF/Viewers/compare/v3.10.0-beta.0...v3.10.0-beta.1) (2024-11-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4194,7 +4976,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.10.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.111...v3.10.0-beta.0) (2024-11-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4205,7 +4987,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* Have an addIcon that adds to both ui and ui-next ([#4490](https://github.com/OHIF/Viewers/issues/4490)) ([4a12523](https://github.com/OHIF/Viewers/commit/4a125236ddbf8a4a95fb9c5820f511d0224e663f))
 * Measurement Tracking: Various UI and functionality improvements ([#4481](https://github.com/OHIF/Viewers/issues/4481)) ([62b2748](https://github.com/OHIF/Viewers/commit/62b27488471c9d5979142e2d15872a85778b90ed))
+* **styles:** several fixes for different styles ([#4483](https://github.com/OHIF/Viewers/issues/4483)) ([a5f0376](https://github.com/OHIF/Viewers/commit/a5f03764d1fe07b55635c52c5dac38ab5e694ba1))
 
 
 
@@ -4257,7 +5041,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.106](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.105...v3.9.0-beta.106) (2024-11-06)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4265,7 +5049,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.105](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.104...v3.9.0-beta.105) (2024-11-05)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4273,7 +5057,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.104](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.103...v3.9.0-beta.104) (2024-10-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ui:** show ui notification on displaySet load error ([#4447](https://github.com/OHIF/Viewers/issues/4447)) ([4f20523](https://github.com/OHIF/Viewers/commit/4f20523109ecbb7ec5a6d5f2c97f7e73f81cda09))
 
 
 
@@ -4281,7 +5068,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.103](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.102...v3.9.0-beta.103) (2024-10-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ui:** display error in ui while loading seg ([#4433](https://github.com/OHIF/Viewers/issues/4433)) ([2e96371](https://github.com/OHIF/Viewers/commit/2e96371b0631a9e5d411b0142300708ab8ba7d27))
 
 
 
@@ -4289,7 +5079,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.102](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.101...v3.9.0-beta.102) (2024-10-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **packages:** http-proxy-middleware vulnerability ([#4443](https://github.com/OHIF/Viewers/issues/4443)) ([0610425](https://github.com/OHIF/Viewers/commit/06104257402e872d447e59cb166184d9a3548f8b))
 
 
 
@@ -4308,13 +5101,28 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.100](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.99...v3.9.0-beta.100) (2024-10-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **tmtv:** prevent fusion row in tmtv from getting inverted unexpectedly ([#4420](https://github.com/OHIF/Viewers/issues/4420)) ([33af9bb](https://github.com/OHIF/Viewers/commit/33af9bb021ff3a6c3b683d4df2c730413400ff8a))
 
 
 
 
 
 # [3.9.0-beta.99](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.98...v3.9.0-beta.99) (2024-10-17)
+
+
+### Bug Fixes
+
+* **3d-viewport:** exception was being thrown and 3d viewpot not getting resized. ([#4366](https://github.com/OHIF/Viewers/issues/4366)) ([433cc80](https://github.com/OHIF/Viewers/commit/433cc8089db6aa218c9075bd0eeb7952a7e4f028))
+* **createReport:** early return on cancel in prompt ([#4243](https://github.com/OHIF/Viewers/issues/4243)) ([2ec4692](https://github.com/OHIF/Viewers/commit/2ec4692eaf2349e21b141a2c0b5b104ee10f7a28))
+* **dicomjson:** Update getUIDsFromImageID to work with json data source + update getDisplaySetImageUIDs to work with mixed sop class json ([#4322](https://github.com/OHIF/Viewers/issues/4322)) ([3dd0666](https://github.com/OHIF/Viewers/commit/3dd0666c0c090cbd66161f24bc9795f96abb3697))
+* **hp-presets:** select the active displaySet when toggling an HP preset, not a random one from the series panel ([#4365](https://github.com/OHIF/Viewers/issues/4365)) ([ace67b3](https://github.com/OHIF/Viewers/commit/ace67b3bbb6be4e8c78e613e20d3e10b93762bf7))
+* **sr:** load existing point, if there is 2nd point in renderableData (Fix rotation in arrow annotation) ([#4356](https://github.com/OHIF/Viewers/issues/4356)) ([7353f7f](https://github.com/OHIF/Viewers/commit/7353f7f069446f8484278c2cff5b09149cfa23eb))
+* **tools:** check if seriesNumber is an undefined properly ([#4338](https://github.com/OHIF/Viewers/issues/4338)) ([307b144](https://github.com/OHIF/Viewers/commit/307b14476be41b10b861d6a8474f7386b5107618))
+* **typo:** type in fourup preset ([#4426](https://github.com/OHIF/Viewers/issues/4426)) ([03aad4e](https://github.com/OHIF/Viewers/commit/03aad4eba24e33a266a6d91eaf74df52dc2a550e))
+* **updateIndex:** getNumberOfSlices is defined when used with a 3D viewport ([#4424](https://github.com/OHIF/Viewers/issues/4424)) ([d5bcf54](https://github.com/OHIF/Viewers/commit/d5bcf54e23ef68abd85c5f0ea671feca637c4f49))
 
 
 ### Features
@@ -4328,7 +5136,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.98](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.97...v3.9.0-beta.98) (2024-10-15)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4347,7 +5155,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.96](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.95...v3.9.0-beta.96) (2024-10-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **fossa:** update fossa to track licenses correctly ([#4411](https://github.com/OHIF/Viewers/issues/4411)) ([ec685ef](https://github.com/OHIF/Viewers/commit/ec685ef5b9c8bfa5bff3bbf869eb394548ae1cab))
 
 
 
@@ -4355,7 +5166,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.95](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.94...v3.9.0-beta.95) (2024-10-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4374,7 +5185,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.93](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.92...v3.9.0-beta.93) (2024-10-04)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4382,7 +5193,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.92](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.91...v3.9.0-beta.92) (2024-10-01)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **Select:** select clear button ([#4398](https://github.com/OHIF/Viewers/issues/4398)) ([a11cd6d](https://github.com/OHIF/Viewers/commit/a11cd6d6cbe20d7d986430befb3398f910a03ada))
 
 
 
@@ -4390,7 +5204,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.91](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.90...v3.9.0-beta.91) (2024-10-01)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **dependent:** high priority vulnerabilities ([#4396](https://github.com/OHIF/Viewers/issues/4396)) ([b4f08ad](https://github.com/OHIF/Viewers/commit/b4f08adfb638e5df11bb77d3c1b128b5efdf77a7))
 
 
 
@@ -4398,7 +5215,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.90](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.89...v3.9.0-beta.90) (2024-09-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* 🐛 Fix imports for ui-next ([#4394](https://github.com/OHIF/Viewers/issues/4394)) ([43efed2](https://github.com/OHIF/Viewers/commit/43efed207e0d8d13bcbf52fab14c1be034d22d0c))
 
 
 
@@ -4406,7 +5226,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.89](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.88...v3.9.0-beta.89) (2024-09-27)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4414,7 +5234,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.88](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.87...v3.9.0-beta.88) (2024-09-24)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4422,7 +5242,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.87](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.86...v3.9.0-beta.87) (2024-09-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ui:** Fixed study component open and closed feedback in Studies panel ([#4384](https://github.com/OHIF/Viewers/issues/4384)) ([365d824](https://github.com/OHIF/Viewers/commit/365d824b98e03b87db294878abde6823abdcf409))
 
 
 
@@ -4430,7 +5253,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.86](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.85...v3.9.0-beta.86) (2024-09-19)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4438,7 +5261,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.85](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.84...v3.9.0-beta.85) (2024-09-17)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4446,7 +5269,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.84](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.83...v3.9.0-beta.84) (2024-09-12)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **toolbar:** enable extensions to change toolbar button sections ([#4367](https://github.com/OHIF/Viewers/issues/4367)) ([1bfce0a](https://github.com/OHIF/Viewers/commit/1bfce0a03cbbb4cc1f69e8b5d1d72244b30d6b46))
 
 
 
@@ -4487,7 +5313,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.80](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.79...v3.9.0-beta.80) (2024-08-16)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4495,7 +5321,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.79](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.78...v3.9.0-beta.79) (2024-08-16)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4514,7 +5340,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.77](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.76...v3.9.0-beta.77) (2024-08-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **roundNumber:** handle negative numbers properly ([#4336](https://github.com/OHIF/Viewers/issues/4336)) ([7377db8](https://github.com/OHIF/Viewers/commit/7377db8d280a90515fe099cb580607450cb146a5))
 
 
 
@@ -4522,7 +5351,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.76](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.75...v3.9.0-beta.76) (2024-08-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* unexpected mpr measurements ([#4332](https://github.com/OHIF/Viewers/issues/4332)) ([ab6e341](https://github.com/OHIF/Viewers/commit/ab6e341731652a4fa894fcb576eb23dc95aefa11))
 
 
 
@@ -4530,7 +5362,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.75](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.74...v3.9.0-beta.75) (2024-08-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ui:** Tailwind build errors ([#4329](https://github.com/OHIF/Viewers/issues/4329)) ([8e7cc11](https://github.com/OHIF/Viewers/commit/8e7cc1152917f562ea7e6a5f3f7e492b300dc564))
 
 
 
@@ -4538,7 +5373,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.74](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.73...v3.9.0-beta.74) (2024-08-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **url:** series query param filtering ([#4328](https://github.com/OHIF/Viewers/issues/4328)) ([9b10303](https://github.com/OHIF/Viewers/commit/9b10303a2efa809096156d4a2322b2b46f160a91))
 
 
 
@@ -4557,7 +5395,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.72](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.71...v3.9.0-beta.72) (2024-07-31)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* customization types ([#4321](https://github.com/OHIF/Viewers/issues/4321)) ([72bef63](https://github.com/OHIF/Viewers/commit/72bef63ef6e63395ba18ff91a39294913966e9db))
 
 
 
@@ -4565,7 +5406,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.71](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.70...v3.9.0-beta.71) (2024-07-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* ip SSRF improper categorization ([#4319](https://github.com/OHIF/Viewers/issues/4319)) ([aa0e5a5](https://github.com/OHIF/Viewers/commit/aa0e5a59379453bb8e6a4f286447576744ea6bf5))
 
 
 
@@ -4573,7 +5417,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.70](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.69...v3.9.0-beta.70) (2024-07-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **ui:** remove border-border class ([#4317](https://github.com/OHIF/Viewers/issues/4317)) ([d402ded](https://github.com/OHIF/Viewers/commit/d402ded8c36631f8009b7b15b2f1c7a02cd09f6c))
 
 
 
@@ -4581,7 +5428,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.69](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.68...v3.9.0-beta.69) (2024-07-27)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4589,7 +5436,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.68](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.67...v3.9.0-beta.68) (2024-07-26)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **dicom:** Update multiframe DICOM JSON parsing for correct image ID generation ([#4307](https://github.com/OHIF/Viewers/issues/4307)) ([16b7aa4](https://github.com/OHIF/Viewers/commit/16b7aa4f6538b81e5915e47b9209d74575895dfe))
 
 
 
@@ -4597,7 +5447,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.67](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.66...v3.9.0-beta.67) (2024-07-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4616,7 +5466,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.65](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.64...v3.9.0-beta.65) (2024-07-23)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **SR:** text structured report (TEXT, CODE, NUM, PNAME, DATE, TIME and DATETIME) ([#4287](https://github.com/OHIF/Viewers/issues/4287)) ([246ebab](https://github.com/OHIF/Viewers/commit/246ebab6ebf5431a704a1861a5804045b9644ba4))
 
 
 
@@ -4624,7 +5477,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.64](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.63...v3.9.0-beta.64) (2024-07-19)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4632,7 +5485,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.63](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.62...v3.9.0-beta.63) (2024-07-10)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4640,7 +5493,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.62](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.61...v3.9.0-beta.62) (2024-07-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* the start/end command in TMTV for the ROIStartEndThreshold tools ([#4281](https://github.com/OHIF/Viewers/issues/4281)) ([38c19fa](https://github.com/OHIF/Viewers/commit/38c19fab77cdb21d14bdae35813d73f43012cbd7))
 
 
 
@@ -4659,7 +5515,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.60](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.59...v3.9.0-beta.60) (2024-07-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Tests run against e2e config for both playwright and older tests ([#4283](https://github.com/OHIF/Viewers/issues/4283)) ([31271ae](https://github.com/OHIF/Viewers/commit/31271aeef727ec9cfa44fdf91f571a33b10cb3ab))
 
 
 
@@ -4675,12 +5534,20 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * webpack import bugs showing warnings on import ([#4265](https://github.com/OHIF/Viewers/issues/4265)) ([24c511f](https://github.com/OHIF/Viewers/commit/24c511f4bc04c4143bbd3d0d48029f41f7f36014))
 
 
+### Features
+
+* Add interleaved HTJ2K and volume progressive loading ([#4276](https://github.com/OHIF/Viewers/issues/4276)) ([a2084f3](https://github.com/OHIF/Viewers/commit/a2084f319b731d98b59485799fb80357094f8c38))
+
+
 
 
 
 # [3.9.0-beta.58](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.57...v3.9.0-beta.58) (2024-07-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* stdValue in TMTV mode ([#4278](https://github.com/OHIF/Viewers/issues/4278)) ([b2c6291](https://github.com/OHIF/Viewers/commit/b2c629123c5cf05afbeb19bd1424c327c1f5a606))
 
 
 
@@ -4688,7 +5555,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.57](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.56...v3.9.0-beta.57) (2024-07-02)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4696,7 +5563,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.56](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.55...v3.9.0-beta.56) (2024-07-02)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4704,7 +5571,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.55](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.54...v3.9.0-beta.55) (2024-06-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4723,7 +5590,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.53](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.52...v3.9.0-beta.53) (2024-06-28)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4731,7 +5598,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.52](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.51...v3.9.0-beta.52) (2024-06-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cli:** missing js ([#4268](https://github.com/OHIF/Viewers/issues/4268)) ([f660f8e](https://github.com/OHIF/Viewers/commit/f660f8e970c0226b34a9de10e2c57429dcce6763))
 
 
 
@@ -4739,7 +5609,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.51](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.50...v3.9.0-beta.51) (2024-06-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cli:** Fix the cli utilities which require full paths ([d09f8b5](https://github.com/OHIF/Viewers/commit/d09f8b5ba2dcc0c02beb405b8cfa79fbae5bdde8)), closes [#4267](https://github.com/OHIF/Viewers/issues/4267)
 
 
 
@@ -4758,7 +5631,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.49](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.48...v3.9.0-beta.49) (2024-06-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4766,7 +5639,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.48](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.47...v3.9.0-beta.48) (2024-06-25)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4780,11 +5653,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * Allow the mode setup/creation to be async, and provide a few more values to extension/app config/mode setup. ([#4016](https://github.com/OHIF/Viewers/issues/4016)) ([88575c6](https://github.com/OHIF/Viewers/commit/88575c6c09fd778a31b2f91524163ce65d1639dd))
 * **code:** remove console log ([#4248](https://github.com/OHIF/Viewers/issues/4248)) ([f3bbfff](https://github.com/OHIF/Viewers/commit/f3bbfff09b66ee020daf503656a2b58e763634a3))
 * **CustomViewportOverlay:** pass accurate data to Custom Viewport Functions ([#4224](https://github.com/OHIF/Viewers/issues/4224)) ([aef00e9](https://github.com/OHIF/Viewers/commit/aef00e91d63e9bc2de289cc6f35975e36547fb20))
+* **studybrowser:** Differentiate recent and all in study panel based on a provided time period ([#4242](https://github.com/OHIF/Viewers/issues/4242)) ([6f93449](https://github.com/OHIF/Viewers/commit/6f9344914951c204feaff48aaeb43cd7d727623d))
 
 
 ### Features
 
 * customization service append and customize functionality should run once ([#4238](https://github.com/OHIF/Viewers/issues/4238)) ([e462fd3](https://github.com/OHIF/Viewers/commit/e462fd31f7944acfee34f08cfbc28cfd9de16169))
+* **HP:** Frame View HP ([#4235](https://github.com/OHIF/Viewers/issues/4235)) ([d5d8214](https://github.com/OHIF/Viewers/commit/d5d821464acb0f89fc9b189bd245a06c209d77b4))
 * **sort:** custom series sort in study panel ([#4214](https://github.com/OHIF/Viewers/issues/4214)) ([a433d40](https://github.com/OHIF/Viewers/commit/a433d406e2cac13f644203996c682260b54e8865))
 
 
@@ -4804,7 +5679,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.45](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.44...v3.9.0-beta.45) (2024-06-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* Re-enable hpScale module ([#4237](https://github.com/OHIF/Viewers/issues/4237)) ([2eab049](https://github.com/OHIF/Viewers/commit/2eab049d7993bb834f7736093941c175f16d61fc))
 
 
 
@@ -4812,7 +5690,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.44](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.43...v3.9.0-beta.44) (2024-06-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cli:** version txt had a new line which it should not ([#4233](https://github.com/OHIF/Viewers/issues/4233)) ([097ef76](https://github.com/OHIF/Viewers/commit/097ef7665559a672d73e1babfc42afccc3cdd41d))
+* **pdf-viewport:** Allow Drag and Drop on PDF Viewport ([#4225](https://github.com/OHIF/Viewers/issues/4225)) ([729efb6](https://github.com/OHIF/Viewers/commit/729efb6d766e0f72f1fd8adefbca6fb46b355b2b))
 
 
 
@@ -4820,7 +5702,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.43](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.42...v3.9.0-beta.43) (2024-06-12)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **sr:** rendering issue by running loadSR before updateSR ([#4226](https://github.com/OHIF/Viewers/issues/4226)) ([6971287](https://github.com/OHIF/Viewers/commit/69712874603109aa4f655d47daf15d72167a49ff))
 
 
 
@@ -4828,7 +5713,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.42](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.41...v3.9.0-beta.42) (2024-06-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4847,7 +5732,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.40](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.39...v3.9.0-beta.40) (2024-06-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4855,7 +5740,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.39](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.38...v3.9.0-beta.39) (2024-06-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4863,7 +5748,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.38](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.37...v3.9.0-beta.38) (2024-06-07)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **window-level:** move window level region to more tools menu ([#4215](https://github.com/OHIF/Viewers/issues/4215)) ([33f4c18](https://github.com/OHIF/Viewers/commit/33f4c18f2687d30a250fe7183df3daae8394a984))
 
 
 
@@ -4871,7 +5759,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.37](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.36...v3.9.0-beta.37) (2024-06-05)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -4879,7 +5767,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.36](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.35...v3.9.0-beta.36) (2024-06-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* get direct url pixel data should be optional for video ([#4152](https://github.com/OHIF/Viewers/issues/4152)) ([649ffab](https://github.com/OHIF/Viewers/commit/649ffab4d97be875d42e1a3473a4354aac14e87d))
 
 
 
@@ -4898,7 +5789,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.34](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.33...v3.9.0-beta.34) (2024-06-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **hydration:** Maintain the same slice that the user was on pre hydration in post hydration for SR and SEG. ([#4200](https://github.com/OHIF/Viewers/issues/4200)) ([430330f](https://github.com/OHIF/Viewers/commit/430330f7e384d503cb6fc695a7a9642ddfaac313))
 
 
 
@@ -4906,7 +5800,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.33](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.32...v3.9.0-beta.33) (2024-06-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **window-level-region:** add window level region tool ([#4127](https://github.com/OHIF/Viewers/issues/4127)) ([ab1a18a](https://github.com/OHIF/Viewers/commit/ab1a18af5a5b0f9086c080ed81c8fda9bfaa975b))
 
 
 
@@ -4925,7 +5822,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.31](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.30...v3.9.0-beta.31) (2024-05-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **seg:** should be able to navigate outside toolbox and come back later ([#4196](https://github.com/OHIF/Viewers/issues/4196)) ([93e7609](https://github.com/OHIF/Viewers/commit/93e760937f6587ba7481fcf3484ba9004ba49a62))
 
 
 
@@ -4933,7 +5833,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.30](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.29...v3.9.0-beta.30) (2024-05-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docker:** docker build was broken because of imports ([#4192](https://github.com/OHIF/Viewers/issues/4192)) ([d7aa386](https://github.com/OHIF/Viewers/commit/d7aa386800153e0bb9eea6bbf36c696c57750ad8))
+* segmentation creation and segmentation mode viewport rendering ([#4193](https://github.com/OHIF/Viewers/issues/4193)) ([2174026](https://github.com/OHIF/Viewers/commit/217402678981f74293dff615f6b6812e54216d37))
 
 
 
@@ -4941,7 +5845,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.29](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.28...v3.9.0-beta.29) (2024-05-30)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **tmtv:** side panel crashing when activeToolOptions is not an array ([#4189](https://github.com/OHIF/Viewers/issues/4189)) ([19b5b1c](https://github.com/OHIF/Viewers/commit/19b5b1c15cb29ddf1cfd9b608815199bc838f8b2))
 
 
 
@@ -4960,7 +5867,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.27](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.26...v3.9.0-beta.27) (2024-05-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **contour:** set renderFill to false for contour ([#4186](https://github.com/OHIF/Viewers/issues/4186)) ([731340d](https://github.com/OHIF/Viewers/commit/731340d70ab23e116dd23e80b880bd8a28526f19))
 
 
 
@@ -5001,7 +5911,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.23](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.22...v3.9.0-beta.23) (2024-05-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **rt:** dont convert to volume for RTSTRUCT ([#4157](https://github.com/OHIF/Viewers/issues/4157)) ([7745c09](https://github.com/OHIF/Viewers/commit/7745c092bb3edf0090f32fbbbae2f0776128d5a2))
 
 
 
@@ -5031,7 +5944,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.20](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.19...v3.9.0-beta.20) (2024-05-24)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5039,7 +5952,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.19](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.18...v3.9.0-beta.19) (2024-05-24)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5047,7 +5960,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.18](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.17...v3.9.0-beta.18) (2024-05-24)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5077,7 +5990,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.15](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.14...v3.9.0-beta.15) (2024-05-22)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5085,7 +5998,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.14](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.13...v3.9.0-beta.14) (2024-05-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **HangingProtocol:** fix hp when unsupported series load first ([#4145](https://github.com/OHIF/Viewers/issues/4145)) ([b124c91](https://github.com/OHIF/Viewers/commit/b124c91d8fa0def262d1fee8f105295b02864129))
 
 
 
@@ -5093,7 +6009,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.13](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.12...v3.9.0-beta.13) (2024-05-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **rt:** allow rendering of points in RT Struct ([#4128](https://github.com/OHIF/Viewers/issues/4128)) ([5903b07](https://github.com/OHIF/Viewers/commit/5903b0749aa41112d2e991bf53ed29b1fd7bd13f))
 
 
 
@@ -5123,7 +6042,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.10](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.9...v3.9.0-beta.10) (2024-05-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **stack-invalidation:** Resolve stack invalidation if metadata invalidated ([#4147](https://github.com/OHIF/Viewers/issues/4147)) ([70bb6c4](https://github.com/OHIF/Viewers/commit/70bb6c46267b3733a665f12534b849c890ce54ad))
 
 
 
@@ -5131,7 +6053,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.9](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.8...v3.9.0-beta.9) (2024-05-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **select:** utilize react portals for select component ([#4144](https://github.com/OHIF/Viewers/issues/4144)) ([dce1e7d](https://github.com/OHIF/Viewers/commit/dce1e7d423cb64ec0d4be7362ecbfd52db47ef36))
 
 
 
@@ -5139,7 +6064,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.8](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.7...v3.9.0-beta.8) (2024-05-16)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5147,7 +6072,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.7](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.6...v3.9.0-beta.7) (2024-05-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **tmtv:** threshold was crashing the side panel ([#4119](https://github.com/OHIF/Viewers/issues/4119)) ([8d5c676](https://github.com/OHIF/Viewers/commit/8d5c676a5e1f3eda664071c8aece313de766bd59))
 
 
 
@@ -5155,7 +6083,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.6](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.5...v3.9.0-beta.6) (2024-05-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* 🐛 Overflow scroll list menu based on screen hight ([#4123](https://github.com/OHIF/Viewers/issues/4123)) ([6bba2e7](https://github.com/OHIF/Viewers/commit/6bba2e70f80d8eacc57c0e765013d9c10adf5413))
 
 
 
@@ -5163,7 +6094,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.5](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.4...v3.9.0-beta.5) (2024-05-14)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5194,7 +6125,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.2](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.1...v3.9.0-beta.2) (2024-05-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **bugs:** enhancements and bugs in several areas ([#4086](https://github.com/OHIF/Viewers/issues/4086)) ([730f434](https://github.com/OHIF/Viewers/commit/730f4349100f21b4489a21707dbb2dca9dbfbba2))
 
 
 
@@ -5213,7 +6147,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.9.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.94...v3.9.0-beta.0) (2024-04-29)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5221,7 +6155,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.94](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.93...v3.8.0-beta.94) (2024-04-29)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5251,7 +6185,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.91](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.90...v3.8.0-beta.91) (2024-04-25)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5259,7 +6193,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.90](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.89...v3.8.0-beta.90) (2024-04-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **viewport-sync:** Enable re-sync image slices in a different position when needed ([#3984](https://github.com/OHIF/Viewers/issues/3984)) ([6ebd2cc](https://github.com/OHIF/Viewers/commit/6ebd2cc7cb70cd88fd01dc1e516077f27b201943))
 
 
 
@@ -5270,6 +6207,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* **vewport:** Add missing blendmodes from cornerstonejs ([#4055](https://github.com/OHIF/Viewers/issues/4055)) ([3ec7e51](https://github.com/OHIF/Viewers/commit/3ec7e512169a07506388902acb5b2c118093fa50))
 * **viewport-webworker-segmentation:** Resolve issues with viewport detection, webworker termination, and segmentation panel layout change ([#4059](https://github.com/OHIF/Viewers/issues/4059)) ([52a0c59](https://github.com/OHIF/Viewers/commit/52a0c59294a4161fcca0a6708855549034849951))
 
 
@@ -5278,7 +6216,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.88](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.87...v3.8.0-beta.88) (2024-04-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **hp:** Fails to display any layouts in the layout selector if first layout has multiple stages ([#4058](https://github.com/OHIF/Viewers/issues/4058)) ([f0ed3fd](https://github.com/OHIF/Viewers/commit/f0ed3fd7b99b0e4e00b261ceb9888ba94726719c))
 
 
 
@@ -5308,7 +6249,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.85](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.84...v3.8.0-beta.85) (2024-04-18)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5338,7 +6279,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.82](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.81...v3.8.0-beta.82) (2024-04-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **bugs:** enhancements and bug fixes - more ([#4043](https://github.com/OHIF/Viewers/issues/4043)) ([3754c22](https://github.com/OHIF/Viewers/commit/3754c224b4dab28182adb0a41e37d890942144d8))
 
 
 
@@ -5390,7 +6334,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.77](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.76...v3.8.0-beta.77) (2024-04-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **dicom-video:** Update get direct func for dicom json to use url if present and fix config argument ([#4017](https://github.com/OHIF/Viewers/issues/4017)) ([4f99244](https://github.com/OHIF/Viewers/commit/4f99244d864427d69be6f863cb7a6a78411adb12))
 
 
 
@@ -5398,7 +6345,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.76](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.75...v3.8.0-beta.76) (2024-04-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **MetaDataProvider:** Fix tag in GeneralImageModule ([#4000](https://github.com/OHIF/Viewers/issues/4000)) ([e9c30a1](https://github.com/OHIF/Viewers/commit/e9c30a108e2dd14a8b137b81e5b832cc167bc3d1))
 
 
 
@@ -5428,7 +6378,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.73](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.72...v3.8.0-beta.73) (2024-04-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5447,7 +6397,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.71](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.70...v3.8.0-beta.71) (2024-04-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **advanced-roi-tools:** new tools and icon updates and overlay bug fixes ([#4014](https://github.com/OHIF/Viewers/issues/4014)) ([cea27d4](https://github.com/OHIF/Viewers/commit/cea27d438d1de2c1ec90cbaefdc2b31a1d9980a1))
 
 
 
@@ -5455,7 +6408,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.70](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.69...v3.8.0-beta.70) (2024-04-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **measurement:** Add support measurement label autocompletion ([#3855](https://github.com/OHIF/Viewers/issues/3855)) ([56b1eae](https://github.com/OHIF/Viewers/commit/56b1eae6356a6534960df1196bdd1e95b0a9a470))
 
 
 
@@ -5463,7 +6419,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.69](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.68...v3.8.0-beta.69) (2024-04-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **presentation-state:** Iterate over map properly to restore the presentation state ([#4013](https://github.com/OHIF/Viewers/issues/4013)) ([fa38e6a](https://github.com/OHIF/Viewers/commit/fa38e6a07a259d8cb33277922884e722414ac548))
 
 
 
@@ -5570,7 +6529,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.59](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.58...v3.8.0-beta.59) (2024-03-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cli:** mode creation template ([#3876](https://github.com/OHIF/Viewers/issues/3876)) ([#3981](https://github.com/OHIF/Viewers/issues/3981)) ([e485d68](https://github.com/OHIF/Viewers/commit/e485d68fd4619ce7187113cbe59e47f9523dbcc8))
 
 
 
@@ -5578,7 +6540,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.58](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.57...v3.8.0-beta.58) (2024-03-05)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5586,7 +6548,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.57](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.56...v3.8.0-beta.57) (2024-02-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **docs:** Minor typos in hpModule.md ([#3962](https://github.com/OHIF/Viewers/issues/3962)) ([4cdfdae](https://github.com/OHIF/Viewers/commit/4cdfdae8149166cf9dc91a55c0d7f2a224e55d8f))
 
 
 
@@ -5616,7 +6581,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.54](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.53...v3.8.0-beta.54) (2024-02-14)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **errorboundary:** format stack trace properly ([#3931](https://github.com/OHIF/Viewers/issues/3931)) ([0eac386](https://github.com/OHIF/Viewers/commit/0eac386a31a5d6965536360aa65a44769c1a5740))
 
 
 
@@ -5624,7 +6592,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.53](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.52...v3.8.0-beta.53) (2024-02-05)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* 🐛 Sort merge results based on default data source (input) ([#3903](https://github.com/OHIF/Viewers/issues/3903)) ([5bba98e](https://github.com/OHIF/Viewers/commit/5bba98ed848bdf46b5ba4fc4708527cced3308b5))
 
 
 
@@ -5632,7 +6603,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.52](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.51...v3.8.0-beta.52) (2024-01-22)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5640,7 +6611,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.51](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.50...v3.8.0-beta.51) (2024-01-22)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* catch errors in getPTImageIdInstanceMetadata ([#3897](https://github.com/OHIF/Viewers/issues/3897)) ([a47aeb8](https://github.com/OHIF/Viewers/commit/a47aeb8bd729dcb8d2cfc13b27a31b0dd88f11ad))
 
 
 
@@ -5659,7 +6633,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.49](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.48...v3.8.0-beta.49) (2024-01-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* is same orientaiton ([#3905](https://github.com/OHIF/Viewers/issues/3905)) ([31b837f](https://github.com/OHIF/Viewers/commit/31b837fa90f631d4984482c6e952373fbb8bdbfc))
 
 
 
@@ -5667,7 +6644,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.48](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.47...v3.8.0-beta.48) (2024-01-17)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* 🐛 Check merge key for merge data source ([#3901](https://github.com/OHIF/Viewers/issues/3901)) ([911d672](https://github.com/OHIF/Viewers/commit/911d67283536b2fe7930948f2819ea0ad66e2a32))
 
 
 
@@ -5675,7 +6655,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.47](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.46...v3.8.0-beta.47) (2024-01-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5727,7 +6707,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.42](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.41...v3.8.0-beta.42) (2024-01-08)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5746,7 +6726,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.40](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.39...v3.8.0-beta.40) (2024-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **ui:** sidePanel expandedWidth ([#3728](https://github.com/OHIF/Viewers/issues/3728)) ([61bf22c](https://github.com/OHIF/Viewers/commit/61bf22c6f80e764bdf5c3b56bb0124a95aa0f793))
 
 
 
@@ -5754,7 +6737,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.39](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.38...v3.8.0-beta.39) (2024-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* improve disableEditing flag ([#3875](https://github.com/OHIF/Viewers/issues/3875)) ([2049c09](https://github.com/OHIF/Viewers/commit/2049c0936c86f819604c243d3dc7b3fe971b5b2c))
 
 
 
@@ -5765,6 +6751,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* convert radian to degree value for mip rotation ([#3881](https://github.com/OHIF/Viewers/issues/3881)) ([bf846c9](https://github.com/OHIF/Viewers/commit/bf846c94c378f04b9f44dcd71be3f056dbcfe0b5))
 * PDF display request in v3 ([#3878](https://github.com/OHIF/Viewers/issues/3878)) ([9865030](https://github.com/OHIF/Viewers/commit/98650302c7575f0aea386e32cfc4112c378035e6))
 
 
@@ -5773,7 +6760,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.37](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.36...v3.8.0-beta.37) (2024-01-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* colormap for stack viewports via HangingProtocol ([#3866](https://github.com/OHIF/Viewers/issues/3866)) ([e8858f3](https://github.com/OHIF/Viewers/commit/e8858f3eb55552f695af4a55980f9ae2e9af7291))
 
 
 
@@ -5781,7 +6771,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.36](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.35...v3.8.0-beta.36) (2023-12-15)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5789,7 +6779,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.35](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.34...v3.8.0-beta.35) (2023-12-14)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5797,7 +6787,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.34](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.33...v3.8.0-beta.34) (2023-12-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **icon-style:** Ensure consistent icon dimensions ([#3727](https://github.com/OHIF/Viewers/issues/3727)) ([6ca13c0](https://github.com/OHIF/Viewers/commit/6ca13c0a4cb5a95bbb52b0db902b5dbf72f8aa6e))
+
+
+### Features
+
+* **overlay:** add inline binary overlays ([#3852](https://github.com/OHIF/Viewers/issues/3852)) ([0177b62](https://github.com/OHIF/Viewers/commit/0177b625ba86760168bc4db58c8a109aa9ee83cb))
 
 
 
@@ -5805,7 +6803,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.33](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.32...v3.8.0-beta.33) (2023-12-13)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5813,7 +6811,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.32](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.31...v3.8.0-beta.32) (2023-12-13)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5821,7 +6819,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.31](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.30...v3.8.0-beta.31) (2023-12-13)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -5829,13 +6827,21 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.30](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.29...v3.8.0-beta.30) (2023-12-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **customizationService:** Enable saving and loading of private tags in SRs ([#3842](https://github.com/OHIF/Viewers/issues/3842)) ([e1f55e6](https://github.com/OHIF/Viewers/commit/e1f55e65f2d2a34136ad5d0b1ada77d337a0ea23))
 
 
 
 
 
 # [3.8.0-beta.29](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.28...v3.8.0-beta.29) (2023-12-13)
+
+
+### Bug Fixes
+
+* address and improve system vulnerabilities ([#3851](https://github.com/OHIF/Viewers/issues/3851)) ([805c532](https://github.com/OHIF/Viewers/commit/805c53270f243ec61f142a3ffa0af500021cd5ec))
 
 
 ### Features
@@ -5849,7 +6855,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.28](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.27...v3.8.0-beta.28) (2023-12-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **HP:** Added new 3D hanging protocols to be used in the new layout selector ([#3844](https://github.com/OHIF/Viewers/issues/3844)) ([59576d6](https://github.com/OHIF/Viewers/commit/59576d695d4d26601d35c43f73d602f0b12d72bf))
 
 
 
@@ -5868,7 +6877,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.26](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.25...v3.8.0-beta.26) (2023-11-28)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **SM:** drag and drop is now fixed for SM ([#3813](https://github.com/OHIF/Viewers/issues/3813)) ([f1a6764](https://github.com/OHIF/Viewers/commit/f1a67647aed635437b188cea7cf5d5a8fb974bbe))
 
 
 
@@ -5876,7 +6888,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.25](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.24...v3.8.0-beta.25) (2023-11-27)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cine:** Set cine disabled on mode exit. ([#3812](https://github.com/OHIF/Viewers/issues/3812)) ([924affa](https://github.com/OHIF/Viewers/commit/924affa7b5d420c2f91522a075cecbb3c78e8f52))
 
 
 
@@ -5895,7 +6910,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.23](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.22...v3.8.0-beta.23) (2023-11-24)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* Merge Data Source ([#3788](https://github.com/OHIF/Viewers/issues/3788)) ([c4ff2c2](https://github.com/OHIF/Viewers/commit/c4ff2c2f09546ce8b72eab9c5e7beed611e3cab0))
 
 
 
@@ -5903,7 +6921,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.22](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.21...v3.8.0-beta.22) (2023-11-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **events:** broadcast series summary metadata ([#3798](https://github.com/OHIF/Viewers/issues/3798)) ([404b0a5](https://github.com/OHIF/Viewers/commit/404b0a5d535182d1ae44e33f7232db500a7b2c16))
 
 
 
@@ -5922,7 +6943,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.20](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.19...v3.8.0-beta.20) (2023-11-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **metadata:** to handle cornerstone3D update for htj2k ([#3783](https://github.com/OHIF/Viewers/issues/3783)) ([8c8924a](https://github.com/OHIF/Viewers/commit/8c8924af373d906773f5db20defe38628cacd4a0))
 
 
 
@@ -5930,7 +6954,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.19](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.18...v3.8.0-beta.19) (2023-11-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **docs:** Added various training videos to support the OHIF CLI tools ([#3794](https://github.com/OHIF/Viewers/issues/3794)) ([d83beb7](https://github.com/OHIF/Viewers/commit/d83beb7c62c1d5be19c54e08d23883f112147fe1))
 
 
 
@@ -5938,7 +6965,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.18](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.17...v3.8.0-beta.18) (2023-11-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **url:** Add SeriesInstanceUIDs wado query param ([#3746](https://github.com/OHIF/Viewers/issues/3746)) ([b694228](https://github.com/OHIF/Viewers/commit/b694228dd535e4b97cb86a1dc085b6e8716bdaf3))
 
 
 
@@ -5946,7 +6976,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.17](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.16...v3.8.0-beta.17) (2023-11-13)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* 🐛 Run error handler for failed image requests ([#3773](https://github.com/OHIF/Viewers/issues/3773)) ([3234014](https://github.com/OHIF/Viewers/commit/323401418e7ccab74655ba02f990bbe0ed4e523b))
 
 
 
@@ -5965,7 +6998,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.15](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.14...v3.8.0-beta.15) (2023-11-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **dicomJSON:** Add Loading Other Display Sets and JSON Metadata Generation script ([#3777](https://github.com/OHIF/Viewers/issues/3777)) ([43b1c17](https://github.com/OHIF/Viewers/commit/43b1c17209502e4876ad59bae09ed9442eda8024))
 
 
 
@@ -5973,7 +7009,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.14](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.13...v3.8.0-beta.14) (2023-11-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **path:** upgrade docusaurus for security ([#3780](https://github.com/OHIF/Viewers/issues/3780)) ([8bbcd0e](https://github.com/OHIF/Viewers/commit/8bbcd0e692e25917c1b6dd94a39fac834c812fca))
 
 
 
@@ -5981,7 +7020,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.13](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.12...v3.8.0-beta.13) (2023-11-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **arrow:** ArrowAnnotate text key cause validation error ([#3771](https://github.com/OHIF/Viewers/issues/3771)) ([8af1046](https://github.com/OHIF/Viewers/commit/8af10468035f1f59e0a21e579d50ad63c8cbf7ad))
 
 
 
@@ -5989,7 +7031,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.12](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.11...v3.8.0-beta.12) (2023-11-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* add VolumeViewport rotation ([#3776](https://github.com/OHIF/Viewers/issues/3776)) ([442f99d](https://github.com/OHIF/Viewers/commit/442f99d5eb2ceece7def20e14da59af1dd7d8442))
 
 
 
@@ -5997,7 +7042,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.11](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.10...v3.8.0-beta.11) (2023-11-08)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **hp callback:** Add viewport ready callback ([#3772](https://github.com/OHIF/Viewers/issues/3772)) ([bf252bc](https://github.com/OHIF/Viewers/commit/bf252bcec2aae3a00479fdcb732110b344bcf2c0))
 
 
 
@@ -6005,7 +7053,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.10](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.9...v3.8.0-beta.10) (2023-11-03)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6034,6 +7082,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 # [3.8.0-beta.7](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.6...v3.8.0-beta.7) (2023-10-30)
+
+
+### Bug Fixes
+
+* **measurement service:** Implemented correct check of schema keys in _isValidMeasurment. ([#3750](https://github.com/OHIF/Viewers/issues/3750)) ([db39585](https://github.com/OHIF/Viewers/commit/db395852b6fc6cd5c265a9282e5eee5bd6f951b7))
 
 
 ### Features
@@ -6068,7 +7121,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.4](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.3...v3.8.0-beta.4) (2023-10-23)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6076,7 +7129,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.3](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.2...v3.8.0-beta.3) (2023-10-23)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **recipes:** package.json script orthanc:up docker-compose path ([#3741](https://github.com/OHIF/Viewers/issues/3741)) ([49514ae](https://github.com/OHIF/Viewers/commit/49514aedfe0498b5bd505193106a9745a6a5b5e6))
 
 
 
@@ -6084,7 +7140,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.2](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.1...v3.8.0-beta.2) (2023-10-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cine:** Use the frame rate specified in DICOM and optionally auto play cine ([#3735](https://github.com/OHIF/Viewers/issues/3735)) ([d9258ec](https://github.com/OHIF/Viewers/commit/d9258eca70587cf4dc18be4e56c79b16bae73d6d))
 
 
 
@@ -6092,7 +7151,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.1](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.0...v3.8.0-beta.1) (2023-10-19)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **calibration:** No calibration popup caused by perhaps an unused code optimization for production builds ([#3736](https://github.com/OHIF/Viewers/issues/3736)) ([93d798d](https://github.com/OHIF/Viewers/commit/93d798db99c0dee53ef73c376f8a74ac3049cf3f))
 
 
 
@@ -6100,7 +7162,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.8.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.110...v3.8.0-beta.0) (2023-10-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6108,7 +7170,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.110](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.109...v3.7.0-beta.110) (2023-10-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **display messages:** broken after timings ([#3719](https://github.com/OHIF/Viewers/issues/3719)) ([157b88c](https://github.com/OHIF/Viewers/commit/157b88c909d3289cb89ace731c1f9a19d40797ac))
 
 
 
@@ -6116,7 +7181,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.109](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.108...v3.7.0-beta.109) (2023-10-11)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **export:** wrong export for the tmtv RT function ([#3715](https://github.com/OHIF/Viewers/issues/3715)) ([a3f2a1a](https://github.com/OHIF/Viewers/commit/a3f2a1a7b0d16bfcc0ecddc2ab731e54c5e377c8))
 
 
 
@@ -6124,7 +7192,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.108](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.107...v3.7.0-beta.108) (2023-10-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **i18n:** display set(s) are two words for English messages ([#3711](https://github.com/OHIF/Viewers/issues/3711)) ([c3a5847](https://github.com/OHIF/Viewers/commit/c3a5847dcd3dce4f1c8d8b11af95f79e3f93f70d))
 
 
 
@@ -6143,7 +7214,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.106](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.105...v3.7.0-beta.106) (2023-10-10)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:**  Various fixes for segmentation mode and other ([#3709](https://github.com/OHIF/Viewers/issues/3709)) ([a9a6ad5](https://github.com/OHIF/Viewers/commit/a9a6ad50eae67b43b8b34efc07182d788cacdcfe))
 
 
 
@@ -6173,7 +7247,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.103](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.102...v3.7.0-beta.103) (2023-10-09)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation:** do not use SAB if not specified ([#3705](https://github.com/OHIF/Viewers/issues/3705)) ([4911e47](https://github.com/OHIF/Viewers/commit/4911e4796cef5e22cb7cc0ca73dc5c956bc75339))
 
 
 
@@ -6203,7 +7280,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.100](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.99...v3.7.0-beta.100) (2023-10-06)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **segmentation scroll:** and hydration bugs ([#3701](https://github.com/OHIF/Viewers/issues/3701)) ([1fd98d9](https://github.com/OHIF/Viewers/commit/1fd98d922094d10fe0c6e9df726314ec9fce49e8))
 
 
 
@@ -6222,7 +7302,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.98](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.97...v3.7.0-beta.98) (2023-10-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **locale:** add German translations - community PR ([#3697](https://github.com/OHIF/Viewers/issues/3697)) ([ebe8f71](https://github.com/OHIF/Viewers/commit/ebe8f71da22c1d24b58f889c5d803951e19817b6))
 
 
 
@@ -6230,7 +7313,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.97](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.96...v3.7.0-beta.97) (2023-10-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **locale:** Added Turkish language support (tr-TR) - Community PR ([#3695](https://github.com/OHIF/Viewers/issues/3695)) ([745050a](https://github.com/OHIF/Viewers/commit/745050a28ec7c2ef2e9a4d4e590040050b2177b2))
 
 
 
@@ -6238,7 +7324,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.96](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.95...v3.7.0-beta.96) (2023-10-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **translation:** Side panel translate fix ([#3156](https://github.com/OHIF/Viewers/issues/3156)) ([29748d4](https://github.com/OHIF/Viewers/commit/29748d46a14d23817dbe196e0f64363fc61a8aed))
 
 
 
@@ -6246,7 +7335,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.95](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.94...v3.7.0-beta.95) (2023-10-04)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cli:** Add npm packaged mode not working ([#3689](https://github.com/OHIF/Viewers/issues/3689)) ([28cec04](https://github.com/OHIF/Viewers/commit/28cec04ff43b81e218c3e9addef4665b3833a6fe))
 
 
 
@@ -6265,7 +7357,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.93](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.92...v3.7.0-beta.93) (2023-10-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Features
+
+* **displayArea:** add display area to hanging protocol ([#3691](https://github.com/OHIF/Viewers/issues/3691)) ([5e7fe91](https://github.com/OHIF/Viewers/commit/5e7fe91617d7399f85702d82e7bfa028b8010a89))
 
 
 
@@ -6273,7 +7368,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.92](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.91...v3.7.0-beta.92) (2023-10-03)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6292,7 +7387,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.90](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.89...v3.7.0-beta.90) (2023-10-03)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **typescript error:** Change pubSubServiceInterface file type to typescript ([#3546](https://github.com/OHIF/Viewers/issues/3546)) ([eb22328](https://github.com/OHIF/Viewers/commit/eb22328fc05d06fc4411805e7a30f826659d796a))
 
 
 
@@ -6303,6 +7401,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
+* **dicom overlay:** Handle special cases of ArrayBuffer for various DICOM overlay attributes. ([#3684](https://github.com/OHIF/Viewers/issues/3684)) ([e36a604](https://github.com/OHIF/Viewers/commit/e36a6043315e900eeb6ce183772c7f852f478e96))
 * **StackSync:** Miscellaneous fixes for stack image sync ([#3663](https://github.com/OHIF/Viewers/issues/3663)) ([8a335bd](https://github.com/OHIF/Viewers/commit/8a335bd03d14ba87d65d7468d93f74040aa828d9))
 
 
@@ -6322,7 +7421,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.87](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.86...v3.7.0-beta.87) (2023-09-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **no sab:** should work when shared array buffer is not required ([#3686](https://github.com/OHIF/Viewers/issues/3686)) ([a67d72d](https://github.com/OHIF/Viewers/commit/a67d72de85238b369a18c010bf6d147daefc6df5))
 
 
 
@@ -6330,7 +7432,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.86](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.85...v3.7.0-beta.86) (2023-09-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **cli:** various fixes for adding custom modes and extensions ([#3683](https://github.com/OHIF/Viewers/issues/3683)) ([dc73b18](https://github.com/OHIF/Viewers/commit/dc73b187484da029a2664bb1302f30137c973b8c))
 
 
 
@@ -6338,7 +7443,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.85](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.84...v3.7.0-beta.85) (2023-09-26)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **toggleOneUp:** fixed one up for main tmtv layout ([#3677](https://github.com/OHIF/Viewers/issues/3677)) ([86f54d0](https://github.com/OHIF/Viewers/commit/86f54d0d07042750a863ae876aa8dd5fb16029a5))
 
 
 
@@ -6346,7 +7454,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.84](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.83...v3.7.0-beta.84) (2023-09-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6354,7 +7462,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.83](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.82...v3.7.0-beta.83) (2023-09-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6362,7 +7470,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.82](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.81...v3.7.0-beta.82) (2023-09-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6370,7 +7478,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.81](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.80...v3.7.0-beta.81) (2023-09-26)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6406,7 +7514,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.78](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.77...v3.7.0-beta.78) (2023-09-21)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **mpr:** Return the original/raw hanging protocol when fetching and preserving the current active protocol. ([#3670](https://github.com/OHIF/Viewers/issues/3670)) ([221dedd](https://github.com/OHIF/Viewers/commit/221dedde5dd4df086276406a9fa2da1cc23b4eb1))
 
 
 
@@ -6414,7 +7525,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.77](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.76...v3.7.0-beta.77) (2023-09-21)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6433,7 +7544,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.75](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.74...v3.7.0-beta.75) (2023-09-18)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **DicomJson:** retrieve.series.metadata method should be async ([#3659](https://github.com/OHIF/Viewers/issues/3659)) ([2737903](https://github.com/OHIF/Viewers/commit/2737903386cf97399473e0fa64fe53ad14da155a))
 
 
 
@@ -6441,7 +7555,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.74](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.73...v3.7.0-beta.74) (2023-09-15)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **measurements:** Update the calibration tool to match changes in CS3D ([#3505](https://github.com/OHIF/Viewers/issues/3505)) ([38af311](https://github.com/OHIF/Viewers/commit/38af3112ec1f94f36c0ef64ff1cf9d21c0981c81))
 
 
 
@@ -6460,7 +7577,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.72](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.71...v3.7.0-beta.72) (2023-09-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6468,7 +7585,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.71](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.70...v3.7.0-beta.71) (2023-09-12)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **suv:** import calculate-suv library version that prevents SUV calculation for a zero PatientWeight ([#3638](https://github.com/OHIF/Viewers/issues/3638)) ([0d10f46](https://github.com/OHIF/Viewers/commit/0d10f46b885fe54ec3dae1848134da658eb6280a))
 
 
 
@@ -6476,7 +7596,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.70](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.69...v3.7.0-beta.70) (2023-09-12)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6484,7 +7604,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.69](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.68...v3.7.0-beta.69) (2023-09-11)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6492,7 +7612,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.68](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.67...v3.7.0-beta.68) (2023-09-11)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6511,7 +7631,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.66](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.65...v3.7.0-beta.66) (2023-09-06)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6574,7 +7694,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.60](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.59...v3.7.0-beta.60) (2023-08-29)
 
-**Note:** Version bump only for package @ohif/app
+
+### Bug Fixes
+
+* **PT Metadata:** Allow for PatientWeight to be missing from the metadata ([#3621](https://github.com/OHIF/Viewers/issues/3621)) ([44f101d](https://github.com/OHIF/Viewers/commit/44f101d3f2b3204b67e31f4e4939062e65a246ee))
 
 
 
@@ -6582,7 +7705,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.7.0-beta.59](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.58...v3.7.0-beta.59) (2023-08-29)
 
-**Note:** Version bump only for package @ohif/app
+**Note:** Version bump only for package ohif-monorepo-root
 
 
 
@@ -6605,1928 +7728,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * **memory leak:** array buffer was sticking around in volume viewports ([#3611](https://github.com/OHIF/Viewers/issues/3611)) ([65b49ae](https://github.com/OHIF/Viewers/commit/65b49aeb1b5f38224e4892bdf32453500ee351f8))
-
-
-
-
-
-# [4.0.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.11...@ohif/viewer@4.0.0) (2020-05-14)
-
-
-### Bug Fixes
-
-* 🐛 Fix race condition when loading derived display sets ([#1718](https://github.com/OHIF/Viewers/issues/1718)) ([b1678ce](https://github.com/OHIF/Viewers/commit/b1678ce6399dde37a9878f45ccc7c63286d93fab)), closes [#1715](https://github.com/OHIF/Viewers/issues/1715)
-
-
-### BREAKING CHANGES
-
-* 🧨 However we start to load once the first set of metadata arrives. We need
-to wait until all series metadata is fetched.
-
-
-
-
-
-## [3.11.11](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.10...@ohif/viewer@3.11.11) (2020-05-14)
-
-
-### Bug Fixes
-
-* 🐛 Load default display set when no time metadata ([#1684](https://github.com/OHIF/Viewers/issues/1684)) ([f7b8b6a](https://github.com/OHIF/Viewers/commit/f7b8b6a41c4626084ef56b0fdf7363e914b143c4)), closes [#1683](https://github.com/OHIF/Viewers/issues/1683)
-
-
-
-
-
-## [3.11.10](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.9...@ohif/viewer@3.11.10) (2020-05-13)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.11.9](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.8...@ohif/viewer@3.11.9) (2020-05-12)
-
-
-### Bug Fixes
-
-* 🐛 Fix seg color load ([#1724](https://github.com/OHIF/Viewers/issues/1724)) ([c4f84b1](https://github.com/OHIF/Viewers/commit/c4f84b1174d04ba84d37ed89b6d7ab541be28181))
-
-
-
-
-
-## [3.11.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.7...@ohif/viewer@3.11.8) (2020-05-06)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.11.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.6...@ohif/viewer@3.11.7) (2020-05-04)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.11.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.5...@ohif/viewer@3.11.6) (2020-05-04)
-
-
-### Bug Fixes
-
-* 🐛 Proper error handling for derived display sets ([#1708](https://github.com/OHIF/Viewers/issues/1708)) ([5b20d8f](https://github.com/OHIF/Viewers/commit/5b20d8f323e4b3ef9988f2f2ab672d697b6da409))
-
-
-
-
-
-## [3.11.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.4...@ohif/viewer@3.11.5) (2020-05-04)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.11.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.3...@ohif/viewer@3.11.4) (2020-05-04)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.11.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.2...@ohif/viewer@3.11.3) (2020-04-29)
-
-
-### Bug Fixes
-
-* Add IHEInvokeImageDisplay routes back into viewer ([#1695](https://github.com/OHIF/Viewers/issues/1695)) ([f7162ce](https://github.com/OHIF/Viewers/commit/f7162ce61708776a6c192732b0904a022bcc6b3a))
-
-
-
-
-
-## [3.11.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.1...@ohif/viewer@3.11.2) (2020-04-28)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.11.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.11.0...@ohif/viewer@3.11.1) (2020-04-27)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.11.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.10.2...@ohif/viewer@3.11.0) (2020-04-24)
-
-
-### Features
-
-* 🎸 Seg jump to slice + show/hide ([835f64d](https://github.com/OHIF/Viewers/commit/835f64d47a9994f6a25aaf3941a4974e215e7e7f))
-
-
-
-
-
-## [3.10.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.10.1...@ohif/viewer@3.10.2) (2020-04-23)
-
-
-### Bug Fixes
-
-* undefined `errorHandler` in cornerstoneWadoImageLoader configuration ([#1664](https://github.com/OHIF/Viewers/issues/1664)) ([709f147](https://github.com/OHIF/Viewers/commit/709f14708e2b0f912b5ea509114acd87af3149cb))
-
-
-
-
-
-## [3.10.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.10.0...@ohif/viewer@3.10.1) (2020-04-23)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.10.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.9.2...@ohif/viewer@3.10.0) (2020-04-23)
-
-
-### Features
-
-* configuration to hook into XHR Error handling ([e96205d](https://github.com/OHIF/Viewers/commit/e96205de35e5bec14dc8a9a8509db3dd4e6ecdb6))
-
-
-
-
-
-## [3.9.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.9.1...@ohif/viewer@3.9.2) (2020-04-22)
-
-
-### Bug Fixes
-
-* whiteLabeling should support component creation by passing React to defined fn ([#1659](https://github.com/OHIF/Viewers/issues/1659)) ([2093a00](https://github.com/OHIF/Viewers/commit/2093a0036584b2cc698c8f06fe62b334523b1029))
-
-
-
-
-
-## [3.9.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.9.0...@ohif/viewer@3.9.1) (2020-04-17)
-
-
-### Bug Fixes
-
-* `showStudyList` config ([#1647](https://github.com/OHIF/Viewers/issues/1647)) ([d9fc7bb](https://github.com/OHIF/Viewers/commit/d9fc7bbb0e6d868f507c515f031aaf88a2353e2f))
-
-
-
-
-
-# [3.9.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.21...@ohif/viewer@3.9.0) (2020-04-17)
-
-
-### Features
-
-* set the authorization header for DICOMWeb requests if provided in query string ([#1646](https://github.com/OHIF/Viewers/issues/1646)) ([450c80b](https://github.com/OHIF/Viewers/commit/450c80b9d5f172be8b5713b422370360325a0afc))
-
-
-
-
-
-## [3.8.21](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.20...@ohif/viewer@3.8.21) (2020-04-15)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.20](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.19...@ohif/viewer@3.8.20) (2020-04-09)
-
-
-### Bug Fixes
-
-* Revert "refactor: Reduce bundle size ([#1575](https://github.com/OHIF/Viewers/issues/1575))" ([#1622](https://github.com/OHIF/Viewers/issues/1622)) ([d21af3f](https://github.com/OHIF/Viewers/commit/d21af3f133492fa31492413b8782936c9ff18b44))
-
-
-
-
-
-## [3.8.19](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.18...@ohif/viewer@3.8.19) (2020-04-09)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [3.8.18](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.17...@ohif/viewer@3.8.18) (2020-04-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.17](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.16...@ohif/viewer@3.8.17) (2020-04-06)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.16](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.15...@ohif/viewer@3.8.16) (2020-04-02)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.15](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.14...@ohif/viewer@3.8.15) (2020-04-02)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.14](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.13...@ohif/viewer@3.8.14) (2020-04-02)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.13](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.12...@ohif/viewer@3.8.13) (2020-04-01)
-
-
-### Bug Fixes
-
-* segmentation not loading ([#1566](https://github.com/OHIF/Viewers/issues/1566)) ([4a7ce1c](https://github.com/OHIF/Viewers/commit/4a7ce1c09324d74c61048393e3a2427757e4001a))
-
-
-
-
-
-## [3.8.12](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.11...@ohif/viewer@3.8.12) (2020-03-31)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.11](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.10...@ohif/viewer@3.8.11) (2020-03-26)
-
-
-### Bug Fixes
-
-* [#1312](https://github.com/OHIF/Viewers/issues/1312) Cine dialog remains on screen ([#1540](https://github.com/OHIF/Viewers/issues/1540)) ([7d22bb7](https://github.com/OHIF/Viewers/commit/7d22bb7d5a8590cffc169725c93942f758fe13a0))
-
-
-
-
-
-## [3.8.10](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.9...@ohif/viewer@3.8.10) (2020-03-26)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.9](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.8...@ohif/viewer@3.8.9) (2020-03-25)
-
-
-### Bug Fixes
-
-* Load measurement in active viewport. ([#1558](https://github.com/OHIF/Viewers/issues/1558)) ([99022f2](https://github.com/OHIF/Viewers/commit/99022f2bac752f3cd1cedb61e222b8d411e158c8))
-
-
-
-
-
-## [3.8.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.7...@ohif/viewer@3.8.8) (2020-03-25)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.6...@ohif/viewer@3.8.7) (2020-03-24)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.5...@ohif/viewer@3.8.6) (2020-03-24)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.4...@ohif/viewer@3.8.5) (2020-03-23)
-
-
-### Bug Fixes
-
-* avoid-wasteful-renders ([#1544](https://github.com/OHIF/Viewers/issues/1544)) ([e41d339](https://github.com/OHIF/Viewers/commit/e41d339f5faef6b93700bc860f37f29f32ad5ed6))
-
-
-
-
-
-## [3.8.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.3...@ohif/viewer@3.8.4) (2020-03-19)
-
-
-### Bug Fixes
-
-* Only permit web workers to be initialized once. ([#1535](https://github.com/OHIF/Viewers/issues/1535)) ([9feadd3](https://github.com/OHIF/Viewers/commit/9feadd3c6d71c1c48f7825d024ccf95d5d82606d))
-
-
-
-
-
-## [3.8.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.2...@ohif/viewer@3.8.3) (2020-03-17)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.1...@ohif/viewer@3.8.2) (2020-03-17)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.8.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.8.0...@ohif/viewer@3.8.1) (2020-03-17)
-
-
-### Bug Fixes
-
-* resolves [#1483](https://github.com/OHIF/Viewers/issues/1483) ([#1527](https://github.com/OHIF/Viewers/issues/1527)) ([2747eff](https://github.com/OHIF/Viewers/commit/2747effd9e893bd78b80ee7d0444f44676e9d632))
-
-
-
-
-
-# [3.8.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.8...@ohif/viewer@3.8.0) (2020-03-13)
-
-
-### Features
-
-* Segmentations Settings UI - Phase 1 [#1391](https://github.com/OHIF/Viewers/issues/1391) ([#1392](https://github.com/OHIF/Viewers/issues/1392)) ([e8842cf](https://github.com/OHIF/Viewers/commit/e8842cf8aebde98db7fc123e4867c8288552331f)), closes [#1423](https://github.com/OHIF/Viewers/issues/1423)
-
-
-
-
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [3.7.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.7...@ohif/viewer@3.7.8) (2020-03-09)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.7.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.6...@ohif/viewer@3.7.7) (2020-03-09)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.7.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.5...@ohif/viewer@3.7.6) (2020-03-06)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.7.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.4...@ohif/viewer@3.7.5) (2020-03-05)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.7.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.3...@ohif/viewer@3.7.4) (2020-03-03)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.7.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.2...@ohif/viewer@3.7.3) (2020-03-02)
-
-
-### Bug Fixes
-
-* GCloud dataset picker dialog broken ([#1453](https://github.com/OHIF/Viewers/issues/1453)) ([64dfbea](https://github.com/OHIF/Viewers/commit/64dfbeab7af98277efefadd334df14db79e32a4f))
-
-
-
-
-
-## [3.7.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.1...@ohif/viewer@3.7.2) (2020-02-29)
-
-
-### Bug Fixes
-
-* prevent the native context menu from appearing when right-clicking on a measurement or angle (https://github.com/OHIF/Viewers/issues/1406) ([#1469](https://github.com/OHIF/Viewers/issues/1469)) ([9b3be9b](https://github.com/OHIF/Viewers/commit/9b3be9b0c082c9a5b62f2a40f42e59381860fe73))
-
-
-
-
-
-## [3.7.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.7.0...@ohif/viewer@3.7.1) (2020-02-21)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.7.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.6.3...@ohif/viewer@3.7.0) (2020-02-20)
-
-
-### Features
-
-* [#1342](https://github.com/OHIF/Viewers/issues/1342) - Window level tab ([#1429](https://github.com/OHIF/Viewers/issues/1429)) ([ebc01a8](https://github.com/OHIF/Viewers/commit/ebc01a8ca238d5a3437b44d81f75aa8a5e8d0574))
-
-
-
-
-
-## [3.6.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.6.2...@ohif/viewer@3.6.3) (2020-02-14)
-
-
-### Bug Fixes
-
-* Creating 2 commands to activate zoom tool and also to move between displaySets ([#1446](https://github.com/OHIF/Viewers/issues/1446)) ([06a4af0](https://github.com/OHIF/Viewers/commit/06a4af06faaecf6fa06ccd90cdfa879ee8d53053))
-
-
-
-
-
-## [3.6.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.6.1...@ohif/viewer@3.6.2) (2020-02-12)
-
-
-### Bug Fixes
-
-* Combined Hotkeys for special characters ([#1233](https://github.com/OHIF/Viewers/issues/1233)) ([2f30e7a](https://github.com/OHIF/Viewers/commit/2f30e7a821a238144c49c56f37d8e5565540b4bd))
-
-
-
-
-
-## [3.6.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.6.0...@ohif/viewer@3.6.1) (2020-02-10)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.6.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.5.1...@ohif/viewer@3.6.0) (2020-02-10)
-
-
-### Features
-
-* 🎸 MeasurementService ([#1314](https://github.com/OHIF/Viewers/issues/1314)) ([0c37a40](https://github.com/OHIF/Viewers/commit/0c37a406d963569af8c3be24c697dafd42712dfc))
-
-
-
-
-
-## [3.5.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.5.0...@ohif/viewer@3.5.1) (2020-02-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.5.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.14...@ohif/viewer@3.5.0) (2020-02-06)
-
-
-### Features
-
-* lesion-tracker extension ([#1420](https://github.com/OHIF/Viewers/issues/1420)) ([73e4409](https://github.com/OHIF/Viewers/commit/73e440968ce4699d081a9c9f2d21dd68095b3056))
-
-
-
-
-
-## [3.4.14](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.13...@ohif/viewer@3.4.14) (2020-02-06)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.13](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.12...@ohif/viewer@3.4.13) (2020-01-30)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.12](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.11...@ohif/viewer@3.4.12) (2020-01-30)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.11](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.10...@ohif/viewer@3.4.11) (2020-01-30)
-
-
-### Bug Fixes
-
-* download tool fixes & improvements ([#1235](https://github.com/OHIF/Viewers/issues/1235)) ([b9574b6](https://github.com/OHIF/Viewers/commit/b9574b6efcfeb85cde35b5cae63282f8e1b35be6))
-
-
-
-
-
-## [3.4.10](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.9...@ohif/viewer@3.4.10) (2020-01-28)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.9](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.8...@ohif/viewer@3.4.9) (2020-01-28)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.7...@ohif/viewer@3.4.8) (2020-01-28)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.6...@ohif/viewer@3.4.7) (2020-01-28)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.5...@ohif/viewer@3.4.6) (2020-01-28)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.4...@ohif/viewer@3.4.5) (2020-01-27)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.3...@ohif/viewer@3.4.4) (2020-01-27)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.2...@ohif/viewer@3.4.3) (2020-01-24)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.1...@ohif/viewer@3.4.2) (2020-01-17)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.4.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.4.0...@ohif/viewer@3.4.1) (2020-01-15)
-
-
-### Bug Fixes
-
-* 🐛 Metadata is being mistakenly purged ([#1360](https://github.com/OHIF/Viewers/issues/1360)) ([b9a66d4](https://github.com/OHIF/Viewers/commit/b9a66d44241f2896ef184511287fb4984671e16d)), closes [#1326](https://github.com/OHIF/Viewers/issues/1326)
-
-
-
-
-
-# [3.4.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.8...@ohif/viewer@3.4.0) (2020-01-14)
-
-
-### Features
-
-* Custom Healthcare API endpoint ([#1367](https://github.com/OHIF/Viewers/issues/1367)) ([a5d6bc6](https://github.com/OHIF/Viewers/commit/a5d6bc6a51784ed3a8a40d4ae773de9099f116b9))
-
-
-
-
-
-## [3.3.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.7...@ohif/viewer@3.3.8) (2020-01-10)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.3.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.6...@ohif/viewer@3.3.7) (2020-01-08)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.3.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.5...@ohif/viewer@3.3.6) (2020-01-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.3.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.4...@ohif/viewer@3.3.5) (2020-01-06)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.3.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.3...@ohif/viewer@3.3.4) (2019-12-30)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.3.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.2...@ohif/viewer@3.3.3) (2019-12-20)
-
-
-### Bug Fixes
-
-* 🐛 1241: Make Plugin switch part of ToolbarModule ([#1322](https://github.com/OHIF/Viewers/issues/1322)) ([6540e36](https://github.com/OHIF/Viewers/commit/6540e36818944ac2eccc696186366ae495b33a04)), closes [#1241](https://github.com/OHIF/Viewers/issues/1241)
-
-
-
-
-
-## [3.3.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.1...@ohif/viewer@3.3.2) (2019-12-20)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.3.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.3.0...@ohif/viewer@3.3.1) (2019-12-20)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.3.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.2.2...@ohif/viewer@3.3.0) (2019-12-20)
-
-
-### Features
-
-* 🎸 Configuration so viewer tools can nix handles ([#1304](https://github.com/OHIF/Viewers/issues/1304)) ([63594d3](https://github.com/OHIF/Viewers/commit/63594d36b0bdba59f0901095aed70b75fb05172d)), closes [#1223](https://github.com/OHIF/Viewers/issues/1223)
-
-
-
-
-
-## [3.2.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.2.1...@ohif/viewer@3.2.2) (2019-12-19)
-
-
-### Bug Fixes
-
-* 🐛 Fix drag-n-drop of local files into OHIF ([#1319](https://github.com/OHIF/Viewers/issues/1319)) ([23305ce](https://github.com/OHIF/Viewers/commit/23305cec9c0f514e73a8dd17f984ffc87ad8d131)), closes [#1307](https://github.com/OHIF/Viewers/issues/1307)
-
-
-
-
-
-## [3.2.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.2.0...@ohif/viewer@3.2.1) (2019-12-18)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.2.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.12...@ohif/viewer@3.2.0) (2019-12-16)
-
-
-### Features
-
-* 🎸 Expose extension config to modules ([#1279](https://github.com/OHIF/Viewers/issues/1279)) ([4ea239a](https://github.com/OHIF/Viewers/commit/4ea239a9535ef297e23387c186e537ab273744ea)), closes [#1268](https://github.com/OHIF/Viewers/issues/1268)
-
-
-
-
-
-## [3.1.12](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.11...@ohif/viewer@3.1.12) (2019-12-16)
-
-
-### Bug Fixes
-
-* 🐛 Dismiss all dialogs if leaving viewer route [#1242](https://github.com/OHIF/Viewers/issues/1242) ([#1301](https://github.com/OHIF/Viewers/issues/1301)) ([5c3d8b3](https://github.com/OHIF/Viewers/commit/5c3d8b37b6f723fbd8edcc447c37984e7eee8d40))
-
-
-
-
-
-## [3.1.11](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.10...@ohif/viewer@3.1.11) (2019-12-16)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.10](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.9...@ohif/viewer@3.1.10) (2019-12-16)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.9](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.8...@ohif/viewer@3.1.9) (2019-12-16)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.7...@ohif/viewer@3.1.8) (2019-12-16)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.6...@ohif/viewer@3.1.7) (2019-12-13)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.5...@ohif/viewer@3.1.6) (2019-12-13)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.4...@ohif/viewer@3.1.5) (2019-12-13)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.3...@ohif/viewer@3.1.4) (2019-12-13)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.2...@ohif/viewer@3.1.3) (2019-12-12)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.1...@ohif/viewer@3.1.2) (2019-12-12)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.1.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.1.0...@ohif/viewer@3.1.1) (2019-12-11)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.1.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.0.3...@ohif/viewer@3.1.0) (2019-12-11)
-
-
-### Features
-
-* 🎸 DICOM SR STOW on MeasurementAPI ([#954](https://github.com/OHIF/Viewers/issues/954)) ([ebe1af8](https://github.com/OHIF/Viewers/commit/ebe1af8d4f75d2483eba869655906d7829bd9666)), closes [#758](https://github.com/OHIF/Viewers/issues/758)
-
-
-
-
-
-## [3.0.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.0.2...@ohif/viewer@3.0.3) (2019-12-11)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.0.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.0.1...@ohif/viewer@3.0.2) (2019-12-11)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [3.0.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@3.0.0...@ohif/viewer@3.0.1) (2019-12-09)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [3.0.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.8...@ohif/viewer@3.0.0) (2019-12-09)
-
-
-* feat!: Ability to configure cornerstone tools via extension configuration (#1229) ([55a5806](https://github.com/OHIF/Viewers/commit/55a580659ecb74ca6433461d8f9a05c2a2b69533)), closes [#1229](https://github.com/OHIF/Viewers/issues/1229)
-
-
-### BREAKING CHANGES
-
-* modifies the exposed react <App /> components props. The contract for providing configuration for the app has changed. Please reference updated documentation for guidance.
-
-
-
-
-
-## [2.11.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.7...@ohif/viewer@2.11.8) (2019-12-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [2.11.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.6...@ohif/viewer@2.11.7) (2019-12-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [2.11.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.5...@ohif/viewer@2.11.6) (2019-12-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [2.11.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.4...@ohif/viewer@2.11.5) (2019-12-06)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [2.11.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.3...@ohif/viewer@2.11.4) (2019-12-02)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [2.11.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.2...@ohif/viewer@2.11.3) (2019-12-02)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [2.11.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.1...@ohif/viewer@2.11.2) (2019-11-28)
-
-
-### Bug Fixes
-
-* User Preferences Issues ([#1207](https://github.com/OHIF/Viewers/issues/1207)) ([1df21a9](https://github.com/OHIF/Viewers/commit/1df21a9e075b5e6dfc10a429ae825826f46c71b8)), closes [#1161](https://github.com/OHIF/Viewers/issues/1161) [#1164](https://github.com/OHIF/Viewers/issues/1164) [#1177](https://github.com/OHIF/Viewers/issues/1177) [#1179](https://github.com/OHIF/Viewers/issues/1179) [#1180](https://github.com/OHIF/Viewers/issues/1180) [#1181](https://github.com/OHIF/Viewers/issues/1181) [#1182](https://github.com/OHIF/Viewers/issues/1182) [#1183](https://github.com/OHIF/Viewers/issues/1183) [#1184](https://github.com/OHIF/Viewers/issues/1184) [#1185](https://github.com/OHIF/Viewers/issues/1185)
-
-
-
-
-
-## [2.11.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.11.0...@ohif/viewer@2.11.1) (2019-11-27)
-
-
-### Bug Fixes
-
-* of undefined name of project ([#1231](https://github.com/OHIF/Viewers/issues/1231)) ([e34a057](https://github.com/OHIF/Viewers/commit/e34a05726319e3e70279c43d5bf976d33cdf71f7))
-
-
-
-
-
-# [2.11.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.10.2...@ohif/viewer@2.11.0) (2019-11-25)
-
-
-### Features
-
-* Add new annotate tool using new dialog service ([#1211](https://github.com/OHIF/Viewers/issues/1211)) ([8fd3af1](https://github.com/OHIF/Viewers/commit/8fd3af1e137e793f1b482760a22591c64a072047))
-
-
-
-
-
-## [2.10.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.10.1...@ohif/viewer@2.10.2) (2019-11-25)
-
-
-### Bug Fixes
-
-* Issue branch from danny experimental changes pr 1128 ([#1150](https://github.com/OHIF/Viewers/issues/1150)) ([a870b3c](https://github.com/OHIF/Viewers/commit/a870b3cc6056cf824af422e46f1ad674910b534e)), closes [#1161](https://github.com/OHIF/Viewers/issues/1161) [#1164](https://github.com/OHIF/Viewers/issues/1164) [#1177](https://github.com/OHIF/Viewers/issues/1177) [#1179](https://github.com/OHIF/Viewers/issues/1179) [#1180](https://github.com/OHIF/Viewers/issues/1180) [#1181](https://github.com/OHIF/Viewers/issues/1181) [#1182](https://github.com/OHIF/Viewers/issues/1182) [#1183](https://github.com/OHIF/Viewers/issues/1183) [#1184](https://github.com/OHIF/Viewers/issues/1184) [#1185](https://github.com/OHIF/Viewers/issues/1185)
-
-
-
-
-
-## [2.10.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.10.0...@ohif/viewer@2.10.1) (2019-11-20)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-# [2.10.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.9.0...@ohif/viewer@2.10.0) (2019-11-19)
-
-
-### Features
-
-* New dialog service ([#1202](https://github.com/OHIF/Viewers/issues/1202)) ([f65639c](https://github.com/OHIF/Viewers/commit/f65639c2b0dab01decd20cab2cef4263cb4fab37))
-
-
-
-
-
-# [2.9.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.8.5...@ohif/viewer@2.9.0) (2019-11-19)
-
-
-### Features
-
-* Issue 879 viewer route query param not filtering but promoting ([#1141](https://github.com/OHIF/Viewers/issues/1141)) ([b17f753](https://github.com/OHIF/Viewers/commit/b17f753e6222045252ef885e40233681541a32e1)), closes [#1118](https://github.com/OHIF/Viewers/issues/1118)
-
-
-
-
-
-## [2.8.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.8.4...@ohif/viewer@2.8.5) (2019-11-18)
-
-
-### Bug Fixes
-
-* minor date picker UX improvements ([813ee5e](https://github.com/OHIF/Viewers/commit/813ee5ed4d78b7bda234922d5f3389efe346451c))
-
-
-
-
-
-## [2.8.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.8.3...@ohif/viewer@2.8.4) (2019-11-15)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [2.8.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.8.2...@ohif/viewer@2.8.3) (2019-11-15)
-
-**Note:** Version bump only for package @ohif/viewer
-
-
-
-
-
-## [2.8.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.8.1...@ohif/viewer@2.8.2) (2019-11-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [2.8.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.8.0...@ohif/viewer@2.8.1) (2019-11-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [2.8.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.7.1...@ohif/viewer@2.8.0) (2019-11-13)
-
-### Features
-
-- expose UiNotifications service
-  ([#1172](https://github.com/OHIF/Viewers/issues/1172))
-  ([5c04e34](https://github.com/OHIF/Viewers/commit/5c04e34c8fb2394ab7acd9eb4f2ab12afeb2f255))
-- filter field for google api windows
-  ([#1170](https://github.com/OHIF/Viewers/issues/1170))
-  ([c59c5b3](https://github.com/OHIF/Viewers/commit/c59c5b3f14d44f1c06aa396125a1f4caaa431c25))
-
-## [2.7.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.7.0...@ohif/viewer@2.7.1) (2019-11-12)
-
-### Bug Fixes
-
-- 🐛 Fix for JS breaking on header
-  ([#1164](https://github.com/OHIF/Viewers/issues/1164))
-  ([0fbaf95](https://github.com/OHIF/Viewers/commit/0fbaf95971dc0b3a671e1f586a876d9019e860ed))
-
-# [2.7.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.6.4...@ohif/viewer@2.7.0) (2019-11-12)
-
-### Features
-
-- 🎸 Update hotkeys and user preferences modal
-  ([#1135](https://github.com/OHIF/Viewers/issues/1135))
-  ([e62f5f8](https://github.com/OHIF/Viewers/commit/e62f5f8dd28ab363f23671cd21cee115abb870ff)),
-  closes [#923](https://github.com/OHIF/Viewers/issues/923)
-
-## [2.6.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.6.3...@ohif/viewer@2.6.4) (2019-11-11)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [2.6.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.6.2...@ohif/viewer@2.6.3) (2019-11-08)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [2.6.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.6.1...@ohif/viewer@2.6.2) (2019-11-08)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [2.6.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.6.0...@ohif/viewer@2.6.1) (2019-11-06)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [2.6.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.5.0...@ohif/viewer@2.6.0) (2019-11-06)
-
-### Features
-
-- modal provider ([#1151](https://github.com/OHIF/Viewers/issues/1151))
-  ([75d88bc](https://github.com/OHIF/Viewers/commit/75d88bc454710d2dcdbc7d68c4d9df041159c840)),
-  closes [#1086](https://github.com/OHIF/Viewers/issues/1086)
-  [#1116](https://github.com/OHIF/Viewers/issues/1116)
-  [#1116](https://github.com/OHIF/Viewers/issues/1116)
-  [#1146](https://github.com/OHIF/Viewers/issues/1146)
-  [#1142](https://github.com/OHIF/Viewers/issues/1142)
-  [#1143](https://github.com/OHIF/Viewers/issues/1143)
-  [#1110](https://github.com/OHIF/Viewers/issues/1110)
-  [#1086](https://github.com/OHIF/Viewers/issues/1086)
-  [#1116](https://github.com/OHIF/Viewers/issues/1116)
-  [#1119](https://github.com/OHIF/Viewers/issues/1119)
-
-# [2.5.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.4.1...@ohif/viewer@2.5.0) (2019-11-05)
-
-### Features
-
-- 🎸 Filter by url query param for seriesInstnaceUID
-  ([#1117](https://github.com/OHIF/Viewers/issues/1117))
-  ([e208f2e](https://github.com/OHIF/Viewers/commit/e208f2e6a9c49b16dadead0a917f657cf023929a)),
-  closes [#1118](https://github.com/OHIF/Viewers/issues/1118)
-
-## [2.4.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.4.0...@ohif/viewer@2.4.1) (2019-11-05)
-
-### Bug Fixes
-
-- [#1075](https://github.com/OHIF/Viewers/issues/1075) Returning to the Study
-  List before all series have finishe…
-  ([#1090](https://github.com/OHIF/Viewers/issues/1090))
-  ([ecaf578](https://github.com/OHIF/Viewers/commit/ecaf578f92dc40294cec7ff9b272fb432dec4125))
-
-# [2.4.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.8...@ohif/viewer@2.4.0) (2019-11-04)
-
-### Features
-
-- 🎸 New modal provider ([#1110](https://github.com/OHIF/Viewers/issues/1110))
-  ([5ee832b](https://github.com/OHIF/Viewers/commit/5ee832b19505a4e8e5756660ce6ed03a7f18dec3)),
-  closes [#1086](https://github.com/OHIF/Viewers/issues/1086)
-  [#1116](https://github.com/OHIF/Viewers/issues/1116)
-
-## [2.3.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.7...@ohif/viewer@2.3.8) (2019-11-04)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [2.3.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.6...@ohif/viewer@2.3.7) (2019-11-04)
-
-### Bug Fixes
-
-- 🐛 Minor issues measurement panel related to description
-  ([#1142](https://github.com/OHIF/Viewers/issues/1142))
-  ([681384b](https://github.com/OHIF/Viewers/commit/681384b7425c83b02a0ed83371ca92d78ca7838c))
-
-## [2.3.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.5...@ohif/viewer@2.3.6) (2019-11-02)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [2.3.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.4...@ohif/viewer@2.3.5) (2019-10-31)
-
-### Bug Fixes
-
-- application crash if patientName is an object
-  ([#1138](https://github.com/OHIF/Viewers/issues/1138))
-  ([64cf3b3](https://github.com/OHIF/Viewers/commit/64cf3b324da2383a927af1df2d46db2fca5318aa))
-
-## [2.3.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.3...@ohif/viewer@2.3.4) (2019-10-30)
-
-### Bug Fixes
-
-- 🐛 Fix ghost shadow on thumb
-  ([#1113](https://github.com/OHIF/Viewers/issues/1113))
-  ([caaa032](https://github.com/OHIF/Viewers/commit/caaa032c4bc24fd69fdb01a15a8feb2721c321db))
-
-## [2.3.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.2...@ohif/viewer@2.3.3) (2019-10-30)
-
-### Bug Fixes
-
-- get adapter store picker to show
-  ([#1134](https://github.com/OHIF/Viewers/issues/1134))
-  ([50ca2bd](https://github.com/OHIF/Viewers/commit/50ca2bde971e1e67b73ece96369052dd1a35ac68))
-
-## [2.3.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.1...@ohif/viewer@2.3.2) (2019-10-29)
-
-### Bug Fixes
-
-- 🐛 Limit image download size to avoid browser issues
-  ([#1112](https://github.com/OHIF/Viewers/issues/1112))
-  ([5716b71](https://github.com/OHIF/Viewers/commit/5716b71d409ee1c6f13393c8cb7f50222415e198)),
-  closes [#1099](https://github.com/OHIF/Viewers/issues/1099)
-
-## [2.3.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.3.0...@ohif/viewer@2.3.1) (2019-10-29)
-
-### Bug Fixes
-
-- rollbar template needs PUBLIC_URL defined
-  ([#1127](https://github.com/OHIF/Viewers/issues/1127))
-  ([352407c](https://github.com/OHIF/Viewers/commit/352407c71ae93946e9ebad41446d6086cfbc237b))
-
-# [2.3.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.2.2...@ohif/viewer@2.3.0) (2019-10-29)
-
-### Features
-
-- service worker ([#1045](https://github.com/OHIF/Viewers/issues/1045))
-  ([cf51368](https://github.com/OHIF/Viewers/commit/cf5136899eac08300ec4f15474a6440129ef7a9a))
-
-## [2.2.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.2.1...@ohif/viewer@2.2.2) (2019-10-29)
-
-### Bug Fixes
-
-- Set SR viewport as active by interaction
-  ([#1118](https://github.com/OHIF/Viewers/issues/1118))
-  ([5b33417](https://github.com/OHIF/Viewers/commit/5b334175c370afb930b4b6dbd307ddece8f850e3))
-
-## [2.2.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.2.0...@ohif/viewer@2.2.1) (2019-10-29)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [2.2.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.1.4...@ohif/viewer@2.2.0) (2019-10-28)
-
-### Features
-
-- responsive study list ([#1068](https://github.com/OHIF/Viewers/issues/1068))
-  ([2cdef4b](https://github.com/OHIF/Viewers/commit/2cdef4b9844cc2ce61e9ce76b5a942ba7051fe16))
-
-## [2.1.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.1.3...@ohif/viewer@2.1.4) (2019-10-28)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [2.1.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.1.2...@ohif/viewer@2.1.3) (2019-10-26)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [2.1.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.1.1...@ohif/viewer@2.1.2) (2019-10-26)
-
-### Bug Fixes
-
-- update script-tag output to include config from default.js
-  ([c522ff3](https://github.com/OHIF/Viewers/commit/c522ff3ddab7ed8e3a128dd6edd2cd6902226e99))
-
-## [2.1.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.1.0...@ohif/viewer@2.1.1) (2019-10-26)
-
-### Bug Fixes
-
-- 🐛 JSON launch not working properly
-  ([#1089](https://github.com/OHIF/Viewers/issues/1089))
-  ([#1093](https://github.com/OHIF/Viewers/issues/1093))
-  ([2677170](https://github.com/OHIF/Viewers/commit/2677170d67659ee178cf77307414d54cfe9cb563))
-
-# [2.1.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@2.0.0...@ohif/viewer@2.1.0) (2019-10-26)
-
-### Features
-
-- Snapshot Download Tool ([#840](https://github.com/OHIF/Viewers/issues/840))
-  ([450e098](https://github.com/OHIF/Viewers/commit/450e0981a5ba054fcfcb85eeaeb18371af9088f8))
-
-# [2.0.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.12.2...@ohif/viewer@2.0.0) (2019-10-26)
-
-### Bug Fixes
-
-- 🐛 Desc of meas.table not being updated on properly
-  ([#1094](https://github.com/OHIF/Viewers/issues/1094))
-  ([85f836c](https://github.com/OHIF/Viewers/commit/85f836cd918614be722fce1bff2373460ec4900b)),
-  closes [#1013](https://github.com/OHIF/Viewers/issues/1013)
-
-### BREAKING CHANGES
-
-- 1013
-
-## [1.12.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.12.1...@ohif/viewer@1.12.2) (2019-10-25)
-
-### Bug Fixes
-
-- set SR in ActiveViewport by clicking thumb
-  ([#1091](https://github.com/OHIF/Viewers/issues/1091))
-  ([986b7ae](https://github.com/OHIF/Viewers/commit/986b7ae2bf4f7d27f326e62f93285ce20eaf0a79))
-
-## [1.12.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.12.0...@ohif/viewer@1.12.1) (2019-10-25)
-
-### Bug Fixes
-
-- 🐛 Orthographic MPR fix ([#1092](https://github.com/OHIF/Viewers/issues/1092))
-  ([460e375](https://github.com/OHIF/Viewers/commit/460e375f0aa75d35f7a46b4d48e6cc706019956d))
-
-# [1.12.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.11.5...@ohif/viewer@1.12.0) (2019-10-25)
-
-### Features
-
-- 🎸 Allow routes to load Google Cloud DICOM Stores in the Study List
-  ([#1069](https://github.com/OHIF/Viewers/issues/1069))
-  ([21b586b](https://github.com/OHIF/Viewers/commit/21b586b08f3dde6613859712a9e0577dece564db))
-
-## [1.11.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.11.4...@ohif/viewer@1.11.5) (2019-10-24)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.11.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.11.3...@ohif/viewer@1.11.4) (2019-10-23)
-
-### Bug Fixes
-
-- Revert "Revert "fix: MPR initialization""
-  ([#1065](https://github.com/OHIF/Viewers/issues/1065))
-  ([c680720](https://github.com/OHIF/Viewers/commit/c680720ce5ead58fdb399e3a356edac18093f5c0)),
-  closes [#1062](https://github.com/OHIF/Viewers/issues/1062)
-  [#1064](https://github.com/OHIF/Viewers/issues/1064)
-
-## [1.11.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.11.2...@ohif/viewer@1.11.3) (2019-10-23)
-
-### Bug Fixes
-
-- 🐛 Switch to orhtographic view for 2D MPR
-  ([#1074](https://github.com/OHIF/Viewers/issues/1074))
-  ([13d337a](https://github.com/OHIF/Viewers/commit/13d337aaabb8dadf6366c6262c5e47e7781edd08))
-
-## [1.11.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.11.1...@ohif/viewer@1.11.2) (2019-10-23)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.11.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.11.0...@ohif/viewer@1.11.1) (2019-10-23)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [1.11.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.10.3...@ohif/viewer@1.11.0) (2019-10-22)
-
-### Bug Fixes
-
-- MPR initialization ([#1062](https://github.com/OHIF/Viewers/issues/1062))
-  ([b037394](https://github.com/OHIF/Viewers/commit/b03739428f72bb50bdabdd6f83b7af885057da69))
-
-### Features
-
-- 🎸 Load spinner when selecting gcloud store. Add key on td
-  ([#1034](https://github.com/OHIF/Viewers/issues/1034))
-  ([e62f403](https://github.com/OHIF/Viewers/commit/e62f403fe9e3df56713128e3d59045824b086d8d)),
-  closes [#1057](https://github.com/OHIF/Viewers/issues/1057)
-
-## [1.10.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.10.2...@ohif/viewer@1.10.3) (2019-10-18)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.10.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.10.1...@ohif/viewer@1.10.2) (2019-10-18)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.10.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.10.0...@ohif/viewer@1.10.1) (2019-10-16)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [1.10.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.9.1...@ohif/viewer@1.10.0) (2019-10-15)
-
-### Features
-
-- Add browser info and app version
-  ([#1046](https://github.com/OHIF/Viewers/issues/1046))
-  ([c217b8b](https://github.com/OHIF/Viewers/commit/c217b8b))
-
-## [1.9.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.9.0...@ohif/viewer@1.9.1) (2019-10-15)
-
-### Bug Fixes
-
-- 🐛 Remove debugger statement left in from last PR
-  ([#1052](https://github.com/OHIF/Viewers/issues/1052))
-  ([d091cd6](https://github.com/OHIF/Viewers/commit/d091cd6))
-
-# [1.9.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.8.0...@ohif/viewer@1.9.0) (2019-10-15)
-
-### Features
-
-- 🎸 Only allow reconstruction of datasets that make sense
-  ([#1010](https://github.com/OHIF/Viewers/issues/1010))
-  ([2d75e01](https://github.com/OHIF/Viewers/commit/2d75e01)), closes
-  [#561](https://github.com/OHIF/Viewers/issues/561)
-
-# [1.8.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.7.0...@ohif/viewer@1.8.0) (2019-10-14)
-
-### Features
-
-- Notification Service ([#1011](https://github.com/OHIF/Viewers/issues/1011))
-  ([92c8996](https://github.com/OHIF/Viewers/commit/92c8996))
-
-# [1.7.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.6.3...@ohif/viewer@1.7.0) (2019-10-14)
-
-### Features
-
-- Implement a 'Exit 2D MPR' button in the toolbar
-  ([c99e0d8](https://github.com/OHIF/Viewers/commit/c99e0d8))
-
-## [1.6.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.6.2...@ohif/viewer@1.6.3) (2019-10-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.6.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.6.1...@ohif/viewer@1.6.2) (2019-10-11)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.6.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.6.0...@ohif/viewer@1.6.1) (2019-10-11)
-
-### Bug Fixes
-
-- Switch token storage back to localStorage because in-memory was annoying for
-  end users ([#1030](https://github.com/OHIF/Viewers/issues/1030))
-  ([412fe4e](https://github.com/OHIF/Viewers/commit/412fe4e))
-
-# [1.6.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.5.4...@ohif/viewer@1.6.0) (2019-10-11)
-
-### Features
-
-- 🎸 Improve usability of Google Cloud adapter, including direct routes to
-  studies ([#989](https://github.com/OHIF/Viewers/issues/989))
-  ([2bc361c](https://github.com/OHIF/Viewers/commit/2bc361c))
-
-## [1.5.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.5.3...@ohif/viewer@1.5.4) (2019-10-10)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.5.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.5.2...@ohif/viewer@1.5.3) (2019-10-10)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.5.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.5.1...@ohif/viewer@1.5.2) (2019-10-10)
-
-### Bug Fixes
-
-- 🎸 switch ohif logo from text + font to SVG
-  ([#1021](https://github.com/OHIF/Viewers/issues/1021))
-  ([e7de8be](https://github.com/OHIF/Viewers/commit/e7de8be))
-
-## [1.5.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.5.0...@ohif/viewer@1.5.1) (2019-10-09)
-
-### Bug Fixes
-
-- 🐛 set current viewport as active when switching layouts
-  ([#1018](https://github.com/OHIF/Viewers/issues/1018))
-  ([2a74355](https://github.com/OHIF/Viewers/commit/2a74355))
-
-# [1.5.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.4.5...@ohif/viewer@1.5.0) (2019-10-09)
-
-### Features
-
-- Multiple fixes and implementation changes to react-cornerstone-viewport
-  ([1cc94f3](https://github.com/OHIF/Viewers/commit/1cc94f3))
-
-## [1.4.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.4.4...@ohif/viewer@1.4.5) (2019-10-09)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.4.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.4.3...@ohif/viewer@1.4.4) (2019-10-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.4.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.4.2...@ohif/viewer@1.4.3) (2019-10-04)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.4.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.4.1...@ohif/viewer@1.4.2) (2019-10-04)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.4.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.4.0...@ohif/viewer@1.4.1) (2019-10-03)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [1.4.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.3.3...@ohif/viewer@1.4.0) (2019-10-03)
-
-### Features
-
-- Use QIDO + WADO to load series metadata individually rather than the entire
-  study metadata at once ([#953](https://github.com/OHIF/Viewers/issues/953))
-  ([9e10c2b](https://github.com/OHIF/Viewers/commit/9e10c2b))
-
-## [1.3.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.3.2...@ohif/viewer@1.3.3) (2019-10-02)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.3.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.3.1...@ohif/viewer@1.3.2) (2019-10-01)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.3.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.3.0...@ohif/viewer@1.3.1) (2019-10-01)
-
-### Bug Fixes
-
-- Exit MPR mode if Layout is changed
-  ([#984](https://github.com/OHIF/Viewers/issues/984))
-  ([674ca9f](https://github.com/OHIF/Viewers/commit/674ca9f))
-
-# [1.3.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.8...@ohif/viewer@1.3.0) (2019-10-01)
-
-### Features
-
-- 🎸 MPR UI improvements. Added MinIP, AvgIP, slab thickness slider and mode
-  toggle ([#947](https://github.com/OHIF/Viewers/issues/947))
-  ([c79c0c3](https://github.com/OHIF/Viewers/commit/c79c0c3))
-
-## [1.2.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.7...@ohif/viewer@1.2.8) (2019-10-01)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.2.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.6...@ohif/viewer@1.2.7) (2019-10-01)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.2.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.5...@ohif/viewer@1.2.6) (2019-09-27)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.2.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.4...@ohif/viewer@1.2.5) (2019-09-27)
-
-### Bug Fixes
-
-- version bump issue ([#963](https://github.com/OHIF/Viewers/issues/963))
-  ([e607ed2](https://github.com/OHIF/Viewers/commit/e607ed2)), closes
-  [#962](https://github.com/OHIF/Viewers/issues/962)
-
-# [2.0.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.3...@ohif/viewer@2.0.0) (2019-09-27)
-
-### Bug Fixes
-
-- 🐛 Add DicomLoaderService & FileLoaderService to fix SR, PDF, and SEG support
-  in local file and WADO-RS-only use cases
-  ([#862](https://github.com/OHIF/Viewers/issues/862))
-  ([e7e1a8a](https://github.com/OHIF/Viewers/commit/e7e1a8a)), closes
-  [#838](https://github.com/OHIF/Viewers/issues/838)
-- version bump issue ([#962](https://github.com/OHIF/Viewers/issues/962))
-  ([c80ea17](https://github.com/OHIF/Viewers/commit/c80ea17))
-
-### BREAKING CHANGES
-
-- DICOM Seg
-
-# [2.0.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.3...@ohif/viewer@2.0.0) (2019-09-27)
-
-### Bug Fixes
-
-- 🐛 Add DicomLoaderService & FileLoaderService to fix SR, PDF, and SEG support
-  in local file and WADO-RS-only use cases
-  ([#862](https://github.com/OHIF/Viewers/issues/862))
-  ([e7e1a8a](https://github.com/OHIF/Viewers/commit/e7e1a8a)), closes
-  [#838](https://github.com/OHIF/Viewers/issues/838)
-
-### BREAKING CHANGES
-
-- DICOM Seg
-
-## [1.2.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.2...@ohif/viewer@1.2.3) (2019-09-27)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.2.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.1...@ohif/viewer@1.2.2) (2019-09-27)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.2.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.2.0...@ohif/viewer@1.2.1) (2019-09-26)
-
-### Bug Fixes
-
-- google cloud support w/ docker (via env var)
-  ([#958](https://github.com/OHIF/Viewers/issues/958))
-  ([e375a4a](https://github.com/OHIF/Viewers/commit/e375a4a))
-
-# [1.2.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.14...@ohif/viewer@1.2.0) (2019-09-26)
-
-### Features
-
-- 🎸 React custom component on toolbar button
-  ([#935](https://github.com/OHIF/Viewers/issues/935))
-  ([a90605c](https://github.com/OHIF/Viewers/commit/a90605c))
-
-## [1.1.14](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.13...@ohif/viewer@1.1.14) (2019-09-26)
-
-### Bug Fixes
-
-- 🐛 Set series into active viewport by clicking on thumbnail
-  ([#945](https://github.com/OHIF/Viewers/issues/945))
-  ([5551f81](https://github.com/OHIF/Viewers/commit/5551f81)), closes
-  [#895](https://github.com/OHIF/Viewers/issues/895)
-  [#895](https://github.com/OHIF/Viewers/issues/895)
-
-## [1.1.13](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.12...@ohif/viewer@1.1.13) (2019-09-26)
-
-### Bug Fixes
-
-- Add some code splitting for PWA build
-  ([#937](https://github.com/OHIF/Viewers/issues/937))
-  ([8938035](https://github.com/OHIF/Viewers/commit/8938035))
-
-## [1.1.12](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.11...@ohif/viewer@1.1.12) (2019-09-26)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.11](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.10...@ohif/viewer@1.1.11) (2019-09-23)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.10](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.9...@ohif/viewer@1.1.10) (2019-09-19)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.9](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.8...@ohif/viewer@1.1.9) (2019-09-19)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.7...@ohif/viewer@1.1.8) (2019-09-19)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.6...@ohif/viewer@1.1.7) (2019-09-19)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.5...@ohif/viewer@1.1.6) (2019-09-19)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.4...@ohif/viewer@1.1.5) (2019-09-17)
-
-### Bug Fixes
-
-- bump cornerstone-tools to latest version
-  ([f519f86](https://github.com/OHIF/Viewers/commit/f519f86))
-
-## [1.1.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.3...@ohif/viewer@1.1.4) (2019-09-17)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.2...@ohif/viewer@1.1.3) (2019-09-16)
-
-### Bug Fixes
-
-- 🐛 Fix issue on not loading gcloud
-  ([#919](https://github.com/OHIF/Viewers/issues/919))
-  ([f723546](https://github.com/OHIF/Viewers/commit/f723546))
-
-## [1.1.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.1...@ohif/viewer@1.1.2) (2019-09-12)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.1.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.1.0...@ohif/viewer@1.1.1) (2019-09-12)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [1.1.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.0.5...@ohif/viewer@1.1.0) (2019-09-12)
-
-### Features
-
-- 🎸 Load local file or folder using native dialog
-  ([#870](https://github.com/OHIF/Viewers/issues/870))
-  ([c221dd8](https://github.com/OHIF/Viewers/commit/c221dd8))
-
-## [1.0.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.0.4...@ohif/viewer@1.0.5) (2019-09-10)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.0.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.0.3...@ohif/viewer@1.0.4) (2019-09-10)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [1.0.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.0.2...@ohif/viewer@1.0.3) (2019-09-10)
-
-### Bug Fixes
-
-- on-brand library global name
-  ([ababe63](https://github.com/OHIF/Viewers/commit/ababe63))
-- remove requestOptions when key is not needed
-  ([32bc47d](https://github.com/OHIF/Viewers/commit/32bc47d))
-
-## [1.0.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.0.1...@ohif/viewer@1.0.2) (2019-09-09)
-
-### Bug Fixes
-
-- import regenerator-runtime for umd build
-  ([bad987a](https://github.com/OHIF/Viewers/commit/bad987a))
-
-## [1.0.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.0.0...@ohif/viewer@1.0.1) (2019-09-09)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [1.0.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.21...@ohif/viewer@1.0.0) (2019-09-06)
-
-### Code Refactoring
-
-- 💡 React components to consume appConfig using Context
-  ([#852](https://github.com/OHIF/Viewers/issues/852))
-  ([7c4ee73](https://github.com/OHIF/Viewers/commit/7c4ee73)), closes
-  [#725](https://github.com/OHIF/Viewers/issues/725)
-  [#725](https://github.com/OHIF/Viewers/issues/725)
-
-### BREAKING CHANGES
-
-- #725
-
-## [0.50.21](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.20...@ohif/viewer@0.50.21) (2019-09-06)
-
-### Bug Fixes
-
-- viewer project should build output before publish
-  ([94b625d](https://github.com/OHIF/Viewers/commit/94b625d))
-
-## [0.50.20](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.19...@ohif/viewer@0.50.20) (2019-09-06)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.19](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.18...@ohif/viewer@0.50.19) (2019-09-06)
-
-### Bug Fixes
-
-- @ohif/viewer package build
-  ([4aa7cbd](https://github.com/OHIF/Viewers/commit/4aa7cbd))
-
-## [0.50.18](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.17...@ohif/viewer@0.50.18) (2019-09-05)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.17](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.16...@ohif/viewer@0.50.17) (2019-09-04)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.16](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.15...@ohif/viewer@0.50.16) (2019-09-04)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.15](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.14...@ohif/viewer@0.50.15) (2019-09-04)
-
-### Bug Fixes
-
-- measurementsAPI issue caused by production build
-  ([#842](https://github.com/OHIF/Viewers/issues/842))
-  ([49d3439](https://github.com/OHIF/Viewers/commit/49d3439))
-
-## [0.50.14](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.13...@ohif/viewer@0.50.14) (2019-09-03)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.13](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.12...@ohif/viewer@0.50.13) (2019-09-03)
-
-### Bug Fixes
-
-- 🐛 Activating Pan and Zoom on right and middle click by def
-  ([#841](https://github.com/OHIF/Viewers/issues/841))
-  ([7a9b477](https://github.com/OHIF/Viewers/commit/7a9b477))
-
-## [0.50.12](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.11...@ohif/viewer@0.50.12) (2019-08-29)
-
-### Bug Fixes
-
-- asset resolution when at non-root route
-  ([#828](https://github.com/OHIF/Viewers/issues/828))
-  ([d48b617](https://github.com/OHIF/Viewers/commit/d48b617))
-
-## [0.50.11](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.10...@ohif/viewer@0.50.11) (2019-08-29)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.10](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.9...@ohif/viewer@0.50.10) (2019-08-27)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.9](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.8...@ohif/viewer@0.50.9) (2019-08-27)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.7...@ohif/viewer@0.50.8) (2019-08-26)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.6...@ohif/viewer@0.50.7) (2019-08-22)
-
-### Bug Fixes
-
-- 🐛 Update for changes in ExpandableToolMenu props
-  ([e09670a](https://github.com/OHIF/Viewers/commit/e09670a))
-
-## [0.50.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.5...@ohif/viewer@0.50.6) (2019-08-22)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.4...@ohif/viewer@0.50.5) (2019-08-21)
-
-### Bug Fixes
-
-- **StandaloneRouting:** Promise rejection - added `return`
-  ([#791](https://github.com/OHIF/Viewers/issues/791))
-  ([d09fb4e](https://github.com/OHIF/Viewers/commit/d09fb4e))
-
-## [0.50.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.3...@ohif/viewer@0.50.4) (2019-08-20)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.2...@ohif/viewer@0.50.3) (2019-08-15)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.1...@ohif/viewer@0.50.2) (2019-08-15)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.50.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.0-alpha.13...@ohif/viewer@0.50.1) (2019-08-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [0.50.0-alpha.13](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.0-alpha.12...@ohif/viewer@0.50.0-alpha.13) (2019-08-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [0.50.0-alpha.12](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.50.0-alpha.11...@ohif/viewer@0.50.0-alpha.12) (2019-08-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# [0.50.0-alpha.11](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.10...@ohif/viewer@0.50.0-alpha.11) (2019-08-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.0.22-alpha.10](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.9...@ohif/viewer@0.0.22-alpha.10) (2019-08-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## 0.0.22-alpha.9 (2019-08-14)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [0.0.22-alpha.8](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.7...@ohif/viewer@0.0.22-alpha.8) (2019-08-08)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [0.0.22-alpha.7](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.6...@ohif/viewer@0.0.22-alpha.7) (2019-08-08)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [0.0.22-alpha.6](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.5...@ohif/viewer@0.0.22-alpha.6) (2019-08-08)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [0.0.22-alpha.5](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.4...@ohif/viewer@0.0.22-alpha.5) (2019-08-08)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [0.0.22-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.3...@ohif/viewer@0.0.22-alpha.4) (2019-08-08)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [0.0.22-alpha.3](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.2...@ohif/viewer@0.0.22-alpha.3) (2019-08-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-# Change Log
-
-All notable changes to this project will be documented in this file. See
-[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-## [0.0.22-alpha.2](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.1...@ohif/viewer@0.0.22-alpha.2) (2019-08-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## [0.0.22-alpha.1](https://github.com/OHIF/Viewers/compare/@ohif/viewer@0.0.22-alpha.0...@ohif/viewer@0.0.22-alpha.1) (2019-08-07)
-
-**Note:** Version bump only for package @ohif/viewer
-
-## 0.0.22-alpha.0 (2019-08-05)
-
-**Note:** Version bump only for package @ohif/viewer
