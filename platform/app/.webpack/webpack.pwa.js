@@ -55,7 +55,8 @@ const setHeaders = (res, path) => {
 module.exports = (env, argv) => {
   const baseConfig = webpackBase(env, argv, { SRC_DIR, DIST_DIR });
   const isProdBuild = process.env.NODE_ENV === 'production';
-  const hasProxy = PROXY_TARGET && PROXY_DOMAIN;
+  const proxyTarget = PROXY_DOMAIN || PROXY_TARGET;
+  const hasProxy = Boolean(proxyTarget);
 
   const mergedConfig = merge(baseConfig, {
     entry: {
@@ -183,17 +184,20 @@ module.exports = (env, argv) => {
   });
 
   if (hasProxy) {
+    const proxyConfig = {
+      context: [PROXY_PATH_REWRITE_FROM || '/dicomweb'],
+      target: proxyTarget,
+      changeOrigin: true,
+    };
+
+    if (PROXY_PATH_REWRITE_FROM && typeof PROXY_PATH_REWRITE_TO === 'string') {
+      proxyConfig.pathRewrite = {
+        [`^${PROXY_PATH_REWRITE_FROM}`]: PROXY_PATH_REWRITE_TO,
+      };
+    }
+
     mergedConfig.devServer.proxy = mergedConfig.devServer.proxy || {};
-    mergedConfig.devServer.proxy = [
-      {
-        context: [PROXY_PATH_REWRITE_FROM || '/dicomweb'],
-        target: PROXY_DOMAIN,
-        changeOrigin: true,
-        pathRewrite: {
-          [`^${PROXY_PATH_REWRITE_FROM}`]: PROXY_PATH_REWRITE_TO,
-        },
-      },
-    ];
+    mergedConfig.devServer.proxy = [proxyConfig];
   }
 
   if (isProdBuild) {

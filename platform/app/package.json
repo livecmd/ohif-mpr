@@ -34,6 +34,8 @@
     "dev:orthanc": "cross-env NODE_ENV=development PROXY_TARGET=http://localhost:3000/pacs/dicom-web PROXY_DOMAIN=http://localhost:8042 PROXY_PATH_REWRITE_FROM=/pacs/dicom-web PROXY_PATH_REWRITE_TO=/dicom-web APP_CONFIG=config/docker-nginx-orthanc.js webpack serve --config .webpack/webpack.pwa.js",
     "dev:orthanc:no:cache": "cross-env NODE_ENV=development PROXY_TARGET=http://localhost:3000/pacs/dicom-web PROXY_DOMAIN=http://localhost:8042 PROXY_PATH_REWRITE_FROM=/pacs/dicom-web PROXY_PATH_REWRITE_TO=/dicom-web APP_CONFIG=config/docker-nginx-orthanc.js webpack serve --no-cache --config .webpack/webpack.pwa.js",
     "dev:dcm4chee": "cross-env NODE_ENV=development APP_CONFIG=config/local_dcm4chee.js webpack serve --config .webpack/webpack.pwa.js",
+    "dev:x": "cross-env NODE_ENV=development PROXY_TARGET=https://yihengicloud.com PROXY_DOMAIN=https://yihengicloud.com PROXY_PATH_REWRITE_FROM=/webpacs/api PROXY_PATH_REWRITE_TO=/webpacs/api APP_CONFIG=config/local_xunying.js webpack serve --config .webpack/webpack.pwa.js",
+    "dev:xunying": "cross-env NODE_ENV=development PROXY_TARGET=https://xunyingmed.cn PROXY_DOMAIN=https://xunyingmed.cn PROXY_PATH_REWRITE_FROM=/webpacs/api PROXY_PATH_REWRITE_TO=/webpacs/api APP_CONFIG=config/local_xunying.js webpack serve --config .webpack/webpack.pwa.js",
     "dev:static": "cross-env NODE_ENV=development APP_CONFIG=config/local_static.js webpack serve --config .webpack/webpack.pwa.js",
     "dev:viewer": "yarn run dev",
     "start": "yarn run dev",

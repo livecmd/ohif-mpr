@@ -101,31 +101,21 @@ window.config = {
   // },
   dataSources: [
     {
-      namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
+      namespace: '@ohif/extension-default.dataSourcesModule.companyapi',
       sourceName: 'ohif',
       configuration: {
-        friendlyName: 'AWS S3 Static wado server',
-        name: 'aws',
-        wadoUriRoot: 'https://d14fa38qiwhyfd.cloudfront.net/dicomweb',
-        qidoRoot: 'https://d14fa38qiwhyfd.cloudfront.net/dicomweb',
-        wadoRoot: 'https://d14fa38qiwhyfd.cloudfront.net/dicomweb',
-        qidoSupportsIncludeField: false,
-        imageRendering: 'wadors',
-        thumbnailRendering: 'wadors',
+        friendlyName: 'Company PACS API',
+        name: 'companyapi',
+        apiRoot: '/webpacs/api',
+        tokenHeaderName: 'token',
+        tokenQueryParam: 'token',
+        hospitalQueryParam: 'hospital',
+        imageRendering: 'wadouri',
         enableStudyLazyLoad: true,
-        supportsFuzzyMatching: true,
-        supportsWildcard: false,
-        staticWado: true,
-        singlepart: 'bulkdata,video',
-        // whether the data source should use retrieveBulkData to grab metadata,
-        // and in case of relative path, what would it be relative to, options
-        // are in the series level or study level (some servers like series some study)
-        bulkDataURI: {
-          enabled: true,
-          relativeResolution: 'studies',
-          transform: url => url.replace('/pixeldata.mp4', '/rendered'),
-        },
-        omitQuotationForMultipartRequest: true,
+        metadataRequestConcurrency: 4,
+        thumbnailRows: 256,
+        thumbnailColumns: 256,
+        thumbnailQuality: 60,
       },
     },
 

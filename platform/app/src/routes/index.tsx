@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { Routes, Route, Link, Navigate, useNavigate } from 'react-router-dom';
 import { ErrorBoundary } from '@ohif/ui-next';
 
 // Route Components
@@ -65,6 +65,22 @@ NotFoundStudy.propTypes = {
   message: PropTypes.string,
 };
 
+const RootRedirect = () => {
+  const [appConfig] = useAppConfig();
+  const { redirectRootTo } = appConfig;
+
+  if (!redirectRootTo) {
+    return <NotFound />;
+  }
+
+  return (
+    <Navigate
+      replace
+      to={redirectRootTo}
+    />
+  );
+};
+
 // TODO: Include "routes" debug route if dev build
 const bakedInRoutes = [
   {
@@ -126,12 +142,16 @@ const createRoutes = ({
     private: true,
     props: { children: WorkList, servicesManager, extensionManager },
   };
+  const RootRedirectRoute = {
+    path: '/',
+    children: RootRedirect,
+  };
 
   const customRoutes = customizationService.getCustomization('routes.customRoutes');
 
   const allRoutes = [
     ...routes,
-    ...(showStudyList ? [WorkListRoute] : []),
+    ...(showStudyList ? [WorkListRoute] : [RootRedirectRoute]),
     ...(customRoutes?.routes || []),
     ...bakedInRoutes,
     customRoutes?.notFoundRoute || notFoundRoute,

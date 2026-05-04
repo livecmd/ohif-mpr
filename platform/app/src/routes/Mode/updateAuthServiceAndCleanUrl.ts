@@ -18,6 +18,7 @@ export function updateAuthServiceAndCleanUrl(
   userAuthenticationService.setServiceImplementation({
     getAuthorizationHeader: () => ({
       Authorization: 'Bearer ' + token,
+      token,
     }),
   });
 
