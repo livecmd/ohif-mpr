@@ -75,73 +75,107 @@ function getDisplaySetInfo(instances) {
   };
 }
 
-const makeDisplaySet = (instances, index) => {
+const makeDisplaySet = (instances, index, options = {}) => {
+  const { supportsIncrementalLoad = false } = options;
   // Need to sort the instances in order to get a consistent instance/thumbnail
   sortStudyInstances(instances);
-  const instance = instances[0];
   const imageSet = new ImageSet(instances);
   const { extensionManager } = appContext;
   const dataSource = extensionManager.getActiveDataSource()[0];
-  const {
-    isDynamicVolume,
-    value: isReconstructable,
-    averageSpacingBetweenFrames,
-    dynamicVolumeInfo,
-  } = getDisplaySetInfo(instances);
-
-  const volumeLoaderSchema = isDynamicVolume
-    ? DYNAMIC_VOLUME_LOADER_SCHEME
-    : DEFAULT_VOLUME_LOADER_SCHEME;
-
-  // set appropriate attributes to image set...
-  const messages = getDisplaySetMessages(instances, isReconstructable, isDynamicVolume);
-
-  imageSet.setAttributes({
-    volumeLoaderSchema,
-    displaySetInstanceUID: imageSet.uid, // create a local alias for the imageSet UID
-    SeriesDate: instance.SeriesDate,
-    SeriesTime: instance.SeriesTime,
-    SeriesInstanceUID: instance.SeriesInstanceUID,
-    StudyInstanceUID: instance.StudyInstanceUID,
-    SeriesNumber: instance.SeriesNumber || 0,
-    FrameRate: instance.FrameTime,
-    SOPClassUID: instance.SOPClassUID,
-    SeriesDescription: instance.SeriesDescription || '',
-    Modality: instance.Modality,
-    isMultiFrame: isMultiFrame(instance),
-    countIcon: isReconstructable ? 'icon-mpr' : undefined,
-    numImageFrames: instances.length,
-    SOPClassHandlerId: `${id}.sopClassHandlerModule.${sopClassHandlerName}`,
-    isReconstructable,
-    messages,
-    averageSpacingBetweenFrames: averageSpacingBetweenFrames || null,
-    isDynamicVolume,
-    dynamicVolumeInfo,
-    supportsWindowLevel: true,
-    label:
-      instance.SeriesDescription ||
-      `${i18n.t('Series')} ${instance.SeriesNumber} - ${i18n.t(instance.Modality)}`,
-    FrameOfReferenceUID: instance.FrameOfReferenceUID,
-  });
-
-  const imageIds = dataSource.getImageIdsForDisplaySet(imageSet);
-  let imageId = imageIds[Math.floor(imageIds.length / 2)];
-  let thumbnailInstance = instances[Math.floor(instances.length / 2)];
-  if (isDynamicVolume) {
-    const timePoints = dynamicVolumeInfo.timePoints;
-    const middleIndex = Math.floor(timePoints.length / 2);
-    const middleTimePointImageIds = timePoints[middleIndex];
-    imageId = middleTimePointImageIds[Math.floor(middleTimePointImageIds.length / 2)];
-  }
-
-  imageSet.setAttributes({
-    getThumbnailSrc: dataSource.retrieve.getGetThumbnailSrc?.(thumbnailInstance, imageId),
-  });
-
   const { servicesManager } = appContext;
   const { customizationService } = servicesManager.services;
 
-  imageSet.sort(customizationService);
+  const updateDisplaySetState = () => {
+    sortStudyInstances(imageSet.images);
+
+    const instance = imageSet.images[0];
+    const {
+      isDynamicVolume,
+      value: isReconstructable,
+      averageSpacingBetweenFrames,
+      dynamicVolumeInfo,
+    } = getDisplaySetInfo(imageSet.images);
+
+    const volumeLoaderSchema = isDynamicVolume
+      ? DYNAMIC_VOLUME_LOADER_SCHEME
+      : DEFAULT_VOLUME_LOADER_SCHEME;
+    const messages = getDisplaySetMessages(imageSet.images, isReconstructable, isDynamicVolume);
+    const imageIds = dataSource.getImageIdsForDisplaySet(imageSet);
+
+    let thumbnailImageId = imageIds[0];
+    let thumbnailInstance = imageSet.images[0];
+
+    if (isDynamicVolume) {
+      const timePoints = dynamicVolumeInfo.timePoints;
+      const firstTimePointImageIds = timePoints[0];
+      thumbnailImageId = firstTimePointImageIds?.[0] || thumbnailImageId;
+    }
+
+    imageSet.instance = instance;
+    imageSet.setAttributes({
+      volumeLoaderSchema,
+      displaySetInstanceUID: imageSet.uid,
+      SeriesDate: instance.SeriesDate,
+      SeriesTime: instance.SeriesTime,
+      SeriesInstanceUID: instance.SeriesInstanceUID,
+      StudyInstanceUID: instance.StudyInstanceUID,
+      SeriesNumber: instance.SeriesNumber || 0,
+      FrameRate: instance.FrameTime,
+      SOPClassUID: instance.SOPClassUID,
+      SeriesDescription: instance.SeriesDescription || '',
+      Modality: instance.Modality,
+      isMultiFrame: isMultiFrame(instance),
+      countIcon: isReconstructable ? 'icon-mpr' : undefined,
+      numImageFrames: imageSet.images.length,
+      SOPClassHandlerId: `${id}.sopClassHandlerModule.${sopClassHandlerName}`,
+      isReconstructable,
+      messages,
+      averageSpacingBetweenFrames: averageSpacingBetweenFrames || null,
+      isDynamicVolume,
+      dynamicVolumeInfo,
+      supportsWindowLevel: true,
+      label:
+        instance.SeriesDescription ||
+        `${i18n.t('Series')} ${instance.SeriesNumber} - ${i18n.t(instance.Modality)}`,
+      FrameOfReferenceUID: instance.FrameOfReferenceUID,
+      imageIds,
+      getThumbnailSrc: dataSource.retrieve.getGetThumbnailSrc?.(
+        thumbnailInstance,
+        thumbnailImageId
+      ),
+    });
+
+    imageSet.sort(customizationService);
+  };
+
+  updateDisplaySetState();
+
+  if (supportsIncrementalLoad) {
+    imageSet.setAttributes({
+      addInstances: function (newInstances) {
+        const existingInstanceKeys = new Set(
+          imageSet.images.map(
+            instance => `${instance.SOPInstanceUID}::${instance.frameNumber || ''}`
+          )
+        );
+        const instancesToAdd = newInstances.filter(
+          instance =>
+            !existingInstanceKeys.has(`${instance.SOPInstanceUID}::${instance.frameNumber || ''}`)
+        );
+
+        if (!instancesToAdd.length) {
+          return this;
+        }
+
+        instancesToAdd.forEach(instance => imageSet.images.push(instance));
+        imageSet.instances = imageSet.images;
+        imageSet.invalidateData = false;
+        updateDisplaySetState();
+
+        return this;
+      },
+    });
+  }
 
   // Include the first image instance number (after sorted)
   /*imageSet.setAttribute(
@@ -228,7 +262,9 @@ function getDisplaySetsFromSeries(instances) {
   });
 
   if (stackableInstances.length) {
-    const displaySet = makeDisplaySet(stackableInstances, displaySets.length);
+    const displaySet = makeDisplaySet(stackableInstances, displaySets.length, {
+      supportsIncrementalLoad: true,
+    });
     displaySet.setAttribute('studyInstanceUid', instances[0].StudyInstanceUID);
     displaySet.setAttributes({
       sopClassUids,

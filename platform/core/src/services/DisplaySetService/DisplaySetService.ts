@@ -374,7 +374,12 @@ export default class DisplaySetService extends PubSubService {
               this.activeDisplaySetsChanged = true;
               instances = filterInstances(instances, [addedDs]);
               this._addActiveDisplaySets([addedDs]);
-              this.setDisplaySetMetadataInvalidated(addedDs.displaySetInstanceUID);
+              const invalidateData = (addedDs as DisplaySet & { invalidateData?: boolean })
+                .invalidateData;
+              this.setDisplaySetMetadataInvalidated(
+                addedDs.displaySetInstanceUID,
+                invalidateData ?? true
+              );
             }
             // This means that all instances already existed or got added to
             // existing display sets, and had an invalidated event fired

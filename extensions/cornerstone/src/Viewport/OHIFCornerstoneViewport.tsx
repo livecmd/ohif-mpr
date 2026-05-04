@@ -241,10 +241,6 @@ const OHIFCornerstoneViewport = React.memo(
           displaySetInstanceUID: invalidatedDisplaySetInstanceUID,
           invalidateData,
         }: Types.DisplaySetSeriesMetadataInvalidatedEvent) => {
-          if (!invalidateData) {
-            return;
-          }
-
           const viewportInfo = cornerstoneViewportService.getViewportInfo(viewportId);
 
           if (viewportInfo.hasDisplaySet(invalidatedDisplaySetInstanceUID)) {
@@ -253,7 +249,8 @@ const OHIFCornerstoneViewport = React.memo(
               viewportData,
               invalidatedDisplaySetInstanceUID,
               dataSource,
-              displaySetService
+              displaySetService,
+              invalidateData
             );
 
             const keepCamera = true;

@@ -1321,7 +1321,23 @@ class CornerstoneViewportService extends PubSubService implements IViewportServi
     }
 
     if (viewport instanceof StackViewport) {
-      displaySetPromise = this._setStackViewport(viewport, viewportData, viewportInfo);
+      const currentImageId = viewport.getCurrentImageId?.();
+      const presentations = currentImageId
+        ? ({
+            positionPresentation: {
+              viewReference: {
+                referencedImageId: currentImageId,
+              },
+            },
+          } as Presentations)
+        : undefined;
+
+      displaySetPromise = this._setStackViewport(
+        viewport,
+        viewportData,
+        viewportInfo,
+        presentations
+      );
     }
 
     displaySetPromise.then(() => {

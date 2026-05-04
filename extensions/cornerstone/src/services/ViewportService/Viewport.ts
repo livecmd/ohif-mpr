@@ -238,7 +238,9 @@ class ViewportInfo {
     }
 
     viewportData = viewportData as StackViewportData;
-    return viewportData.data.displaySetInstanceUID === displaySetInstanceUID;
+    return viewportData.data.some(
+      ({ displaySetInstanceUID: dsUID }) => dsUID === displaySetInstanceUID
+    );
   }
 
   /**

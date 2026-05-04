@@ -72,26 +72,33 @@ class CornerstoneCacheService {
     viewportData: VolumeViewportData | StackViewportData,
     invalidatedDisplaySetInstanceUID: string,
     dataSource,
-    displaySetService
+    displaySetService,
+    invalidateData = true
   ): Promise<VolumeViewportData | StackViewportData> {
     if (viewportData.viewportType === Enums.ViewportType.STACK) {
       const displaySet = displaySetService.getDisplaySetByUID(invalidatedDisplaySetInstanceUID);
       const imageIds = this._getCornerstoneStackImageIds(displaySet, dataSource);
+      displaySet.imageIds = imageIds;
+      this.stackImageIds.set(invalidatedDisplaySetInstanceUID, imageIds);
 
-      // remove images from the cache to be able to re-load them
-      imageIds.forEach(imageId => {
-        if (cs3DCache.getImageLoadObject(imageId)) {
-          cs3DCache.removeImageLoadObject(imageId);
-        }
-      });
+      if (invalidateData) {
+        // remove images from the cache to be able to re-load them
+        imageIds.forEach(imageId => {
+          if (cs3DCache.getImageLoadObject(imageId)) {
+            cs3DCache.removeImageLoadObject(imageId);
+          }
+        });
+      }
 
       return {
         viewportType: Enums.ViewportType.STACK,
-        data: {
-          StudyInstanceUID: displaySet.StudyInstanceUID,
-          displaySetInstanceUID: invalidatedDisplaySetInstanceUID,
-          imageIds,
-        },
+        data: [
+          {
+            StudyInstanceUID: displaySet.StudyInstanceUID,
+            displaySetInstanceUID: invalidatedDisplaySetInstanceUID,
+            imageIds,
+          },
+        ],
       };
     }
 
@@ -101,7 +108,7 @@ class CornerstoneCacheService {
     const volume = cs3DCache.getVolume(volumeId);
 
     if (volume) {
-      if (volume.imageIds) {
+      if (invalidateData && volume.imageIds) {
         // also for each imageId in the volume, remove the imageId from the cache
         // since that will hold the old metadata as well
 

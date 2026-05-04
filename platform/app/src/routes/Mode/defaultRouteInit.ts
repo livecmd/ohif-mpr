@@ -52,9 +52,13 @@ export async function defaultRouteInit(
 
     // run the hanging protocol matching on the displaySets with the predefined
     // hanging protocol in the mode configuration
-    hangingProtocolService.run({ studies, activeStudy, displaySets: sortedDisplaySets }, hangingProtocolId, {
-      stageIndex,
-    });
+    hangingProtocolService.run(
+      { studies, activeStudy, displaySets: sortedDisplaySets },
+      hangingProtocolId,
+      {
+        stageIndex,
+      }
+    );
   }
 
   const unsubscriptions = [];
@@ -126,8 +130,17 @@ export async function defaultRouteInit(
     const allPromises = [];
     const remainingPromises = [];
 
-    function startRemainingPromises(remainingPromises) {
-      remainingPromises.forEach(p => p.forEach(p => p.start()));
+    async function startRemainingPromisesSequentially(remainingPromises) {
+      for (const studyPromises of remainingPromises) {
+        for (const seriesPromise of studyPromises) {
+          try {
+            await seriesPromise.start();
+            await seriesPromise.waitUntilComplete?.();
+          } catch (error) {
+            console.error(error);
+          }
+        }
+      }
     }
 
     promises.forEach(promise => {
@@ -153,7 +166,7 @@ export async function defaultRouteInit(
     });
 
     await Promise.allSettled(allPromises).then(applyHangingProtocol);
-    startRemainingPromises(remainingPromises);
+    void startRemainingPromisesSequentially(remainingPromises);
     applyHangingProtocol();
   });
 

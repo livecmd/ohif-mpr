@@ -1,4 +1,6 @@
 import dcmjs from 'dcmjs';
+import dicomImageLoader from '@cornerstonejs/dicom-image-loader';
+import { metaData as cornerstoneMetaData } from '@cornerstonejs/core';
 import { DicomMetadataStore, IWebApiDataSource, utils, classes } from '@ohif/core';
 
 import { processResults, processSeriesResults } from '../DicomWebDataSource/qido.js';
@@ -375,6 +377,61 @@ function createCompanyApi(userConfig = {}, servicesManager) {
     return imageId;
   };
 
+  class DeferredSeriesPromise {
+    metadata = undefined;
+    processFunction = undefined;
+    internalPromise = undefined;
+    completionPromise = undefined;
+    thenFunction = undefined;
+    rejectFunction = undefined;
+
+    constructor(metadata, processFunction) {
+      this.metadata = metadata;
+      this.processFunction = processFunction;
+    }
+
+    start() {
+      if (!this.internalPromise) {
+        this.internalPromise = Promise.resolve().then(() => this.processFunction());
+
+        if (this.thenFunction) {
+          this.then(this.thenFunction);
+          this.thenFunction = undefined;
+        }
+
+        if (this.rejectFunction) {
+          this.catch(this.rejectFunction);
+          this.rejectFunction = undefined;
+        }
+      }
+
+      return this.internalPromise;
+    }
+
+    then(onFulfilled, onRejected) {
+      if (this.internalPromise) {
+        return this.internalPromise.then(onFulfilled, onRejected);
+      }
+
+      this.thenFunction = onFulfilled;
+      if (onRejected) {
+        this.rejectFunction = onRejected;
+      }
+    }
+
+    catch(onRejected) {
+      if (this.internalPromise) {
+        return this.internalPromise.catch(onRejected);
+      }
+
+      this.rejectFunction = onRejected;
+    }
+
+    waitUntilComplete() {
+      return this.completionPromise || this.start();
+    }
+  }
+
   const mapWithConcurrency = async (items, limit, worker) => {
     const results = new Array(items.length);
     let nextIndex = 0;
@@ -426,7 +483,65 @@ function createCompanyApi(userConfig = {}, servicesManager) {
     return promise;
   };
 
-  const ensureRequiredInstanceTags = (dicomJson, imageRecord, studyInstanceUID, seriesInstanceUID) => {
+  const normalizeUIDList = value => {
+    if (!value) {
+      return [];
+    }
+
+    return (Array.isArray(value) ? value : String(value).split(/[\\,]/))
+      .map(item => item.trim())
+      .filter(Boolean);
+  };
+
+  const sortImageRecords = imageRecords => {
+    return [...imageRecords].sort((left, right) => {
+      const leftNumber = Number(left?.imageno || left?.InstanceNumber || 0);
+      const rightNumber = Number(right?.imageno || right?.InstanceNumber || 0);
+
+      return leftNumber - rightNumber;
+    });
+  };
+
+  const createSeriesSummaryMetadata = ({
+    studyInstanceUID,
+    seriesInstanceUID,
+    studySummary,
+    seriesNumber,
+  }) => ({
+    StudyInstanceUID: studyInstanceUID,
+    SeriesInstanceUID: seriesInstanceUID,
+    SeriesNumber: seriesNumber,
+    Modality:
+      Array.isArray(studySummary?.modalities) ||
+      String(studySummary?.modalities || '').includes('\\')
+        ? undefined
+        : studySummary?.modalities,
+  });
+
+  const createLazySeriesLoadPlan = async studyInstanceUID => {
+    const studySummary = await getStudySummary(studyInstanceUID);
+    const orderedSeriesUIDs = normalizeUIDList(studySummary?.series);
+
+    const seriesSummaryMetadata = orderedSeriesUIDs.map((seriesInstanceUID, index) =>
+      createSeriesSummaryMetadata({
+        studyInstanceUID,
+        seriesInstanceUID,
+        studySummary,
+        seriesNumber: index + 1,
+      })
+    );
+
+    return {
+      seriesSummaryMetadata,
+    };
+  };
+
+  const ensureRequiredInstanceTags = (
+    dicomJson,
+    imageRecord,
+    studyInstanceUID,
+    seriesInstanceUID
+  ) => {
     const naturalizedFallback = {
       StudyInstanceUID: studyInstanceUID,
       SeriesInstanceUID: seriesInstanceUID,
@@ -460,29 +575,37 @@ function createCompanyApi(userConfig = {}, servicesManager) {
 
   const getInstanceMetadata = async (studyInstanceUID, seriesInstanceUID, imageRecord) => {
     const sopInstanceUID = imageRecord.imageuid;
-    const cacheKey = createCacheKey('instance', studyInstanceUID, seriesInstanceUID, sopInstanceUID);
+    const cacheKey = createCacheKey(
+      'instance',
+      studyInstanceUID,
+      seriesInstanceUID,
+      sopInstanceUID
+    );
 
     if (instanceMetadataCache.has(cacheKey)) {
       return instanceMetadataCache.get(cacheKey);
     }
 
-    const promise = fetchArrayBuffer(
-      buildDicomFileUrl({
-        StudyInstanceUID: studyInstanceUID,
-        SeriesInstanceUID: seriesInstanceUID,
-        SOPInstanceUID: sopInstanceUID,
-      })
-    ).then(arrayBuffer => {
-      const dicomData = dcmjs.data.DicomMessage.readFile(arrayBuffer);
-      const dicomJson = dicomData?.dict || {};
-
-      return ensureRequiredInstanceTags(
-        dicomJson,
-        imageRecord,
-        studyInstanceUID,
-        seriesInstanceUID
-      );
+    const dicomFileUrl = buildDicomFileUrl({
+      StudyInstanceUID: studyInstanceUID,
+      SeriesInstanceUID: seriesInstanceUID,
+      SOPInstanceUID: sopInstanceUID,
     });
+    const imageId = `wadouri:${dicomFileUrl}`;
+
+    const promise = dicomImageLoader.wadouri.dataSetCacheManager
+      .load(dicomFileUrl, uri => fetchArrayBuffer(uri), imageId)
+      .then(() => {
+        const naturalizedInstance = cornerstoneMetaData.get('instance', imageId) || {};
+        const dicomJson = naturalizedToDicomJson(naturalizedInstance);
+
+        return ensureRequiredInstanceTags(
+          dicomJson,
+          imageRecord,
+          studyInstanceUID,
+          seriesInstanceUID
+        );
+      });
 
     instanceMetadataCache.set(cacheKey, promise);
     return promise;
@@ -493,7 +616,10 @@ function createCompanyApi(userConfig = {}, servicesManager) {
 
     async searchForStudies({ studyInstanceUid, studyInstanceUID, queryParams } = {}) {
       let studyUIDs =
-        studyInstanceUid || studyInstanceUID || queryParams?.StudyInstanceUID || queryParams?.studyuid;
+        studyInstanceUid ||
+        studyInstanceUID ||
+        queryParams?.StudyInstanceUID ||
+        queryParams?.studyuid;
 
       if (!studyUIDs) {
         return [];
@@ -524,12 +650,12 @@ function createCompanyApi(userConfig = {}, servicesManager) {
       const studySummary = await getStudySummary(studyInstanceUID);
       const requestedSeriesUID = queryParams.SeriesInstanceUID;
       const requestedSeriesUIDs = requestedSeriesUID
-        ? (Array.isArray(requestedSeriesUID)
-            ? requestedSeriesUID
-            : String(requestedSeriesUID)
-                .split(/[\\,]/)
-                .map(item => item.trim())
-                .filter(Boolean))
+        ? Array.isArray(requestedSeriesUID)
+          ? requestedSeriesUID
+          : String(requestedSeriesUID)
+              .split(/[\\,]/)
+              .map(item => item.trim())
+              .filter(Boolean)
         : studySummary.series || [];
 
       const seriesDatasets = await Promise.all(
@@ -583,8 +709,7 @@ function createCompanyApi(userConfig = {}, servicesManager) {
         return [];
       }
 
-      const concurrency =
-        Number(config.metadataRequestConcurrency) || DEFAULT_METADATA_CONCURRENCY;
+      const concurrency = Number(config.metadataRequestConcurrency) || DEFAULT_METADATA_CONCURRENCY;
 
       return mapWithConcurrency(images, concurrency, imageRecord =>
         getInstanceMetadata(studyInstanceUID, seriesInstanceUID, imageRecord)
@@ -640,7 +765,8 @@ function createCompanyApi(userConfig = {}, servicesManager) {
       instances: {
         search: async (studyInstanceUid, queryParameters = {}) => {
           qidoClient.headers = buildHeaders();
-          const seriesInstanceUID = queryParameters.SeriesInstanceUID || queryParameters.seriesInstanceUID;
+          const seriesInstanceUID =
+            queryParameters.SeriesInstanceUID || queryParameters.seriesInstanceUID;
 
           if (!studyInstanceUid || !seriesInstanceUID) {
             return [];
@@ -761,16 +887,30 @@ function createCompanyApi(userConfig = {}, servicesManager) {
       madeInClient = false,
       returnPromises = false
     ) => {
-      const { preLoadData: seriesSummaryMetadata, promises: seriesPromises } =
-        await retrieveStudyMetadata(
-          wadoClient,
-          StudyInstanceUID,
-          true,
-          filters,
-          sortCriteria,
-          sortFunction,
-          config
-        );
+      const requestedSeriesUIDs = normalizeUIDList(
+        filters?.seriesInstanceUID || filters?.SeriesInstanceUID
+      );
+      const { seriesSummaryMetadata: allSeriesSummaryMetadata } =
+        await createLazySeriesLoadPlan(StudyInstanceUID);
+
+      const filteredSeries =
+        requestedSeriesUIDs.length > 0
+          ? allSeriesSummaryMetadata.reduce(
+              (acc, metadata) => {
+                if (requestedSeriesUIDs.includes(metadata.SeriesInstanceUID)) {
+                  acc.seriesSummaryMetadata.push(metadata);
+                }
+                return acc;
+              },
+              {
+                seriesSummaryMetadata: [],
+              }
+            )
+          : {
+              seriesSummaryMetadata: allSeriesSummaryMetadata,
+            };
+
+      const { seriesSummaryMetadata } = filteredSeries;
 
       function storeInstances(instances) {
         const naturalizedInstances = instances.map(naturalizeDataset);
@@ -800,6 +940,27 @@ function createCompanyApi(userConfig = {}, servicesManager) {
         });
 
         DicomMetadataStore.addInstances(naturalizedInstances, madeInClient);
+
+        const firstInstance = naturalizedInstances[0];
+        if (firstInstance) {
+          const series = DicomMetadataStore.getSeries(
+            firstInstance.StudyInstanceUID,
+            firstInstance.SeriesInstanceUID
+          );
+
+          DicomMetadataStore.updateSeriesMetadata({
+            StudyInstanceUID: firstInstance.StudyInstanceUID,
+            SeriesInstanceUID: firstInstance.SeriesInstanceUID,
+            Modality: firstInstance.Modality,
+            SeriesNumber: firstInstance.SeriesNumber,
+            SeriesDate: firstInstance.SeriesDate,
+            SeriesDescription: firstInstance.SeriesDescription,
+            NumberOfSeriesRelatedInstances:
+              series?.instances?.length || naturalizedInstances.length,
+            StudyDescription: firstInstance.StudyDescription,
+            StudyID: firstInstance.StudyID,
+          });
+        }
       }
 
       function setSuccessFlag() {
@@ -815,23 +976,85 @@ function createCompanyApi(userConfig = {}, servicesManager) {
 
       DicomMetadataStore.addSeriesMetadata(seriesSummaryMetadata, madeInClient);
 
-      const seriesDeliveredPromises = seriesPromises.map(promise => {
-        if (!returnPromises) {
-          promise?.start();
+      if (!seriesSummaryMetadata.length) {
+        setSuccessFlag();
+        return seriesSummaryMetadata;
+      }
+
+      const backgroundSeriesPromises = new Map();
+      let hasAttachedStudyCompletionListener = false;
+
+      const attachStudyCompletionListener = () => {
+        if (
+          hasAttachedStudyCompletionListener ||
+          backgroundSeriesPromises.size !== seriesSummaryMetadata.length
+        ) {
+          return;
         }
 
-        return promise.then(instances => {
-          storeInstances(instances);
-        });
+        hasAttachedStudyCompletionListener = true;
+
+        Promise.allSettled(Array.from(backgroundSeriesPromises.values())).then(() =>
+          setSuccessFlag()
+        );
+      };
+
+      const loadSeriesProgressively = async (seriesMetadata, seriesPromise) => {
+        const { SeriesInstanceUID: seriesInstanceUID } = seriesMetadata;
+        const images = sortImageRecords(await getSeriesImages(StudyInstanceUID, seriesInstanceUID));
+
+        if (!images.length) {
+          seriesPromise.completionPromise = Promise.resolve([]);
+          backgroundSeriesPromises.set(seriesInstanceUID, seriesPromise.completionPromise);
+          attachStudyCompletionListener();
+          return [];
+        }
+
+        const [firstImageRecord, ...remainingImageRecords] = images;
+        const firstInstance = await getInstanceMetadata(
+          StudyInstanceUID,
+          seriesInstanceUID,
+          firstImageRecord
+        );
+
+        storeInstances([firstInstance]);
+
+        seriesPromise.completionPromise = (async () => {
+          const loadedInstances = [];
+
+          for (const imageRecord of remainingImageRecords) {
+            const instance = await getInstanceMetadata(
+              StudyInstanceUID,
+              seriesInstanceUID,
+              imageRecord
+            );
+            loadedInstances.push(instance);
+            storeInstances([instance]);
+          }
+
+          return loadedInstances;
+        })();
+
+        backgroundSeriesPromises.set(seriesInstanceUID, seriesPromise.completionPromise);
+        attachStudyCompletionListener();
+
+        return [firstInstance];
+      };
+
+      const seriesPromises = seriesSummaryMetadata.map(seriesMetadata => {
+        const seriesPromise = new DeferredSeriesPromise(seriesMetadata, () =>
+          loadSeriesProgressively(seriesMetadata, seriesPromise)
+        );
+
+        return seriesPromise;
       });
 
       if (returnPromises) {
-        Promise.all(seriesDeliveredPromises).then(() => setSuccessFlag());
         return seriesPromises;
       }
 
-      await Promise.all(seriesDeliveredPromises);
-      setSuccessFlag();
+      await Promise.all(seriesPromises.map(seriesPromise => seriesPromise.start()));
+      attachStudyCompletionListener();
 
       return seriesSummaryMetadata;
     },
